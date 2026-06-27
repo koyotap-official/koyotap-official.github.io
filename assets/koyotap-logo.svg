@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="120" viewBox="0 0 320 120" role="img" aria-labelledby="title desc">
+  <title id="title">KoyoTap logo</title>
+  <desc id="desc">KoyoTap official wordmark and app tile</desc>
+  <rect width="320" height="120" rx="24" fill="#ffffff"/>
+  <rect x="22" y="22" width="76" height="76" rx="18" fill="#0b6b63"/>
+  <path d="M43 41h13v16l18-16h17L70 60l23 19H75L56 62v17H43V41Z" fill="#ffffff"/>
+  <circle cx="86" cy="36" r="7" fill="#f4b740"/>
+  <text x="118" y="58" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#18211f">KoyoTap</text>
+  <text x="119" y="83" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="600" fill="#0b6b63">Official Site</text>
+</svg>

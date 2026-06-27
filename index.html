@@ -1,83 +1,111 @@
 <!doctype html>
-<html lang="en">
-<head>
+<html lang="ja">
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>KoyoTap</title>
-    <style>
-        :root {
-            color-scheme: light dark;
-            --background: #f7f7f4;
-            --surface: #ffffff;
-            --text: #1d2329;
-            --muted: #59636e;
-            --border: #d7d9dc;
-            --accent: #176b5f;
-        }
+    <meta name="description" content="KoyoTap公式ホームページ。サービス、チーム、プライバシーポリシー、問い合わせ先を掲載しています。">
+    <title>KoyoTap 公式ホームページ</title>
+    <link rel="icon" href="assets/koyotap-logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/site.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="メインナビゲーション">
+        <a class="brand" href="index.html" aria-label="KoyoTap ホーム">
+          <span class="brand-mark" aria-hidden="true">K</span>
+          <span>KoyoTap</span>
+        </a>
+        <div class="nav-links">
+          <a href="services.html">サービス</a>
+          <a href="team.html">チーム</a>
+          <a href="privacy-policy.html">プライバシーポリシー</a>
+          <a href="mailto:koyotapofficial@gmail.com">お問い合わせ</a>
+        </div>
+      </nav>
+    </header>
 
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --background: #101417;
-                --surface: #171d21;
-                --text: #eef2f3;
-                --muted: #b4bec7;
-                --border: #2e383f;
-                --accent: #62c7b4;
-            }
-        }
-
-        body {
-            margin: 0;
-            min-height: 100vh;
-            display: grid;
-            place-items: center;
-            background: var(--background);
-            color: var(--text);
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.5;
-        }
-
-        main {
-            width: min(100%, 680px);
-            padding: 24px;
-        }
-
-        section {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 32px;
-        }
-
-        h1 {
-            margin: 0 0 12px;
-            font-size: 2rem;
-            line-height: 1.15;
-        }
-
-        p {
-            margin: 0 0 12px;
-            color: var(--muted);
-        }
-
-        p:last-child {
-            margin-bottom: 0;
-        }
-
-        a {
-            color: var(--accent);
-            font-weight: 700;
-        }
-    </style>
-</head>
-<body>
     <main>
-        <section>
-            <h1>KoyoTap</h1>
-            <p>Developer website for KoyoTap mobile applications.</p>
-            <p><a href="https://koyotap-official.github.io/ArrowNext/privacy-policy.html">Arrow Next Privacy Policy</a></p>
-            <p><a href="app-ads.txt">app-ads.txt</a></p>
-        </section>
+      <section class="hero">
+        <div class="hero-inner">
+          <img class="hero-logo" src="assets/koyotap-logo.svg" alt="KoyoTap Official Site">
+          <p class="eyebrow">Official Website</p>
+          <h1>KoyoTap</h1>
+          <p class="lead">KoyoTapは、スマートフォン向けアプリとデジタル体験を企画・開発・運営するチームです。サービス情報、運営チーム、プライバシーポリシーをこのページで確認できます。</p>
+          <div class="actions" aria-label="主要リンク">
+            <a class="button primary" href="privacy-policy.html">プライバシーポリシーを見る</a>
+            <a class="button" href="mailto:koyotapofficial@gmail.com">koyotapofficial@gmail.com</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="services">
+        <div class="section-inner">
+          <div class="section-head">
+            <h2>サービス</h2>
+            <p>KoyoTapは、使いやすさと安心して遊べる・使える体験を重視して、アプリや関連サービスを提供します。</p>
+          </div>
+          <div class="grid">
+            <article class="tile">
+              <span class="accent" aria-hidden="true"></span>
+              <h3>モバイルアプリ</h3>
+              <p>カジュアルゲームや日常で使えるアプリの企画、開発、改善を行います。</p>
+            </article>
+            <article class="tile">
+              <span class="accent" aria-hidden="true"></span>
+              <h3>運営とサポート</h3>
+              <p>お問い合わせ対応、品質改善、不具合修正など、公開後の運営を継続します。</p>
+            </article>
+            <article class="tile">
+              <span class="accent" aria-hidden="true"></span>
+              <h3>デジタルコンテンツ</h3>
+              <p>ユーザーが直感的に楽しめる画面、体験、コンテンツづくりに取り組みます。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="team">
+        <div class="section-inner">
+          <div class="section-head">
+            <h2>チーム</h2>
+            <p>KoyoTap運営チームは、小さく素早い開発体制で、企画から公開後の改善まで一貫して取り組みます。</p>
+          </div>
+          <div class="grid">
+            <article class="tile">
+              <span class="accent" aria-hidden="true"></span>
+              <h3>企画</h3>
+              <p>遊びやすさ、わかりやすさ、継続的な改善を前提にサービスを設計します。</p>
+            </article>
+            <article class="tile">
+              <span class="accent" aria-hidden="true"></span>
+              <h3>開発</h3>
+              <p>モバイル環境で安定して動作するアプリを目指して開発します。</p>
+            </article>
+            <article class="tile">
+              <span class="accent" aria-hidden="true"></span>
+              <h3>運営</h3>
+              <p>問い合わせやフィードバックを受け取り、サービス改善に反映します。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-band" id="contact">
+        <div class="section-inner">
+          <div>
+            <h2>お問い合わせ</h2>
+            <p>サービス、アプリ、プライバシーポリシーに関するご連絡はこちらへお願いします。</p>
+          </div>
+          <a class="button" href="mailto:koyotapofficial@gmail.com">koyotapofficial@gmail.com</a>
+        </div>
+      </section>
     </main>
-</body>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <span>&copy; 2026 KoyoTap. All rights reserved.</span>
+        <a href="privacy-policy.html">プライバシーポリシー</a>
+      </div>
+    </footer>
+  </body>
 </html>
