@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>近日公開 ─ 事前登録ハブ</title>
+
+<!-- ===================================================================
+     ★公開前に埋める設定はこのブロックだけ★
+     (1) GA4_MEASUREMENT_ID : GA4の測定ID (G-XXXXXXXXXX)。未設定でもページは壊れず計測をスキップ。
+     (2) REGISTER_URLS      : 事前登録先(Google Form等)。concept_id別。未設定(空文字)なら
+                              ボタンは「準備中」トーストを出すだけ(クリックは計測される=校正モードでは十分)。
+     (3) PRIVACY_URL        : プライバシーポリシーのURL(同梱の privacy.html)。
+     ================================================================== -->
+<script>
+  window.GA4_MEASUREMENT_ID = "G-RFENDKLRYS"; // GA4測定ID（organic-lp-batch1 / 2026-07-13設定）
+  window.REGISTER_URLS = {
+    control_screw: "",   // TODO: 事前登録フォームURL(任意)
+    screw_timebomb: "",
+    sort_hidden: "",
+    block_physics: ""
+  };
+  window.PRIVACY_URL = "privacy.html";
+</script>
+
+<!-- gtag.js（測定IDが未設定でも読み込み自体は害がないが、未設定時はイベント送信をスキップ） -->
+<script async src="https://www.googletagmanager.com/gtag/js"></script>
+<script>
+  (function () {
+    var id = window.GA4_MEASUREMENT_ID || "";
+    var ga4Ready = /^G-[A-Z0-9]{6,}$/.test(id) && id !== "G-XXXXXXXXXX";
+
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { dataLayer.push(arguments); };
+
+    // UTM 取得（utm_campaign=batch_<n> を batch として使う）
+    var params = new URLSearchParams(location.search);
+    var batch = params.get("utm_campaign") || "unknown";
+    var utmSource = params.get("utm_source") || "";
+    window.__BATCH__ = batch;
+
+    if (ga4Ready) {
+      // gtag.js 本体を正しい測定IDで読み込む
+      var s = document.querySelector('script[src^="https://www.googletagmanager.com/gtag/js"]');
+      if (s) s.src = "https://www.googletagmanager.com/gtag/js?id=" + id;
+      gtag("js", new Date());
+      gtag("config", id, { batch: batch, utm_source: utmSource });
+      window.__GA4_READY__ = true;
+    } else {
+      window.__GA4_READY__ = false;
+      console.warn("[LP計測] GA4未設定：window.GA4_MEASUREMENT_ID を実際の G-XXXX に差し替えてください。イベントはスキップされます（ページは正常動作）。");
+    }
+
+    // 共通イベント送信ヘルパ（未設定ならコンソール出力のみ）
+    window.trackEvent = function (name, extra) {
+      var payload = Object.assign({ batch: window.__BATCH__ }, extra || {});
+      if (window.__GA4_READY__) {
+        gtag("event", name, payload);
+      } else {
+        console.info("[LP計測 dry-run] event:", name, payload);
+      }
+    };
+  })();
+</script>
+
+<style>
+  :root {
+    --bg: #0e1116;
+    --card: #171b22;
+    --card2: #1e2530;
+    --accent: #7c5cff;
+    --accent2: #4dd0e1;
+    --text: #eef1f6;
+    --sub: #9aa4b2;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; }
+  body {
+    font-family: -apple-system, "Segoe UI", "Hiragino Kaku Gothic ProN", "Yu Gothic UI", Meiryo, sans-serif;
+    background: radial-gradient(120% 80% at 50% 0%, #1b2130 0%, var(--bg) 60%);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    min-height: 100%;
+    padding: env(safe-area-inset-top) 0 env(safe-area-inset-bottom);
+  }
+  /* モバイル9:16を主対象。PCでは中央に幅制限したカラム */
+  .wrap {
+    width: 100%;
+    max-width: 420px;
+    padding: 28px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  header { text-align: center; margin-top: 8px; }
+  .badge {
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: .08em;
+    color: var(--accent2);
+    border: 1px solid rgba(77,208,225,.4);
+    border-radius: 999px;
+    padding: 4px 12px;
+    margin-bottom: 14px;
+  }
+  h1 { font-size: 24px; line-height: 1.35; font-weight: 800; }
+  h1 .hl { color: var(--accent); }
+  .lead { color: var(--sub); font-size: 14px; margin-top: 10px; line-height: 1.6; }
+
+  .concepts { display: flex; flex-direction: column; gap: 12px; margin-top: 6px; }
+  .concept {
+    background: linear-gradient(180deg, var(--card2), var(--card));
+    border: 1px solid rgba(255,255,255,.06);
+    border-radius: 16px;
+    padding: 16px 16px 14px;
+    text-decoration: none;
+    color: var(--text);
+    display: block;
+    transition: transform .12s ease, border-color .12s ease;
+  }
+  .concept:active { transform: scale(.985); }
+  .concept:hover { border-color: rgba(124,92,255,.5); }
+  .concept .row { display: flex; align-items: center; gap: 12px; }
+  .thumb {
+    width: 52px; height: 52px; flex: 0 0 52px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    display: flex; align-items: center; justify-content: center;
+    font-size: 24px;
+  }
+  .concept h2 { font-size: 16px; font-weight: 700; }
+  .concept p { font-size: 12.5px; color: var(--sub); margin-top: 3px; line-height: 1.5; }
+  .cta {
+    margin-top: 12px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    background: linear-gradient(90deg, var(--accent), #a07bff);
+    border-radius: 10px;
+    padding: 10px;
+  }
+  footer { text-align: center; color: var(--sub); font-size: 11px; margin-top: 10px; line-height: 1.6; }
+  footer a { color: var(--accent2); text-decoration: none; }
+  .toast {
+    position: fixed; left: 50%; bottom: 28px; transform: translateX(-50%) translateY(20px);
+    background: rgba(30,37,48,.96); color: var(--text); font-size: 13px;
+    border: 1px solid rgba(255,255,255,.12); border-radius: 10px; padding: 10px 16px;
+    opacity: 0; pointer-events: none; transition: opacity .2s, transform .2s; z-index: 50;
+    max-width: 88%; text-align: center;
+  }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <span class="badge">COMING SOON ─ 事前登録受付中</span>
+      <h1>気になるゲームを<br /><span class="hl">タップして事前登録</span></h1>
+      <p class="lead">開発中の新作から、あなたが遊びたい1本を選んでください。<br />選ばれた作品を優先して開発します。</p>
+    </header>
+
+    <!-- コンセプト別ボタン：data-concept が GA4 の concept_id になる。
+         data-href に実際の事前登録先(Google Form/ストア等)を入れる。未定は # のまま。
+         ※ここはコンセプト選定(手順書§6⑥)確定後に差し替える暫定ダミー。 -->
+    <div class="concepts" id="concepts">
+      <a class="concept" data-concept="control_screw" data-href="#">
+        <div class="row">
+          <div class="thumb">🔩</div>
+          <div>
+            <h2>ネジ抜きパズル</h2>
+            <p>板を留めるネジを順に外して色別に仕分ける、定番のネジ抜きパズル。</p>
+          </div>
+        </div>
+        <div class="cta">このゲームを事前登録する</div>
+      </a>
+
+      <a class="concept" data-concept="screw_timebomb" data-href="#">
+        <div class="row">
+          <div class="thumb">⏱️</div>
+          <div>
+            <h2>時限ネジ抜き</h2>
+            <p>一部のネジにカウントダウン。0になる前に抜け——時間との勝負のネジ抜き。</p>
+          </div>
+        </div>
+        <div class="cta">このゲームを事前登録する</div>
+      </a>
+
+      <a class="concept" data-concept="sort_hidden" data-href="#">
+        <div class="row">
+          <div class="thumb">🃏</div>
+          <div>
+            <h2>伏せ札ソート</h2>
+            <p>裏向きのピースを隣のヒントから推理して仕分ける、頭を使う色ソート。</p>
+          </div>
+        </div>
+        <div class="cta">このゲームを事前登録する</div>
+      </a>
+
+      <a class="concept" data-concept="block_physics" data-href="#">
+        <div class="row">
+          <div class="thumb">🧱</div>
+          <div>
+            <h2>くずれ落ちブロック</h2>
+            <p>ブロックが重力で落下・積み崩れ。同色を崩して大量回収する物理パズル。</p>
+          </div>
+        </div>
+        <div class="cta">このゲームを事前登録する</div>
+      </a>
+    </div>
+
+    <footer>
+      個人開発 / <a id="privacyLink" href="privacy.html">プライバシーポリシー</a><br />
+      <span id="batchLabel"></span>
+    </footer>
+  </div>
+
+  <div id="toast" class="toast"></div>
+
+<script>
+  // バッチ表示（デバッグ視認用）
+  document.getElementById("batchLabel").textContent =
+    "batch: " + (window.__BATCH__ || "unknown") + (window.__GA4_READY__ ? " / GA4:ON" : " / GA4:OFF(未設定)");
+
+  // プライバシーリンク
+  if (window.PRIVACY_URL) document.getElementById("privacyLink").href = window.PRIVACY_URL;
+
+  // トースト
+  var toastEl = document.getElementById("toast");
+  var toastTimer = null;
+  function toast(msg) {
+    toastEl.textContent = msg;
+    toastEl.classList.add("show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { toastEl.classList.remove("show"); }, 2200);
+  }
+
+  // コンセプトボタンのクリックを計測（→登録先が設定済みなら遷移、未設定なら「準備中」トースト）
+  var REG = window.REGISTER_URLS || {};
+  document.querySelectorAll(".concept").forEach(function (el) {
+    el.addEventListener("click", function (e) {
+      e.preventDefault();
+      var conceptId = el.getAttribute("data-concept");
+      window.trackEvent("select_concept", { concept_id: conceptId });
+      var href = REG[conceptId] || "";
+      if (href) {
+        setTimeout(function () { location.href = href; }, 250); // GA4送信の取りこぼし回避
+      } else {
+        toast("事前登録は近日オープン！フォローしてお待ちください🙏");
+      }
+    });
+  });
+</script>
+</body>
+</html>
