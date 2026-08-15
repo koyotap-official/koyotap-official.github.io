@@ -1,10 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="320" height="120" viewBox="0 0 320 120" role="img" aria-labelledby="title desc">
-  <title id="title">KoyoTap logo</title>
-  <desc id="desc">KoyoTap official wordmark and app tile</desc>
-  <rect width="320" height="120" rx="24" fill="#ffffff"/>
-  <rect x="22" y="22" width="76" height="76" rx="18" fill="#0b6b63"/>
-  <path d="M43 41h13v16l18-16h17L70 60l23 19H75L56 62v17H43V41Z" fill="#ffffff"/>
-  <circle cx="86" cy="36" r="7" fill="#f4b740"/>
-  <text x="118" y="58" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#18211f">KoyoTap</text>
-  <text x="119" y="83" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="600" fill="#0b6b63">Official Site</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="500" viewBox="0 0 1600 500" role="img" aria-labelledby="title desc">
+    <title id="title">KoyoTap Wide Header Sprint Bars Logo</title>
+    <desc id="desc">A horizontal KoyoTap logo with left sprint bars, four offset color tiles, and KoyoTap wordmark.</desc>
+    <rect width="1600" height="500" fill="#ffffff"/>
+    <g transform="translate(112 132)">
+        <rect x="0" y="72" width="118" height="24" rx="12" fill="#2f7bff"/>
+        <rect x="-34" y="148" width="178" height="24" rx="12" fill="#ff4a3d"/>
+        <rect x="18" y="224" width="122" height="24" rx="12" fill="#ffd23f"/>
+        <rect x="-12" y="300" width="90" height="24" rx="12" fill="#22b573"/>
+    </g>
+    <g transform="translate(340 88)">
+        <rect x="0" y="62" width="154" height="154" rx="45" fill="#2f7bff"/>
+        <rect x="132" y="28" width="154" height="154" rx="45" fill="#ff4a3d"/>
+        <rect x="40" y="210" width="154" height="154" rx="45" fill="#ffd23f"/>
+        <rect x="188" y="172" width="154" height="154" rx="45" fill="#22b573"/>
+    </g>
+    <text x="760" y="294" font-family="Arial Black, Impact, sans-serif" font-size="138" fill="#171717">KoyoTap</text>
 </svg>

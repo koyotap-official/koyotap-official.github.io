@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://koyotap-official.github.io/sitemap.xml
