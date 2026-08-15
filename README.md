@@ -17,6 +17,7 @@ the development process, business information, and contact details.
 | `services.html`, `team.html` | Legacy URLs kept alive; they redirect into `index.html` sections |
 | `assets/site.css` | Shared styles (light / dark aware, brand palette) |
 | `assets/site.js` | JA / EN language switch |
+| `assets/analytics.js` | Google Analytics 4, cookieless — **inactive until a measurement ID is set** |
 | `assets/koyotap-mark.svg` | Square brand mark — favicon and header lockup |
 | `assets/koyotap-logo.svg` | Horizontal brand lockup |
 | `assets/koyotap-og.png` | Open Graph / social preview image |
@@ -40,6 +41,40 @@ For the Google Play Console developer website field, enter the site root URL, no
 ```text
 google.com, pub-8203691800220653, DIRECT, f08c47fec0942fa0
 ```
+
+## Analytics
+
+Access analytics live in `assets/analytics.js` and are **off until a measurement ID is
+filled in**. With the constant empty, no script is loaded and no request leaves the page.
+
+To turn it on:
+
+1. In Google Analytics, create a **new property** for this site (do not reuse the
+   `G-RFENDKLRYS` property — that one measures the `/puzzle/` landing-page experiment,
+   and mixing the two means every LP figure needs a path filter first).
+2. Add a **Web** data stream with the URL `https://koyotap-official.github.io`.
+3. Copy the measurement ID (`G-` followed by ten characters).
+4. Set `KOYOTAP_GA4_MEASUREMENT_ID` at the top of `assets/analytics.js`, then push.
+5. Check GA4 → Reports → Realtime while loading the site once.
+
+The tag runs cookieless (`client_storage: "none"`), so no consent banner is needed and
+the privacy policy already discloses it. The trade-off is that returning visitors cannot
+be recognised — read "users" in the reports as "visits". Google Signals and ad
+personalisation are disabled.
+
+Events sent on top of GA4's built-in `page_view` and `scroll`:
+
+| Event | Parameters | Meaning |
+|---|---|---|
+| `language_switch` | `language` | A visitor switched to JA or EN |
+| `contact_click` | `placement`, `language` | A visitor opened the contact email address, and from where |
+| `section_view` | `section` | A visitor reached `business` / `how` / `info` / `contact` |
+
+`contact_click` is the one worth watching — it is the closest signal to inbound interest
+that a static site can give you.
+
+What this cannot tell you: the name or company of a visitor. Analytics gives country,
+referrer, device, and behaviour only.
 
 ## Editing
 
