@@ -49,13 +49,55 @@ filled in**. With the constant empty, no script is loaded and no request leaves 
 
 To turn it on:
 
-1. In Google Analytics, create a **new property** for this site (do not reuse the
-   `G-RFENDKLRYS` property — that one measures the `/puzzle/` landing-page experiment,
-   and mixing the two means every LP figure needs a path filter first).
-2. Add a **Web** data stream with the URL `https://koyotap-official.github.io`.
-3. Copy the measurement ID (`G-` followed by ten characters).
+1. In Google Analytics, open **Admin** (the gear, bottom left) and choose
+   **Create property** in the property column. Set the timezone to Japan and the
+   currency to JPY. Do **not** reuse the `G-RFENDKLRYS` property — that one measures the
+   `/puzzle/` landing-page experiment, and mixing the two means every LP figure needs a
+   path filter first.
+2. When asked for a platform, pick **Web**, with the URL
+   `https://koyotap-official.github.io`, and create the stream.
+3. The **Web stream details** panel that opens shows the measurement ID (`G-` followed by
+   ten characters). To find it again later: **Admin → Data collection and modification →
+   Data streams →** the stream. Ignore the tag installation instructions it offers; the
+   tag is already implemented here.
 4. Set `KOYOTAP_GA4_MEASUREMENT_ID` at the top of `assets/analytics.js`, then push.
-5. Check GA4 → Reports → Realtime while loading the site once.
+5. Register the custom dimensions below, then load the site once and watch
+   **Reports → Realtime**.
+
+### Custom dimensions (required to see event breakdowns)
+
+Event counts appear on their own, but the *parameters* stay invisible in reports until
+they are registered. Without this, `contact_click` shows a number with no way to tell
+which link was used. In **Admin → Data display → Custom definitions →
+Create custom dimension**, with scope **Event**, register these parameter names:
+
+| Parameter | Answers |
+|---|---|
+| `placement` | Where the contact address was clicked from |
+| `section` | How far down the page a visitor read |
+| `language` | Whether JA or EN was being read |
+
+Registration applies only to data collected afterwards — it does not backfill — so do it
+at the same time as setting the measurement ID.
+
+### Where to read the numbers
+
+| Question | Report |
+|---|---|
+| Is measurement working at all? | **Reports → Realtime** (last 30 minutes) |
+| Where did visitors come from? | Reports → Acquisition → **Traffic acquisition** |
+| Which countries and languages? | Reports → User → **Demographics** → Demographic details |
+| Which devices and browsers? | Reports → User → **Tech** → Tech details |
+| Did anyone open the contact address? | Reports → Engagement → **Events** → `contact_click` |
+| JA or EN, and how far they read | the same Events list — `language_switch`, `section_view` |
+| Which pages were viewed? | Reports → Engagement → **Pages and screens** |
+
+Everything except Realtime lags by 24–48 hours, so an empty report on day one is normal.
+Judge the initial smoke test from Realtime alone. At low traffic GA4 also applies data
+thresholding, which can hide some breakdowns until there are more visits.
+
+GA4 renames screens from time to time; if a label differs, match on the hierarchy
+(under Admin, or under Reports) rather than the exact wording.
 
 The tag runs cookieless (`client_storage: "none"`), so no consent banner is needed and
 the privacy policy already discloses it. The trade-off is that returning visitors cannot
