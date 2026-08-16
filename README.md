@@ -99,10 +99,21 @@ thresholding, which can hide some breakdowns until there are more visits.
 GA4 renames screens from time to time; if a label differs, match on the hierarchy
 (under Admin, or under Reports) rather than the exact wording.
 
-The tag runs cookieless (`client_storage: "none"`), so no consent banner is needed and
-the privacy policy already discloses it. The trade-off is that returning visitors cannot
-be recognised — read "users" in the reports as "visits". Google Signals and ad
-personalisation are disabled.
+The tag runs cookieless, so no consent banner is needed, and the privacy policy discloses
+exactly that. What enforces it is **Consent Mode** — `analytics_storage: "denied"`,
+declared before the tag loads. Do not switch this to `client_storage: "none"`: that is a
+Universal Analytics parameter, GA4 ignores it and writes `_ga` cookies anyway, which
+would leave the published privacy policy stating something untrue.
+
+If that code is ever touched, re-check it on the live site rather than trusting the
+config: load the page with no cookies present and confirm `document.cookie` stays empty
+while a `page_view` still reaches `/g/collect` (it should carry `gcs=G100`).
+
+The trade-off is that returning visitors cannot be recognised — read "users" in the
+reports as "visits". Google Signals and ad personalisation are disabled.
+
+Note that GitHub Pages serves these files with `max-age=600`, so an edit to
+`assets/analytics.js` can take up to ten minutes to reach a returning visitor.
 
 Events sent on top of GA4's built-in `page_view` and `scroll`:
 
