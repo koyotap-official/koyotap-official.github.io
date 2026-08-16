@@ -5,7 +5,7 @@
  *  While it is empty, nothing is loaded and no requests are sent.
  * ===========================================================================
  */
-var KOYOTAP_GA4_MEASUREMENT_ID = ""; // e.g. "G-XXXXXXXXXX"
+var KOYOTAP_GA4_MEASUREMENT_ID = "G-KT8SK6QRFJ";
 
 /* Cookieless on purpose: client_storage "none" stops GA4 from writing the _ga
  * cookies, which keeps the site clear of a consent banner. The trade-off is
