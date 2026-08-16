@@ -7,8 +7,16 @@
  */
 var KOYOTAP_GA4_MEASUREMENT_ID = "G-KT8SK6QRFJ";
 
-/* Cookieless on purpose: client_storage "none" stops GA4 from writing the _ga
- * cookies, which keeps the site clear of a consent banner. The trade-off is
+/* Cookieless on purpose, which keeps the site clear of a consent banner.
+ *
+ * What enforces it is Consent Mode: with analytics_storage "denied", declared
+ * before the first hit, GA4 sends cookieless pings and writes no _ga cookies.
+ * Note that client_storage "none" does NOT do this on GA4 — it is a leftover
+ * from Universal Analytics, and GA4 sets its cookies anyway. Verified by
+ * checking document.cookie on a fresh load; if that check is ever redone and
+ * _ga appears, the privacy policy no longer matches the site.
+ *
+ * The trade-off is
  * that returning visitors cannot be recognised — every visit counts as new,
  * so treat "users" as "visits" in the reports. Google Signals and ad
  * personalisation are switched off for the same reason.
@@ -28,6 +36,15 @@ var KOYOTAP_GA4_MEASUREMENT_ID = "G-KT8SK6QRFJ";
   function gtag() { window.dataLayer.push(arguments); }
   window.gtag = gtag;
 
+  // Must be declared before the tag loads and before the first hit, or GA4 will
+  // have already written its cookies by the time the denial arrives.
+  gtag("consent", "default", {
+    analytics_storage: "denied",
+    ad_storage: "denied",
+    ad_user_data: "denied",
+    ad_personalization: "denied"
+  });
+
   var tag = document.createElement("script");
   tag.async = true;
   tag.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(id);
@@ -35,7 +52,6 @@ var KOYOTAP_GA4_MEASUREMENT_ID = "G-KT8SK6QRFJ";
 
   gtag("js", new Date());
   gtag("config", id, {
-    client_storage: "none",
     allow_google_signals: false,
     allow_ad_personalization_signals: false,
     content_language: document.documentElement.getAttribute("data-lang") || "ja"
