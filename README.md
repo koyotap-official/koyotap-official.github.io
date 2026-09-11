@@ -4,23 +4,27 @@ Source of the KoyoTap official website, published by GitHub Pages from `main` at
 
 `https://koyotap-official.github.io/`
 
-The site is a single bilingual page (Japanese / English) covering the business overview,
-the development process, business information, and contact details.
+The site is bilingual (Japanese / English). The root page covers the studio, while `/play/`
+is the public games area.
 
 ## Files
 
 | Path | Purpose |
 |---|---|
 | `index.html` | Home page — business overview, development process, business information, contact |
+| `play/index.html` | Public games area with Block Crush and Cube Merge Shot cards |
+| `play/block-crush/index.html`, `play/cube-merge-shot/index.html` | Bilingual game wrappers; each lazy-loads a same-origin `./game/` build |
 | `privacy-policy.html` | Privacy policy (Japanese is the governing text; English is a reference translation) |
 | `404.html` | Custom not-found page served by GitHub Pages |
 | `services.html`, `team.html` | Legacy URLs kept alive; they redirect into `index.html` sections |
 | `assets/site.css` | Shared styles (light / dark aware, brand palette) |
-| `assets/site.js` | JA / EN language switch |
-| `assets/analytics.js` | Google Analytics 4, cookieless — **inactive until a measurement ID is set** |
+| `assets/site.js` | JA / EN language switch and campaign parameter preservation |
+| `assets/play.js` | Games gallery, lazy iframe player, lifecycle message validation, and funnel events |
+| `assets/analytics.js` | Google Analytics 4 with denied Consent Mode and optional `/play/` analytics choice |
 | `assets/koyotap-mark.svg` | Square brand mark — favicon and header lockup |
 | `assets/koyotap-logo.svg` | Horizontal brand lockup |
 | `assets/koyotap-og.png` | Open Graph / social preview image |
+| `assets/play/` | Source gameplay screenshots used as public card and wrapper posters |
 | `app-ads.txt` | AdMob authorized-seller declaration — **required, do not remove** |
 | `robots.txt`, `sitemap.xml` | Crawler directives |
 | `.nojekyll` | Disables Jekyll processing |
@@ -33,6 +37,7 @@ the development process, business information, and contact details.
 - Privacy policy: `https://koyotap-official.github.io/privacy-policy.html`
 - AdMob `app-ads.txt`: `https://koyotap-official.github.io/app-ads.txt`
 - Arrow Next privacy policy: `https://koyotap-official.github.io/ArrowNext/privacy-policy.html`
+- Games: `https://koyotap-official.github.io/play/`
 
 For the Google Play Console developer website field, enter the site root URL, not an individual page.
 
@@ -44,8 +49,13 @@ google.com, pub-8203691800220653, DIRECT, f08c47fec0942fa0
 
 ## Analytics
 
-Access analytics live in `assets/analytics.js` and are **off until a measurement ID is
-filled in**. With the constant empty, no script is loaded and no request leaves the page.
+Access analytics live in `assets/analytics.js` and use the existing KoyoTap measurement ID
+`G-KT8SK6QRFJ`. The `/puzzle/` landing page keeps its separate `G-RFENDKLRYS` tag.
+Corporate pages retain the existing Consent Mode default with `analytics_storage: "denied"`.
+`/play/` pages also start denied and show a small optional analytics choice; gameplay is
+available either way. An explicit allow changes analytics storage to granted before the tag
+is configured on later `/play/` pages. An allow clicked on the current page sends one
+consented `page_view`, because the initial denied hit may not be reported.
 
 To turn it on:
 
@@ -76,9 +86,15 @@ Create custom dimension**, with scope **Event**, register these parameter names:
 | `placement` | Where the contact address was clicked from |
 | `section` | How far down the page a visitor read |
 | `language` | Whether JA or EN was being read |
+| `game_id` | Which public game was selected or played |
 
 Registration applies only to data collected afterwards — it does not backfill — so do it
 at the same time as setting the measurement ID.
+
+Event counts and page paths are available in the GA4 Events and Pages and screens reports.
+Register `game_id` as an event-scoped custom dimension in the GA4 property if title-level
+breakdowns are needed; this repository cannot confirm whether that remote registration has
+been completed.
 
 ### Where to read the numbers
 
@@ -99,18 +115,21 @@ thresholding, which can hide some breakdowns until there are more visits.
 GA4 renames screens from time to time; if a label differs, match on the hierarchy
 (under Admin, or under Reports) rather than the exact wording.
 
-The tag runs cookieless, so no consent banner is needed, and the privacy policy discloses
-exactly that. What enforces it is **Consent Mode** — `analytics_storage: "denied"`,
-declared before the tag loads. Do not switch this to `client_storage: "none"`: that is a
-Universal Analytics parameter, GA4 ignores it and writes `_ga` cookies anyway, which
-would leave the published privacy policy stating something untrue.
+Consent Mode declares `analytics_storage: "denied"` before the tag loads. Ads remain denied
+in every state. On `/play/`, an explicit allow may let Google Analytics store its `_ga`
+cookies; the footer's `Analytics settings` control can revoke the choice and the wrapper
+removes this property's `_ga` cookies where the browser permits. The preference itself is
+stored in localStorage. Do not switch this implementation to `client_storage: "none"`:
+that is a Universal Analytics parameter and does not prevent GA4 cookies.
 
 If that code is ever touched, re-check it on the live site rather than trusting the
 config: load the page with no cookies present and confirm `document.cookie` stays empty
 while a `page_view` still reaches `/g/collect` (it should carry `gcs=G100`).
 
-The trade-off is that returning visitors cannot be recognised — read "users" in the
-reports as "visits". Google Signals and ad personalisation are disabled.
+Reports describe the opted-in portion of `/play/` visits and should not be read as a
+complete visitor count. Google Signals and ad personalisation are disabled. A local
+preview on `localhost`, `127.0.0.1`, or `[::1]` keeps dataLayer commands for QA assertions
+but does not load the Google tag or send collection requests.
 
 Note that GitHub Pages serves these files with `max-age=600`, so an edit to
 `assets/analytics.js` can take up to ten minutes to reach a returning visitor.
@@ -122,12 +141,40 @@ Events sent on top of GA4's built-in `page_view` and `scroll`:
 | `language_switch` | `language` | A visitor switched to JA or EN |
 | `contact_click` | `placement`, `language` | A visitor opened the contact email address, and from where |
 | `section_view` | `section` | A visitor reached `business` / `how` / `info` / `contact` |
+| `game_select` | `game_id`, `position` | A visitor selected a game card from `/play/` |
+| `play_click` | `game_id`, `attempt` | A visitor pressed Play or Try again |
+| `game_ready` | `game_id`, `attempt`, `elapsed_ms` | The embedded game announced it is ready |
+| `game_start` | `game_id`, `attempt`, `elapsed_ms` | The first successful action in an iframe lifetime |
+| `game_end` | `game_id`, `attempt`, `elapsed_ms`, optional numeric score/round/level | The embedded game announced a round end |
+| `game_load_error` | `game_id`, `attempt`, `elapsed_ms` | The wrapper or game reported a load error |
 
 `contact_click` is the one worth watching — it is the closest signal to inbound interest
 that a static site can give you.
 
 What this cannot tell you: the name or company of a visitor. Analytics gives country,
 referrer, device, and behaviour only.
+
+### Game wrapper integration
+
+Copy the production build into the matching wrapper directory as `game/` after it has
+passed its own release checks. The copied `game/index.html` should include
+`<meta name="robots" content="noindex, nofollow">` so the embedded HTML is not a public
+landing page. The game must not load `assets/analytics.js` or initialize GA itself.
+
+Lifecycle messages are accepted only from the current same-origin iframe window and must
+match the wrapper's game ID:
+
+```js
+parent.postMessage({
+  type: "koyotap:game",
+  gameId: "block-crush",
+  event: "ready" // ready | first_action | round_end | error
+}, window.location.origin);
+```
+
+`round_end` may include numeric `score`, `round`, `level`, or `duration_ms`; the wrapper
+clamps and forwards only those numeric fields. Retry creates a fresh iframe and accepts
+`game_start` once for that iframe lifetime.
 
 ## Editing
 

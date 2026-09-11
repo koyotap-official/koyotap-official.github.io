@@ -1,61 +1,156 @@
-/* KoyoTap official site — access analytics (Google Analytics 4, cookieless).
+/* KoyoTap official site — access analytics (Google Analytics 4).
  *
- * ===========================================================================
- *  SETUP: put the GA4 measurement ID below. That is the only edit needed.
- *  While it is empty, nothing is loaded and no requests are sent.
- * ===========================================================================
+ * The measurement ID is shared by the public site and /play/ wrappers. The
+ * corporate pages keep their existing denied Consent Mode default. Play pages
+ * offer a small, optional analytics choice: the game is always playable, and
+ * only an explicit allow changes analytics_storage to granted.
  */
 var KOYOTAP_GA4_MEASUREMENT_ID = "G-KT8SK6QRFJ";
 
-/* Cookieless on purpose, which keeps the site clear of a consent banner.
- *
- * What enforces it is Consent Mode: with analytics_storage "denied", declared
- * before the first hit, GA4 sends cookieless pings and writes no _ga cookies.
- * Note that client_storage "none" does NOT do this on GA4 — it is a leftover
- * from Universal Analytics, and GA4 sets its cookies anyway. Verified by
- * checking document.cookie on a fresh load; if that check is ever redone and
- * _ga appears, the privacy policy no longer matches the site.
- *
- * The trade-off is
- * that returning visitors cannot be recognised — every visit counts as new,
- * so treat "users" as "visits" in the reports. Google Signals and ad
- * personalisation are switched off for the same reason.
- *
- * Beyond GA4's built-in page_view and scroll tracking, this sends:
- *   language_switch — a visitor chose JA or EN
- *   contact_click   — a visitor opened the contact email address
- *   section_view    — a visitor reached a section of the home page
- */
 (function () {
   "use strict";
 
-  var id = KOYOTAP_GA4_MEASUREMENT_ID;
-  if (!id || id.indexOf("G-") !== 0) return; // not configured yet
+  var root = document.documentElement;
+  var measurementId = KOYOTAP_GA4_MEASUREMENT_ID;
+  if (!measurementId || measurementId.indexOf("G-") !== 0) return;
+
+  var isPlayPage = root.getAttribute("data-play-page") === "true";
+  var consentKey = "koyotap-analytics-consent";
+  var host = String(window.location.hostname || "").toLowerCase();
+  var isLoopback = host === "localhost" || host === "127.0.0.1" || host === "[::1]" || host === "::1";
+  var memoryPreference = "";
+  var existingPreference = readPreference();
+  var initialAnalyticsStorage = isPlayPage && existingPreference === "granted" ? "granted" : "denied";
+  var consentedPageViewSent = initialAnalyticsStorage === "granted";
 
   window.dataLayer = window.dataLayer || [];
   function gtag() { window.dataLayer.push(arguments); }
   window.gtag = gtag;
+  window.koyotapTrack = function (name, params) {
+    if (typeof name !== "string" || !name) return;
+    gtag("event", name, params && typeof params === "object" ? params : {});
+  };
+  window.koyotapAnalytics = {
+    isPlayPage: isPlayPage,
+    isLoopback: isLoopback,
+    getConsent: function () { return readPreference(); }
+  };
 
-  // Must be declared before the tag loads and before the first hit, or GA4 will
-  // have already written its cookies by the time the denial arrives.
+  // Consent must be declared before the tag or its first hit is created.
   gtag("consent", "default", {
-    analytics_storage: "denied",
+    analytics_storage: initialAnalyticsStorage,
     ad_storage: "denied",
     ad_user_data: "denied",
     ad_personalization: "denied"
   });
 
-  var tag = document.createElement("script");
-  tag.async = true;
-  tag.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(id);
-  document.head.appendChild(tag);
+  // Manual local previews and QA keep the dataLayer intact for assertions, but
+  // never load the remote Google tag or send collection requests.
+  if (!isLoopback) {
+    var tag = document.createElement("script");
+    tag.async = true;
+    tag.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(measurementId);
+    document.head.appendChild(tag);
+  }
 
   gtag("js", new Date());
-  gtag("config", id, {
+  gtag("config", measurementId, {
     allow_google_signals: false,
     allow_ad_personalization_signals: false,
-    content_language: document.documentElement.getAttribute("data-lang") || "ja"
+    content_language: root.getAttribute("data-lang") || "ja"
   });
+
+  function readPreference() {
+    try {
+      var value = window.localStorage.getItem(consentKey);
+      if (value === "granted" || value === "denied") {
+        memoryPreference = value;
+        return value;
+      }
+    } catch (e) {
+      // Continue with the in-memory choice for private mode and test doubles.
+    }
+    return memoryPreference;
+  }
+
+  function savePreference(value) {
+    memoryPreference = value;
+    try {
+      window.localStorage.setItem(consentKey, value);
+    } catch (e) {
+      // Private mode can still use the current page's in-memory consent update.
+    }
+  }
+
+  function deleteAnalyticsCookies() {
+    var suffix = measurementId.slice(2).replace(/[^A-Za-z0-9_]/g, "_");
+    var names = ["_ga", "_ga_" + suffix];
+    var domains = [""];
+    if (host && host !== "localhost" && host !== "127.0.0.1" && host !== "::1" && host !== "[::1]") {
+      domains.push(host);
+      domains.push("." + host);
+    }
+    var expires = "Thu, 01 Jan 1970 00:00:00 GMT";
+    for (var i = 0; i < names.length; i++) {
+      for (var j = 0; j < domains.length; j++) {
+        var domain = domains[j] ? "; domain=" + domains[j] : "";
+        document.cookie = names[i] + "=; expires=" + expires + "; Max-Age=0; path=/" + domain;
+      }
+    }
+  }
+
+  function updateConsentUI() {
+    if (!isPlayPage) return;
+    var panel = document.querySelector("[data-analytics-consent-panel]");
+    var settings = document.querySelector("[data-analytics-settings]");
+    var preference = readPreference();
+    if (panel) panel.hidden = preference !== "";
+    if (settings) settings.hidden = preference === "";
+  }
+
+  function sendConsentedPageView() {
+    if (consentedPageViewSent) return;
+    consentedPageViewSent = true;
+    // The automatic denied page_view may not be reported. This is the one
+    // explicit, consented page_view for the current page after an allow.
+    gtag("event", "page_view", {
+      page_location: window.location.href,
+      page_title: document.title,
+      send_to: measurementId
+    });
+  }
+
+  function updateConsent(value) {
+    if (!isPlayPage || (value !== "granted" && value !== "denied")) return;
+    var previous = readPreference();
+    savePreference(value);
+    gtag("consent", "update", {
+      analytics_storage: value,
+      ad_storage: "denied",
+      ad_user_data: "denied",
+      ad_personalization: "denied"
+    });
+    if (value === "denied") deleteAnalyticsCookies();
+    if (value === "granted" && previous !== "granted") sendConsentedPageView();
+    updateConsentUI();
+  }
+
+  if (isPlayPage) {
+    document.addEventListener("click", function (event) {
+      var choice = event.target.closest ? event.target.closest("[data-analytics-choice]") : null;
+      if (choice) {
+        updateConsent(choice.getAttribute("data-analytics-choice"));
+        return;
+      }
+
+      var settings = event.target.closest ? event.target.closest("[data-analytics-settings]") : null;
+      if (settings) {
+        var panel = document.querySelector("[data-analytics-consent-panel]");
+        if (panel) panel.hidden = false;
+      }
+    });
+    updateConsentUI();
+  }
 
   // --- language switch -----------------------------------------------------
   document.addEventListener("click", function (event) {
@@ -70,7 +165,7 @@ var KOYOTAP_GA4_MEASUREMENT_ID = "G-KT8SK6QRFJ";
     if (!link) return;
     gtag("event", "contact_click", {
       placement: link.getAttribute("data-analytics") || "other",
-      language: document.documentElement.getAttribute("data-lang") || "ja"
+      language: root.getAttribute("data-lang") || "ja"
     });
   });
 
@@ -91,10 +186,6 @@ var KOYOTAP_GA4_MEASUREMENT_ID = "G-KT8SK6QRFJ";
       gtag("event", "section_view", { section: name });
     }
   }, {
-    // A section counts as seen once it reaches the top 60% of the viewport.
-    // Deliberately not a ratio threshold: sections here are often taller than
-    // the window, and then a ratio such as 0.4 can be unreachable on a short
-    // viewport, so the event would silently never fire.
     rootMargin: "0px 0px -40% 0px",
     threshold: 0
   });

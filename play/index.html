@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ja" data-lang="ja" data-play-page="true"
+  data-title-ja="ゲームで遊ぶ — KoyoTap"
+  data-title-en="Play KoyoTap games"
+  data-desc-ja="KoyoTapのカジュアルゲームをブラウザで遊べます。Block CrushとCube Merge Shotをお楽しみください。"
+  data-desc-en="Play KoyoTap's casual games in your browser: Block Crush and Cube Merge Shot.">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ゲームで遊ぶ — KoyoTap</title>
+    <meta name="description" content="KoyoTapのカジュアルゲームをブラウザで遊べます。Block CrushとCube Merge Shotをお楽しみください。">
+    <link rel="canonical" href="https://koyotap-official.github.io/play/">
+    <meta name="theme-color" content="#2f7bff">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="KoyoTap">
+    <meta property="og:title" content="ゲームで遊ぶ — KoyoTap">
+    <meta property="og:description" content="KoyoTapのカジュアルゲームをブラウザで遊べます。">
+    <meta property="og:url" content="https://koyotap-official.github.io/play/">
+    <meta property="og:image" content="https://koyotap-official.github.io/assets/koyotap-og.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="../assets/koyotap-mark.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="../assets/koyotap-og.png">
+    <link rel="stylesheet" href="../assets/site.css">
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem("koyotap-lang");
+          var lang = saved || (String(navigator.language || "").toLowerCase().indexOf("ja") === 0 ? "ja" : "en");
+          document.documentElement.setAttribute("data-lang", lang);
+          document.documentElement.setAttribute("lang", lang);
+        } catch (e) { /* keep Japanese as the first-paint default */ }
+      })();
+    </script>
+  </head>
+
+  <body class="play-body">
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="../index.html" data-preserve-utm aria-label="KoyoTap">
+          <svg viewBox="0 0 372 370" aria-hidden="true">
+            <rect x="0" y="38" width="168" height="168" rx="50" fill="#2f7bff"/>
+            <rect x="144" y="0" width="168" height="168" rx="50" fill="#ff4a3d"/>
+            <rect x="42" y="202" width="168" height="168" rx="50" fill="#ffd23f"/>
+            <rect x="204" y="160" width="168" height="168" rx="50" fill="#22b573"/>
+          </svg>
+          <span>KoyoTap</span>
+        </a>
+
+        <nav class="nav-links" aria-label="サイトナビゲーション">
+          <a class="nav-play nav-keep" href="./" aria-current="page"><span data-l="ja" lang="ja">ゲーム</span><span data-l="en" lang="en">Games</span></a>
+          <a href="../index.html#business" data-preserve-utm><span data-l="ja" lang="ja">事業概要</span><span data-l="en" lang="en">What we do</span></a>
+          <a class="nav-keep nav-contact" href="../index.html#contact" data-preserve-utm><span data-l="ja" lang="ja">お問い合わせ</span><span data-l="en" lang="en">Contact</span></a>
+        </nav>
+
+        <div class="lang-switch" role="group" aria-label="Language / 言語">
+          <button type="button" data-set-lang="ja" aria-pressed="true">JA</button>
+          <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="play-hero">
+        <div class="container play-hero-grid">
+          <div>
+            <p class="eyebrow">KoyoTap Play</p>
+            <h1><span data-l="ja" lang="ja">ちょっと遊ぶ。<br>じっくりハマる。</span><span data-l="en" lang="en">A little play.<br>A lot of replay.</span></h1>
+            <p class="lead" data-l="ja" lang="ja">KoyoTapのカジュアルゲームを、ブラウザですぐに遊べます。気になるタイトルを選んでください。</p>
+            <p class="lead" data-l="en" lang="en">Play KoyoTap's casual games right in your browser. Pick a title and jump in.</p>
+          </div>
+          <div class="play-hero-art" aria-hidden="true">
+            <svg viewBox="0 0 360 360">
+              <rect class="tile" x="8" y="58" width="150" height="150" rx="44" fill="#2f7bff"/>
+              <rect class="tile" x="143" y="12" width="150" height="150" rx="44" fill="#ff4a3d"/>
+              <rect class="tile" x="46" y="202" width="150" height="150" rx="44" fill="#ffd23f"/>
+              <rect class="tile" x="204" y="168" width="150" height="150" rx="44" fill="#22b573"/>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section class="section play-games-section" aria-labelledby="games-title">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Games</p>
+            <h2 id="games-title"><span data-l="ja" lang="ja">遊べるタイトル</span><span data-l="en" lang="en">Choose a game</span></h2>
+            <p data-l="ja" lang="ja">どちらも無料で、ブラウザからそのまま始められます。</p>
+            <p data-l="en" lang="en">Both games are free to start and playable directly in your browser.</p>
+          </div>
+
+          <div class="play-consent" data-analytics-consent-panel>
+            <p data-l="ja" lang="ja">Google アナリティクスのCookieで訪問・プレイ状況を計測してよいですか。<a href="../privacy-policy.html" data-preserve-utm>プライバシーポリシー</a></p>
+            <p data-l="en" lang="en">May Google Analytics use cookies to measure visits and play? <a href="../privacy-policy.html" data-preserve-utm>Privacy Policy</a></p>
+            <div class="play-consent-actions">
+              <button type="button" data-analytics-choice="granted"><span data-l="ja" lang="ja">協力する</span><span data-l="en" lang="en">Allow</span></button>
+              <button type="button" data-analytics-choice="denied"><span data-l="ja" lang="ja">協力しない</span><span data-l="en" lang="en">Decline</span></button>
+            </div>
+          </div>
+
+          <div class="play-games-grid">
+            <a class="game-card" href="block-crush/" data-game-link data-game-id="block-crush" data-game-position="1" data-preserve-utm>
+              <div class="game-card-media">
+                <img src="../assets/play/block-crush-poster.png" alt="Block Crush gameplay board" loading="eager">
+                <span class="game-card-play"><span data-l="ja" lang="ja">遊ぶ</span><span data-l="en" lang="en">Play</span></span>
+              </div>
+              <div class="game-card-body">
+                <h2>Block Crush</h2>
+                <p data-l="ja" lang="ja">ブロックを置いてラインを消す、気持ちいいパズル。</p>
+                <p data-l="en" lang="en">Place blocks, clear lines, and keep the board flowing.</p>
+              </div>
+            </a>
+
+            <a class="game-card" href="cube-merge-shot/" data-game-link data-game-id="cube-merge-shot" data-game-position="2" data-preserve-utm>
+              <div class="game-card-media">
+                <img src="../assets/play/cube-merge-shot-poster.png" alt="Cube Merge Shot gameplay arena" loading="lazy">
+                <span class="game-card-play"><span data-l="ja" lang="ja">遊ぶ</span><span data-l="en" lang="en">Play</span></span>
+              </div>
+              <div class="game-card-body">
+                <h2>Cube Merge Shot</h2>
+                <p data-l="ja" lang="ja">キューブを撃って、同じ数字を合体させよう。</p>
+                <p data-l="en" lang="en">Shoot cubes, merge matching numbers, and aim higher.</p>
+              </div>
+            </a>
+          </div>
+
+          <p class="play-support-note" data-l="ja" lang="ja">ゲームがうまく表示されない場合は、ページを再読み込みしてお試しください。</p>
+          <p class="play-support-note" data-l="en" lang="en">If a game does not appear correctly, reload the page and try again.</p>
+
+          <div class="play-settings" data-analytics-settings hidden>
+            <button type="button"><span data-l="ja" lang="ja">解析設定</span><span data-l="en" lang="en">Analytics settings</span></button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>&copy; 2026 KoyoTap</span>
+        <div class="footer-links">
+          <a href="../index.html" data-preserve-utm><span data-l="ja" lang="ja">ホーム</span><span data-l="en" lang="en">Home</span></a>
+          <a href="../privacy-policy.html" data-preserve-utm><span data-l="ja" lang="ja">プライバシーポリシー</span><span data-l="en" lang="en">Privacy Policy</span></a>
+          <a href="mailto:koyotapofficial@gmail.com" data-analytics="play_footer"><span data-l="ja" lang="ja">お問い合わせ</span><span data-l="en" lang="en">Contact</span></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../assets/site.js"></script>
+    <script src="../assets/analytics.js"></script>
+    <script src="../assets/play.js"></script>
+  </body>
+</html>

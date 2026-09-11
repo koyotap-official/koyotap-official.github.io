@@ -41,6 +41,43 @@
     }
   });
 
+  // Keep campaign context as visitors move between the public site and /play/.
+  // Only links explicitly marked by page authors are touched; external links,
+  // mail links, and hash navigation keep their original destinations.
+  (function preserveCampaignParams() {
+    var campaignKeys = ["utm_source", "utm_medium", "utm_campaign", "utm_content"];
+    var current = new URL(window.location.href);
+    var hasCampaign = false;
+    for (var i = 0; i < campaignKeys.length; i++) {
+      if (current.searchParams.has(campaignKeys[i])) {
+        hasCampaign = true;
+        break;
+      }
+    }
+    if (!hasCampaign) return;
+
+    var links = document.querySelectorAll("a[data-preserve-utm]");
+    for (var j = 0; j < links.length; j++) {
+      var link = links[j];
+      var href = link.getAttribute("href");
+      if (!href || href.charAt(0) === "#") continue;
+
+      var target;
+      try {
+        target = new URL(href, current.href);
+      } catch (e) {
+        continue;
+      }
+      if (target.origin !== current.origin) continue;
+
+      for (var k = 0; k < campaignKeys.length; k++) {
+        var key = campaignKeys[k];
+        if (current.searchParams.has(key)) target.searchParams.set(key, current.searchParams.get(key));
+      }
+      link.setAttribute("href", target.pathname + target.search + target.hash);
+    }
+  })();
+
   // Reflect whatever the head script resolved (button state, title, description).
   apply(root.getAttribute("data-lang") === "en" ? "en" : "ja");
 })();

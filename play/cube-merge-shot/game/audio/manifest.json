@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "cues": {
+    "launch": {
+      "files": [
+        "launch.mp3"
+      ],
+      "volume": 0.7
+    },
+    "merge": {
+      "files": [
+        "merge_01.mp3",
+        "merge_02.mp3"
+      ],
+      "volume": 0.9
+    },
+    "bounce": {
+      "files": [
+        "bounce.mp3"
+      ],
+      "volume": 0.6,
+      "minIntervalMs": 60
+    },
+    "tap": {
+      "files": [
+        "tap.mp3"
+      ],
+      "volume": 0.8
+    },
+    "over": {
+      "files": [
+        "over.mp3"
+      ],
+      "volume": 0.8
+    }
+  }
+}
