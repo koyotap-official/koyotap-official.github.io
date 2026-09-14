@@ -93,6 +93,7 @@
     if (!poster || !startButton || !retryButton || !frameWrap || !frameShell || !frame || !status) return;
 
     var attempt = 0;
+    var gameStarted = false;
     var startedAt = 0;
     var ready = false;
     var readyEventSent = false;
@@ -154,6 +155,7 @@
       oldFrame.parentNode.replaceChild(nextFrame, oldFrame);
       frame = nextFrame;
       frame.addEventListener("error", showError);
+      gameStarted = false;
       frameWrap.hidden = true;
       poster.hidden = false;
       startButton.hidden = false;
@@ -166,6 +168,8 @@
     }
 
     function startGame() {
+      if (gameStarted) return;
+      gameStarted = true;
       attempt += 1;
       startedAt = Date.now();
       ready = false;
@@ -186,6 +190,7 @@
         attempt: attempt
       });
       frame.src = "./game/";
+      if (frame.focus) frame.focus();
       if (frameWrap.scrollIntoView) {
         window.setTimeout(function () {
           frameWrap.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -195,7 +200,17 @@
       loadTimer = window.setTimeout(showError, 15000);
     }
 
-    startButton.addEventListener("click", startGame);
+    startButton.addEventListener("click", function () {
+      var analytics = window.koyotapAnalytics;
+      if (analytics && typeof analytics.getConsent === "function" && analytics.getConsent() === "" && typeof analytics.openConsentDialog === "function") {
+        if (analytics.openConsentDialog(startGame)) return;
+        // Older browsers without native modal dialogs can still play in the
+        // existing denied Consent Mode; no permission is stored or granted.
+        startGame();
+        return;
+      }
+      startGame();
+    });
     retryButton.addEventListener("click", function () {
       resetFrame();
       startGame();

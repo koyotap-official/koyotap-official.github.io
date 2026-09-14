@@ -52,10 +52,12 @@ google.com, pub-8203691800220653, DIRECT, f08c47fec0942fa0
 Access analytics live in `assets/analytics.js` and use the existing KoyoTap measurement ID
 `G-KT8SK6QRFJ`. The `/puzzle/` landing page keeps its separate `G-RFENDKLRYS` tag.
 Corporate pages retain the existing Consent Mode default with `analytics_storage: "denied"`.
-`/play/` pages also start denied and show a small optional analytics choice; gameplay is
-available either way. An explicit allow changes analytics storage to granted before the tag
-is configured on later `/play/` pages. An allow clicked on the current page sends one
-consented `page_view`, because the initial denied hit may not be reported.
+`/play/` pages also start denied. The first Play click opens a bilingual modal explaining
+that Google Analytics measures site visits and gameplay to improve the games; either choice
+continues into the game. An allow changes analytics storage to granted on later `/play/`
+pages, and an allow clicked on the current page sends one consented `page_view`, because the
+initial denied hit may not be reported. The settings control reopens the same modal so the
+choice can be changed while a game is running.
 
 To turn it on:
 

@@ -2,8 +2,8 @@
  *
  * The measurement ID is shared by the public site and /play/ wrappers. The
  * corporate pages keep their existing denied Consent Mode default. Play pages
- * offer a small, optional analytics choice: the game is always playable, and
- * only an explicit allow changes analytics_storage to granted.
+ * ask for a choice immediately before first play; only an explicit allow
+ * changes analytics_storage to granted.
  */
 var KOYOTAP_GA4_MEASUREMENT_ID = "G-KT8SK6QRFJ";
 
@@ -19,6 +19,10 @@ var KOYOTAP_GA4_MEASUREMENT_ID = "G-KT8SK6QRFJ";
   var host = String(window.location.hostname || "").toLowerCase();
   var isLoopback = host === "localhost" || host === "127.0.0.1" || host === "[::1]" || host === "::1";
   var memoryPreference = "";
+  var consentDialogOpener = null;
+  var pendingConsentAction = null;
+  var restoreDialogFocus = true;
+  var bodyOverflowBeforeDialog = null;
   var existingPreference = readPreference();
   var initialAnalyticsStorage = isPlayPage && existingPreference === "granted" ? "granted" : "denied";
   var consentedPageViewSent = initialAnalyticsStorage === "granted";
@@ -33,7 +37,8 @@ var KOYOTAP_GA4_MEASUREMENT_ID = "G-KT8SK6QRFJ";
   window.koyotapAnalytics = {
     isPlayPage: isPlayPage,
     isLoopback: isLoopback,
-    getConsent: function () { return readPreference(); }
+    getConsent: function () { return readPreference(); },
+    openConsentDialog: openConsentDialog
   };
 
   // Consent must be declared before the tag or its first hit is created.
@@ -101,11 +106,36 @@ var KOYOTAP_GA4_MEASUREMENT_ID = "G-KT8SK6QRFJ";
 
   function updateConsentUI() {
     if (!isPlayPage) return;
-    var panel = document.querySelector("[data-analytics-consent-panel]");
     var settings = document.querySelector("[data-analytics-settings]");
-    var preference = readPreference();
-    if (panel) panel.hidden = preference !== "";
-    if (settings) settings.hidden = preference === "";
+    if (settings) settings.hidden = false;
+  }
+
+  function openConsentDialog(afterChoice) {
+    if (!isPlayPage) return false;
+    var dialog = document.querySelector("[data-analytics-consent-dialog]");
+    if (!dialog || typeof dialog.showModal !== "function") return false;
+    if (dialog.open) return true;
+
+    pendingConsentAction = typeof afterChoice === "function" ? afterChoice : null;
+    dialog.setAttribute("data-consent-mode", pendingConsentAction ? "play" : "settings");
+    consentDialogOpener = document.activeElement;
+    bodyOverflowBeforeDialog = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    dialog.showModal();
+    var initialFocus = dialog.querySelector("[data-consent-initial-focus]");
+    if (initialFocus) initialFocus.focus();
+    return true;
+  }
+
+  function closeConsentDialog(value) {
+    var dialog = document.querySelector("[data-analytics-consent-dialog]");
+    if (!dialog) return;
+    var afterChoice = pendingConsentAction;
+    pendingConsentAction = null;
+    restoreDialogFocus = !afterChoice;
+    if (dialog.open) dialog.close();
+    if (value) updateConsent(value);
+    if (afterChoice) afterChoice(value);
   }
 
   function sendConsentedPageView() {
@@ -136,17 +166,40 @@ var KOYOTAP_GA4_MEASUREMENT_ID = "G-KT8SK6QRFJ";
   }
 
   if (isPlayPage) {
+    var consentDialog = document.querySelector("[data-analytics-consent-dialog]");
+    if (consentDialog) {
+      consentDialog.addEventListener("cancel", function () {
+        pendingConsentAction = null;
+      });
+      consentDialog.addEventListener("close", function () {
+        document.body.style.overflow = bodyOverflowBeforeDialog || "";
+        bodyOverflowBeforeDialog = null;
+        if (restoreDialogFocus && consentDialogOpener && document.contains(consentDialogOpener) && !consentDialogOpener.hidden) {
+          consentDialogOpener.focus();
+        }
+        consentDialogOpener = null;
+        restoreDialogFocus = true;
+      });
+    }
+
     document.addEventListener("click", function (event) {
       var choice = event.target.closest ? event.target.closest("[data-analytics-choice]") : null;
       if (choice) {
-        updateConsent(choice.getAttribute("data-analytics-choice"));
+        closeConsentDialog(choice.getAttribute("data-analytics-choice"));
+        return;
+      }
+
+      var closeButton = event.target.closest ? event.target.closest("[data-analytics-dialog-close]") : null;
+      if (closeButton) {
+        pendingConsentAction = null;
+        restoreDialogFocus = true;
+        if (consentDialog && consentDialog.open) consentDialog.close();
         return;
       }
 
       var settings = event.target.closest ? event.target.closest("[data-analytics-settings]") : null;
       if (settings) {
-        var panel = document.querySelector("[data-analytics-consent-panel]");
-        if (panel) panel.hidden = false;
+        openConsentDialog();
       }
     });
     updateConsentUI();

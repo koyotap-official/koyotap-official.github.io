@@ -20,7 +20,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <link rel="icon" href="../../assets/koyotap-mark.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="../../assets/koyotap-og.png">
-    <link rel="stylesheet" href="../../assets/site.css?v=play-20260911-1">
+    <link rel="stylesheet" href="../../assets/site.css?v=play-20260914-consent-1">
     <script>
       (function () {
         try {
@@ -71,15 +71,6 @@
           <p data-l="en" lang="en">Place blocks, clear lines, and keep the board flowing.</p>
         </div>
 
-        <div class="play-consent" data-analytics-consent-panel>
-          <p data-l="ja" lang="ja">Google アナリティクスのCookieで訪問・プレイ状況を計測してよいですか。<a href="../../privacy-policy.html" data-preserve-utm>プライバシーポリシー</a></p>
-          <p data-l="en" lang="en">May Google Analytics use cookies to measure visits and play? <a href="../../privacy-policy.html" data-preserve-utm>Privacy Policy</a></p>
-          <div class="play-consent-actions">
-            <button type="button" data-analytics-choice="granted"><span data-l="ja" lang="ja">協力する</span><span data-l="en" lang="en">Allow</span></button>
-            <button type="button" data-analytics-choice="denied"><span data-l="ja" lang="ja">協力しない</span><span data-l="en" lang="en">Decline</span></button>
-          </div>
-        </div>
-
         <div class="play-stage">
           <div class="play-poster play-poster--block" data-game-poster>
             <img src="../../assets/play/block-crush-poster.png" alt="Block Crushのゲーム画面" fetchpriority="high">
@@ -117,6 +108,17 @@
         <div class="play-settings" data-analytics-settings hidden>
           <button type="button"><span data-l="ja" lang="ja">解析設定</span><span data-l="en" lang="en">Analytics settings</span></button>
         </div>
+        <dialog class="analytics-consent-dialog" data-analytics-consent-dialog aria-labelledby="consent-title" aria-describedby="consent-description">
+          <div class="analytics-consent-content">
+            <button class="analytics-consent-close" type="button" data-analytics-dialog-close aria-label="閉じる / Close">×</button>
+            <h2 id="consent-title" data-consent-initial-focus tabindex="-1"><span data-consent-copy="play"><span data-l="ja" lang="ja">プレイ前の確認</span><span data-l="en" lang="en">Before you play</span></span><span data-consent-copy="settings"><span data-l="ja" lang="ja">アナリティクス設定</span><span data-l="en" lang="en">Analytics settings</span></span></h2>
+            <p id="consent-description"><span data-l="ja" lang="ja">ゲームの改善のため、Google アナリティクスを使ってこのサイトの訪問とプレイ状況を測定します。許可すると、Google アナリティクスの Cookie が使われる場合があります。<a href="../../privacy-policy.html" data-preserve-utm>プライバシーポリシー</a></span><span data-l="en" lang="en">We use Google Analytics to measure site visits and gameplay to improve our games. If you allow it, Google Analytics cookies may be used. See our <a href="../../privacy-policy.html" data-preserve-utm>Privacy Policy</a>.</span></p>
+            <div class="analytics-consent-actions">
+              <button type="button" data-analytics-choice="granted"><span data-consent-copy="play"><span data-l="ja" lang="ja">許可して遊ぶ</span><span data-l="en" lang="en">Allow and play</span></span><span data-consent-copy="settings"><span data-l="ja" lang="ja">許可する</span><span data-l="en" lang="en">Allow</span></span></button>
+              <button type="button" data-analytics-choice="denied"><span data-consent-copy="play"><span data-l="ja" lang="ja">許可せず遊ぶ</span><span data-l="en" lang="en">Play without allowing</span></span><span data-consent-copy="settings"><span data-l="ja" lang="ja">許可しない</span><span data-l="en" lang="en">Don't allow</span></span></button>
+            </div>
+          </div>
+        </dialog>
         <p class="play-footer-note"><a href="../../privacy-policy.html" data-preserve-utm><span data-l="ja" lang="ja">プライバシーポリシー</span><span data-l="en" lang="en">Privacy Policy</span></a></p>
       </div>
     </main>
@@ -132,8 +134,8 @@
       </div>
     </footer>
 
-    <script src="../../assets/site.js?v=play-20260911-1"></script>
-    <script src="../../assets/analytics.js?v=play-20260911-1"></script>
-    <script src="../../assets/play.js?v=play-20260911-1"></script>
+    <script src="../../assets/site.js?v=play-20260914-consent-1"></script>
+    <script src="../../assets/analytics.js?v=play-20260914-consent-1"></script>
+    <script src="../../assets/play.js?v=play-20260914-consent-1"></script>
   </body>
 </html>
