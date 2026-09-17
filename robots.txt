@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://koyotap-official.github.io/sitemap.xml
+Sitemap: https://koyotap.com/sitemap.xml

@@ -2,7 +2,7 @@
 
 Source of the KoyoTap official website, published by GitHub Pages from `main` at the repository root:
 
-`https://koyotap-official.github.io/`
+`https://koyotap.com/`
 
 The site is bilingual (Japanese / English). The root page covers the studio, while `/play/`
 is the public games area.
@@ -33,11 +33,11 @@ is the public games area.
 
 ## Public URLs
 
-- Home / developer website: `https://koyotap-official.github.io/`
-- Privacy policy: `https://koyotap-official.github.io/privacy-policy.html`
-- AdMob `app-ads.txt`: `https://koyotap-official.github.io/app-ads.txt`
-- Arrow Next privacy policy: `https://koyotap-official.github.io/ArrowNext/privacy-policy.html`
-- Games: `https://koyotap-official.github.io/play/`
+- Home / developer website: `https://koyotap.com/`
+- Privacy policy: `https://koyotap.com/privacy-policy.html`
+- AdMob `app-ads.txt`: `https://koyotap.com/app-ads.txt`
+- Arrow Next privacy policy: `https://koyotap.com/ArrowNext/privacy-policy.html`
+- Games: `https://koyotap.com/play/`
 
 For the Google Play Console developer website field, enter the site root URL, not an individual page.
 
@@ -67,7 +67,7 @@ To turn it on:
    `/puzzle/` landing-page experiment, and mixing the two means every LP figure needs a
    path filter first.
 2. When asked for a platform, pick **Web**, with the URL
-   `https://koyotap-official.github.io`, and create the stream.
+   `https://koyotap.com`, and create the stream.
 3. The **Web stream details** panel that opens shows the measurement ID (`G-` followed by
    ten characters). To find it again later: **Admin → Data collection and modification →
    Data streams →** the stream. Ignore the tag installation instructions it offers; the
