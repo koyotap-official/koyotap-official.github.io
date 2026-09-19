@@ -20,6 +20,54 @@
     <meta property="og:image" content="https://koyotap.com/assets/koyotap-og.png">
     <meta name="twitter:card" content="summary_large_image">
 
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://koyotap.com/#organization",
+            "name": "KoyoTap",
+            "url": "https://koyotap.com/",
+            "logo": "https://koyotap.com/assets/koyotap-logo.svg",
+            "email": "mailto:contact@koyotap.com",
+            "founder": {
+              "@type": "Person",
+              "name": "Ryuga Yamauchi",
+              "alternateName": "山内 龍我"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://koyotap.com/#website",
+            "url": "https://koyotap.com/",
+            "name": "KoyoTap",
+            "publisher": { "@id": "https://koyotap.com/#organization" },
+            "inLanguage": ["ja", "en"]
+          },
+          {
+            "@type": "ItemList",
+            "@id": "https://koyotap.com/#games",
+            "name": "KoyoTap browser games",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Block Crush",
+                "url": "https://koyotap.com/play/block-crush/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Cube Merge Shot",
+                "url": "https://koyotap.com/play/cube-merge-shot/"
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+
     <link rel="icon" href="assets/koyotap-mark.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="assets/koyotap-og.png">
     <link rel="stylesheet" href="assets/site.css?v=play-20260911-1">
@@ -109,6 +157,33 @@
               <g class="tile-shape"><rect x="204" y="160" width="168" height="168" rx="50" fill="#22b573"/></g>
             </svg>
           </div>
+        </div>
+      </section>
+
+      <!-- ============================== games ============================== -->
+      <section class="section section--alt" id="games" aria-labelledby="games-title">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">KoyoTap Play</p>
+            <h2 id="games-title"><span data-l="ja" lang="ja">ブラウザで遊べるゲーム</span><span data-l="en" lang="en">Play KoyoTap games</span></h2>
+            <p data-l="ja" lang="ja">登録不要・無料で遊べる、KoyoTapのブロック系・マージ系カジュアルゲームです。</p>
+            <p data-l="en" lang="en">Free browser games from KoyoTap: casual block puzzles and merge games with no sign-up required.</p>
+          </div>
+
+          <div class="cards">
+            <article class="card">
+              <h3><a href="play/block-crush/" data-preserve-utm>Block Crush</a></h3>
+              <p data-l="ja" lang="ja">ブロックを盤面に置き、横・縦のラインをそろえて消す、シンプルで繰り返し遊べるブロックパズルゲームです。</p>
+              <p data-l="en" lang="en">A simple, replayable block puzzle game: place pieces on the board and clear complete horizontal or vertical lines.</p>
+            </article>
+            <article class="card">
+              <h3><a href="play/cube-merge-shot/" data-preserve-utm>Cube Merge Shot</a></h3>
+              <p data-l="ja" lang="ja">キューブを狙って撃ち、同じ数字を合体させて高いスコアを目指す、ブラウザ向けマージゲームです。</p>
+              <p data-l="en" lang="en">A browser merge game where you aim, shoot cubes, combine matching numbers, and chase a higher score.</p>
+            </article>
+          </div>
+
+          <p class="section-more"><a class="button button--play" href="play/" data-preserve-utm><span data-l="ja" lang="ja">ゲーム一覧を見る</span><span data-l="en" lang="en">See all games</span></a></p>
         </div>
       </section>
 

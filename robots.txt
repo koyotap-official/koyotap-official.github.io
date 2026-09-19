@@ -1,4 +1,28 @@
 User-agent: *
 Allow: /
 
+# Keep the public site available to search and answer engines.
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+# Gemini uses Google's normal Search crawling signals; do not block Googlebot.
+User-agent: Googlebot
+Allow: /
+
+# Google-Extended controls eligible use for Gemini grounding/training.
+User-agent: Google-Extended
+Allow: /
+
 Sitemap: https://koyotap.com/sitemap.xml

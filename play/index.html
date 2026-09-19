@@ -18,6 +18,38 @@
     <meta property="og:url" content="https://koyotap.com/play/">
     <meta property="og:image" content="https://koyotap.com/assets/koyotap-og.png">
     <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://koyotap.com/play/#page",
+            "url": "https://koyotap.com/play/",
+            "name": "KoyoTap browser games",
+            "description": "Free casual block and merge games playable in a browser.",
+            "isPartOf": { "@id": "https://koyotap.com/#website" },
+            "inLanguage": ["ja", "en"]
+          },
+          {
+            "@type": "ItemList",
+            "@id": "https://koyotap.com/play/#item-list",
+            "name": "KoyoTap games",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "url": "https://koyotap.com/play/block-crush/", "name": "Block Crush" },
+              { "@type": "ListItem", "position": 2, "url": "https://koyotap.com/play/cube-merge-shot/", "name": "Cube Merge Shot" }
+            ]
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "KoyoTap", "item": "https://koyotap.com/" },
+              { "@type": "ListItem", "position": 2, "name": "Games", "item": "https://koyotap.com/play/" }
+            ]
+          }
+        ]
+      }
+    </script>
     <link rel="icon" href="../assets/koyotap-mark.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="../assets/koyotap-og.png">
     <link rel="stylesheet" href="../assets/site.css?v=play-20260914-consent-1">
@@ -116,6 +148,12 @@
 
           <p class="play-support-note" data-l="ja" lang="ja">ゲームがうまく表示されない場合は、ページを再読み込みしてお試しください。</p>
           <p class="play-support-note" data-l="en" lang="en">If a game does not appear correctly, reload the page and try again.</p>
+
+          <section class="play-seo-copy" aria-labelledby="play-about-title">
+            <h2 id="play-about-title"><span data-l="ja" lang="ja">KoyoTapの無料ブラウザゲーム</span><span data-l="en" lang="en">Free browser games by KoyoTap</span></h2>
+            <p data-l="ja" lang="ja">KoyoTapでは、スマートフォンやPCのブラウザですぐに遊べるカジュアルゲームを公開しています。Block Crushはラインをそろえて消すブロックパズル、Cube Merge Shotは数字のキューブを撃って合体させるマージゲームです。どちらもインストールやアカウント登録なしで始められます。</p>
+            <p data-l="en" lang="en">KoyoTap publishes casual games that run directly in a phone or desktop browser. Block Crush is a line-clearing block puzzle, while Cube Merge Shot is a number-based merge game built around aiming and shooting. Both games start without an install or account.</p>
+          </section>
 
           <div class="play-settings" data-analytics-settings hidden>
             <button type="button"><span data-l="ja" lang="ja">解析設定</span><span data-l="en" lang="en">Analytics settings</span></button>
