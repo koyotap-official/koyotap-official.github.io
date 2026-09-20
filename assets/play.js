@@ -8,6 +8,7 @@
   "use strict";
 
   var ALLOWED_GAMES = {
+    "glowline-pipes": true,
     "block-crush": true,
     "cube-merge-shot": true
   };
@@ -189,7 +190,7 @@
       sendEvent("play_click", gameId, {
         attempt: attempt
       });
-      frame.src = "./game/";
+      frame.src = gameId === "glowline-pipes" ? "./game/?standalone=1" : "./game/";
       if (frame.focus) frame.focus();
       if (frameWrap.scrollIntoView) {
         window.setTimeout(function () {

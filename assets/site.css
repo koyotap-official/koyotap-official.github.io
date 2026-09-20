@@ -718,7 +718,7 @@ h2 {
 
 .play-games-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 22px;
   max-width: 980px;
 }
@@ -760,7 +760,7 @@ h2 {
   transition: transform .25s ease;
 }
 
-.game-card:nth-child(2) .game-card-media img { object-position: center 16%; }
+.game-card:nth-child(3) .game-card-media img { object-position: center 16%; }
 .game-card:hover .game-card-media img { transform: scale(1.025); }
 
 .game-card-media::after {
@@ -824,6 +824,7 @@ h2 {
 }
 
 .game-card:nth-child(2) .game-card-body::before { background: var(--c-red); }
+.game-card:nth-child(3) .game-card-body::before { background: var(--c-green); }
 
 .play-support-note {
   max-width: 680px;
