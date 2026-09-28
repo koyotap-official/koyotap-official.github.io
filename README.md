@@ -15,6 +15,7 @@ is the public games area.
 | `play/index.html` | Public games area with Block Crush and Cube Merge Shot cards |
 | `play/block-crush/index.html`, `play/cube-merge-shot/index.html` | Bilingual game wrappers; each lazy-loads a same-origin `./game/` build |
 | `privacy-policy.html` | Privacy policy (Japanese is the governing text; English is a reference translation) |
+| `glowline-pipes-privacy-policy.html` | Per-app bilingual privacy policy for GlowLine Pipes on Android (English governs) |
 | `404.html` | Custom not-found page served by GitHub Pages |
 | `services.html`, `team.html` | Legacy URLs kept alive; they redirect into `index.html` sections |
 | `assets/site.css` | Shared styles (light / dark aware, brand palette) |
@@ -35,6 +36,7 @@ is the public games area.
 
 - Home / developer website: `https://koyotap.com/`
 - Privacy policy: `https://koyotap.com/privacy-policy.html`
+- GlowLine Pipes privacy policy: `https://koyotap.com/glowline-pipes-privacy-policy.html`
 - AdMob `app-ads.txt`: `https://koyotap.com/app-ads.txt`
 - Arrow Next privacy policy: `https://koyotap.com/ArrowNext/privacy-policy.html`
 - Games: `https://koyotap.com/play/`
