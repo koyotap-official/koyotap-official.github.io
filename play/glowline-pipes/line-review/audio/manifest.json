@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "cues": {
+    "tap": { "tone": { "hz": 540, "ms": 38 }, "volume": 0.22, "minIntervalMs": 35 },
+    "rotate": { "tone": { "hz": 420, "ms": 48 }, "volume": 0.42, "minIntervalMs": 28 },
+    "hint": { "tone": { "hz": 760, "ms": 85 }, "volume": 0.2, "minIntervalMs": 80 },
+    "success": { "tone": { "hz": 980, "ms": 180 }, "volume": 0.24, "minIntervalMs": 120 }
+  }
+}
