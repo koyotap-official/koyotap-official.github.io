@@ -363,6 +363,30 @@ h2 {
   line-height: 1.85;
 }
 
+.press-release {
+  max-width: 800px;
+}
+
+.press-release-date {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--text-faint);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.press-release h3 {
+  margin-bottom: 14px;
+  font-size: clamp(20px, 2.6vw, 26px);
+}
+
+.press-release p + p { margin-top: 14px; }
+
+.press-release .press-release-summary {
+  color: var(--text);
+  font-weight: 600;
+}
+
 /* ---------- pipeline ---------- */
 .pipeline {
   display: grid;
