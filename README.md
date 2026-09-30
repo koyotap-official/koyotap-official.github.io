@@ -12,6 +12,8 @@ is the public games area.
 | Path | Purpose |
 |---|---|
 | `index.html` | Home page — business overview, development process, business information, contact |
+| `news/index.html` | News archive with dated press release listings |
+| `news/20260929-company-established.html` | Dedicated article page for the company establishment announcement |
 | `play/index.html` | Public games area with Block Crush and Cube Merge Shot cards |
 | `play/block-crush/index.html`, `play/cube-merge-shot/index.html` | Bilingual game wrappers; each lazy-loads a same-origin `./game/` build |
 | `privacy-policy.html` | Privacy policy (Japanese is the governing text; English is a reference translation) |
@@ -35,6 +37,8 @@ is the public games area.
 ## Public URLs
 
 - Home / developer website: `https://koyotap.com/`
+- News archive: `https://koyotap.com/news/`
+- Company establishment announcement: `https://koyotap.com/news/20260929-company-established.html`
 - Privacy policy: `https://koyotap.com/privacy-policy.html`
 - GlowLine Pipes privacy policy: `https://koyotap.com/glowline-pipes-privacy-policy.html`
 - AdMob `app-ads.txt`: `https://koyotap.com/app-ads.txt`

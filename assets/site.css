@@ -363,28 +363,106 @@ h2 {
   line-height: 1.85;
 }
 
-.press-release {
-  max-width: 800px;
+.news-list {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--border);
+  list-style: none;
 }
 
-.press-release-date {
-  display: block;
-  margin-bottom: 10px;
-  color: var(--text-faint);
-  font-size: 13px;
+.news-item {
+  display: grid;
+  grid-template-columns: 132px 148px minmax(0, 1fr);
+  gap: 12px 20px;
+  align-items: center;
+  padding: 20px 4px;
+  border-bottom: 1px solid var(--border);
+}
+
+.news-item time {
+  color: var(--text-muted);
+  font-size: 14px;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.news-category {
+  display: inline-flex;
+  justify-self: start;
+  padding: 3px 10px;
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  color: var(--text-muted);
+  font-size: 12px;
   font-weight: 600;
+  line-height: 1.6;
+  white-space: nowrap;
 }
 
-.press-release h3 {
-  margin-bottom: 14px;
-  font-size: clamp(20px, 2.6vw, 26px);
-}
-
-.press-release p + p { margin-top: 14px; }
-
-.press-release .press-release-summary {
+.news-item a {
   color: var(--text);
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.news-item a:hover {
+  color: var(--c-blue);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.breadcrumbs {
+  padding-top: 20px;
+}
+
+.breadcrumb-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  color: var(--text-muted);
+  font-size: 13px;
+  list-style: none;
+}
+
+.breadcrumb-list li + li::before {
+  content: "/";
+  margin-right: 8px;
+  color: var(--text-faint);
+}
+
+.breadcrumb-list a {
+  text-decoration-color: var(--border-strong);
+  text-underline-offset: 3px;
+}
+
+.article-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 14px;
+  margin-top: 14px;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.article-category {
+  display: inline-flex;
+  padding: 3px 10px;
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  font-size: 12px;
   font-weight: 600;
+  line-height: 1.6;
+}
+
+.news-back-link { margin-top: 36px; }
+
+@media (max-width: 720px) {
+  .news-item { grid-template-columns: auto 1fr; gap: 8px 12px; }
+  .news-item a { grid-column: 1 / -1; }
 }
 
 /* ---------- pipeline ---------- */
