@@ -25,63 +25,83 @@
 <body>
 <main>
   <h1>プライバシーポリシー</h1>
-  <p class="updated">Cube Merge Shot（Android版） / 最終更新日：2026年10月10日</p>
+  <p class="updated">Cube Merge Shot（Android版） / 最終更新日：2026年10月13日</p>
   <p class="language-link"><a href="#english">English version</a></p>
   <p>このポリシーは、KoyoTapが提供するAndroidアプリ「Cube Merge Shot」（パッケージ名：com.koyotap.cubemergeshot）に適用されます。アプリの情報とデータの取扱いについて説明します。</p>
 
   <h2>アプリ内に保存する情報</h2>
-  <p>ゲームの進行状況、設定、購入済みアイテムの反映状況を端末内に保存します。初回起動時には、広告の設定のため「12歳以下」または「13歳以上」の年齢層を選択します。生年月日や氏名は尋ねず、選択した年齢層も端末内に保存します。これらの情報はKoyoTapのサーバーには送信されません。アプリの保存領域を消去するかアプリをアンインストールすると、端末内の情報は削除されます。</p>
+  <p>ゲームの進行状況、設定、購入済みアイテムの反映状況を端末内に保存します。初回起動時には「12歳以下」または「13歳以上」の年齢層を選択します。生年月日や氏名は尋ねず、選択した年齢層も端末内に保存します。この選択は任意の計測の案内にも使います。「13歳以上」の選択だけで成人として扱うことはありません。0.1.4（コード6）では、この選択によって子ども向けの広告処理は変わりません。これらの端末内の情報をKoyoTapの独自サーバーに送信することはありません。</p>
+
+  <p>端末内のアプリデータは、保存領域を消去するかアプリをアンインストールすると削除されます。ただし、端末の設定によりゲームの保存データや広告に関する選択がOSのバックアップから復元される場合があります。任意の計測・診断の許可や、対象SDKの識別子・未送信記録にはバックアップからの復元を防ぐ処理を設けています。</p>
 
   <h2>広告と広告SDK</h2>
   <p>アプリはGoogle Mobile Ads SDK（AdMob）を使用して広告を表示します。広告SDKは、広告配信、分析、不正利用の防止のため、IPアドレス、アプリ内での操作（アプリの起動、タップ、広告の表示や視聴など）、診断情報、端末またはアカウントに関する識別子を自動的に収集し、Googleと共有する場合があります。IPアドレスからおおよその地域が推定されることがあります。これらの通信はTLSで暗号化されます。詳しくは<a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" target="_blank" rel="noopener noreferrer">Google Mobile Ads SDKのデータ開示</a>と<a href="https://policies.google.com/privacy?hl=ja" target="_blank" rel="noopener noreferrer">Googleのプライバシーポリシー</a>をご確認ください。</p>
-  <p>アプリはAndroid広告ID（AAID）を要求するAD_ID権限を宣言していません。広告リクエストには、年齢層に応じた子ども向け設定を適用し、すべての年齢層に一般向け（G）の広告上限を設定します。年齢に関する追加設定も使用し、行動履歴に基づくパーソナライズド広告をリクエストしません。Googleの同意管理（UMP）が同意画面を必要とする地域では、広告を読み込む前に同意状態を確認します。Googleがアプリ内の広告プライバシー設定を必須と判定した場合は、アプリの「設定」から選択を変更できます。</p>
+  <p>0.1.4（コード6）では、Android広告ID（AAID）を要求するAD_ID権限を宣言していません。Google Playの子ども向けの設定に合わせ、選択した年齢層にかかわらず、すべての広告リクエストに子ども向けの取扱いと一般向け（G）の広告上限を適用します。この取扱いにより、興味や過去の行動に基づくパーソナライズド広告をリクエストしません。子ども向けの広告でも、広告配信や不正利用の防止に必要なSDKの通信や情報の取扱いがなくなるわけではありません。</p>
+  <p>広告設定はバージョンによって異なります。0.1.3（コード5）では、年齢層の選択に応じて広告SDKの子ども向けの取扱いを設定し、同意年齢未満の利用者向け設定と一般向け（G）の広告上限を適用していました。広告SDKとGoogle Playの購入に関する情報の取扱いは、配信中の旧バージョンでもこのポリシーの対象です。</p>
+  <p>広告を読み込む前にGoogleの同意管理（UMP）で状態を確認し、広告をリクエストできる状態の場合に読み込みます。Googleが広告のプライバシー設定を必須と判定した場合は、アプリの「設定」から選択を変更できます。</p>
 
   <h2>Google Playのアプリ内購入</h2>
   <p>アプリ内購入はGoogle Play Billingを通じて処理されます。決済情報（カード番号や銀行口座情報）はGoogle Playが管理し、KoyoTapは受け取りません。アプリは購入内容の確認とアイテム付与のため、商品ID、購入状態、購入トークンを端末上で処理します。重複付与の防止には購入トークンから作成したハッシュを端末内に保存します。購入トークンや決済情報をKoyoTapのサーバーに送信することはありません。決済と購入記録の取扱いは<a href="https://payments.google.com/" target="_blank" rel="noopener noreferrer">Google Playの購入履歴とお支払い設定</a>をご確認ください。</p>
 
   <h2>KoyoTapによる収集・共有</h2>
-  <p>KoyoTapは、アカウントを作成せず、ゲームの進行状況を保存する独自サーバーを運営していません。任意の利用状況の計測には、下記の同意に基づくGoogle Analyticsを使用します。氏名、メールアドレス、生年月日、連絡先、写真、正確な位置情報をアプリから収集しません。広告SDKやGoogle Playが各サービスの提供に必要な情報を取り扱う場合は、上記のとおり各提供元のポリシーが適用されます。</p>
+  <p>KoyoTapは、アカウントを作成せず、ゲームの進行状況を保存する独自サーバーを運営していません。任意の計測と障害診断には、下記の許可に基づくGoogle Analytics for FirebaseとFirebase Crashlyticsを使用します。アプリ内に、氏名、メールアドレス、生年月日の入力や、連絡先、写真、正確な位置情報の取得を求める機能はありません。SDKが扱う端末・アプリの識別子やIPアドレスなどについては、広告・計測・診断の説明をご確認ください。Google Playの決済情報にはGoogleのポリシーが適用されます。</p>
 
   <section lang="ja" data-privacy-section="optional-analytics">
   <h2>任意の利用状況の送信と紹介元の計測</h2>
   <p>この節は、以下の任意の利用状況の送信設定を提供するAndroid版に適用されます。その設定を備えていない旧バージョンやiOS版は、この節の対象ではありません。</p>
   <p>アプリはGoogle Playから受け取った紹介元情報から、媒体名、流入経路、キャンペーン、紹介内容を表す短いタグと、元のインストール日時を端末内に保存します。紹介URLのクエリ全体は保存・送信しません。この端末内の記録だけではGoogle Analyticsへの送信は行いません。</p>
-  <p>18歳以上であることを確認し、任意の利用状況の送信を許可した場合に限り、Google Analytics for Firebaseを有効にします。18歳未満または年齢未確認の利用者については有効にせず、許可する前も無効です。許可しなくてもゲームを利用できます。広告の同意とは別の選択で、広告の同意だけでこの計測が有効になることはありません。</p>
-  <p>許可した場合、上記の紹介元タグと元のインストール日時（UTCの日付と秒単位の時刻）、アプリインスタンス識別子、アプリのバージョン、端末・OSの情報、初回起動・セッション・利用時間などSDKが自動的に記録する基本的な利用イベントをGoogleに送信します。Googleは通信に伴うIPアドレスを処理し、おおよその地域を推定する場合があります。KoyoTapはGoogle Analyticsのレポートを、どの紹介がインストールにつながったかの把握とアプリの改善に利用します。元のインストール日と、許可後にイベントを送信した日は異なることがあります。</p>
+  <p>18歳以上であることを自己申告し、任意の利用状況の送信を許可した場合に限り、Google Analytics for Firebaseを有効にします。初回の年齢層選択だけでは有効になりません。子どもとして選択された利用者には許可を求めず、18歳以上の自己申告がない場合や、許可する前も無効です。許可しなくてもゲームを利用できます。広告の同意とは別の選択で、広告の同意だけでこの計測が有効になることはありません。</p>
+  <p>許可した場合、上記の紹介元タグと元のインストール日時（UTCの日付と秒単位の時刻）、アプリインスタンス識別子、アプリのバージョン、端末・OSの情報をGoogleに送信します。SDKは初回起動・セッション・利用時間などの基本的なイベントや、アプリ内購入に関する商品ID・商品名・価格などを自動的に記録する場合があります。自動の画面名計測は無効にしています。Googleは通信に伴うIPアドレスを処理し、おおよその地域を推定する場合があります。KoyoTapはGoogle Analyticsのレポートを、紹介元の把握とアプリの改善に利用します。元のインストール日と、許可後にイベントを送信した日は異なることがあります。</p>
   <p>このAnalytics計測ではAndroid広告IDの収集を無効にし、広告向けのデータ利用・パーソナライズの同意は許可しません。氏名、メールアドレス、正確な位置情報、購入トークン、決済情報をこの計測に追加して送信することはありません。Google Mobile AdsとGoogle Playがそれぞれ取り扱う情報については、このポリシーの広告・購入の説明をご確認ください。</p>
   <p>アプリの設定からいつでもこの許可を撤回し、その後のAnalytics収集を停止できます。撤回やアンインストールで、Googleに送信済みの情報が直ちに削除されるわけではありません。送信済みの情報にはGoogle Analyticsの保持・削除の仕組みが適用されます。情報の取り扱いや削除については、このポリシー末尾の窓口へお問い合わせください。詳しくは<a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer">Firebaseのプライバシーとセキュリティ</a>と<a href="https://policies.google.com/privacy?hl=ja" rel="noopener noreferrer">Googleのプライバシーポリシー</a>をご確認ください。</p>
 </section>
+
+
+  <h2>任意のプレイ統計と障害診断</h2>
+  <p>この機能を備えるAndroid版では、上記の成人確認と任意の送信許可に基づき、プレイの開始・終了、所要時間、スコアや合体の達成、チュートリアルやイベントの解放、報酬の獲得、広告の表示・結果、購入処理の状態などをGoogle Analytics for Firebaseへ送信します。統計には固定された項目と短い値を使用し、紹介URL全体、購入トークン、決済情報、ゲームの保存データを追加しません。広告や課金のサービス自体が扱う情報とは別の計測です。</p>
+  <p>同じ任意の許可に基づき、Firebase Crashlyticsを使ってクラッシュ、アプリの応答停止、画面の停止、広告からの復帰不良を調べます。診断には障害の種類、処理箇所やスタック、アプリ・OS・端末の情報、Crashlyticsのインストール識別子やFirebaseインストールIDが含まれます。障害の前の操作を示す、許可後のAnalyticsイベントやアプリが追加する短い記録も診断に使われる場合があります。アプリが追加するJavaScript診断からは、URLの認証情報・クエリ、メールアドレスや一般的な秘密値を除き、保存データ、購入トークン、スクリーンショットやプレイ録画を追加しません。ネイティブの障害診断はGoogleのSDKによる標準データも含み、この追加診断の加工処理とは別に扱われます。</p>
+  <p>許可しなくてもゲーム、広告、購入を利用できます。設定から許可を撤回すると、新しい追加診断とその後の診断レポート送信を停止します。実行中の診断SDKが端末内に障害記録を残す場合があり、診断を再び有効にするにはアプリの再起動が必要です。次の許可済み起動では、許可のない期間の未送信記録を送信前に破棄する処理を行います。送信が始まった情報やGoogleに届いた情報を撤回で取り消すことはできません。保持や削除については<a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer">Firebaseのプライバシーとセキュリティ</a>を確認し、必要な場合は下記の窓口へお問い合わせください。</p>
 
   <h2>お問い合わせ</h2>
   <p class="contact">運営者：KoyoTap<br>メール：<a href="mailto:contact@koyotap.com">contact@koyotap.com</a></p>
 
   <hr id="english" style="margin:48px 0 36px;border:0;border-top:1px solid #e2e8f1">
   <h1 lang="en">Privacy Policy</h1>
-  <p class="updated" lang="en">Cube Merge Shot (Android) / Last updated: October 10, 2026</p>
+  <p class="updated" lang="en">Cube Merge Shot (Android) / Last updated: October 13, 2026</p>
   <p lang="en">This policy applies to Cube Merge Shot for Android (package name: com.koyotap.cubemergeshot), provided by KoyoTap. It explains how information is handled in the app.</p>
 
   <h2 lang="en">Information stored on your device</h2>
-  <p lang="en">The app stores game progress, settings, and the status of in-app item grants on your device. On first launch, you select an age group, “12 or younger” or “13 or older,” for ad setup. The app does not ask for your date of birth or name, and the selected age group stays on your device. This information is not sent to KoyoTap servers. It is deleted when you clear the app's storage or uninstall the app.</p>
+  <p lang="en">The app stores game progress, settings, and the status of in-app item grants on your device. On first launch, you select “12 or younger” or “13 or older.” The app does not ask for your date of birth or name, and the selected group stays on your device. This choice also informs the optional analytics prompt. Choosing “13 or older” does not establish that you are an adult. In version 0.1.4 (code 6), this choice does not change child-directed advertising treatment. These local records are not sent to a separate KoyoTap server.</p>
+
+  <p lang="en">Clearing app storage or uninstalling removes the local app data. However, game saves and advertising choices may be restored through your device’s operating-system backup settings. The app has measures to exclude optional analytics and diagnostics permission, relevant SDK identifiers, and unsent records from backup restoration.</p>
 
   <h2 lang="en">Advertising and ad SDK</h2>
   <p lang="en">The app uses the Google Mobile Ads SDK (AdMob). For advertising, analytics, and fraud prevention, the SDK may automatically collect and share with Google IP address, app interactions (such as launches, taps, and ad views), diagnostic information, and device or account identifiers. An IP address may be used to estimate a general location. These transmissions are encrypted using TLS. See <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" target="_blank" rel="noopener noreferrer">Google Mobile Ads SDK data disclosure</a> and <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a>.</p>
-  <p lang="en">The app does not declare the AD_ID permission used to request the Android advertising ID (AAID). Ad requests use child-directed treatment according to the selected age group, a General (G) maximum ad content rating for all age groups, and an additional age setting. The app does not request behaviorally personalized ads. In regions where Google's consent management (UMP) requires a consent message, consent status is checked before ads are loaded. If Google requires a privacy options entry point, you can change the choice from Settings in the app.</p>
+  <p lang="en">Version 0.1.4 (code 6) does not declare the AD_ID permission used to request the Android advertising ID (AAID). In line with its child-directed Google Play configuration, it applies child-directed treatment and a General (G) maximum content rating to all ad requests, regardless of the selected age group. It does not request personalized ads based on interests or previous behavior. Child-directed advertising still involves SDK communications and information handling needed for ad delivery and fraud prevention.</p>
+  <p lang="en">Advertising settings vary by version. Version 0.1.3 (code 5) set the ad SDK’s child-directed treatment according to the selected age group, while applying treatment for users under the age of consent and a General (G) maximum content rating. This policy also covers advertising SDK and Google Play purchase information handling in older versions still distributed.</p>
+  <p lang="en">Before loading ads, the app checks Google’s User Messaging Platform (UMP) state and loads ads only when requests are permitted. If Google requires a privacy options entry point, you can change the choice in Settings.</p>
 
   <h2 lang="en">Google Play in-app purchases</h2>
   <p lang="en">In-app purchases are processed through Google Play Billing. Google Play handles payment details such as card and bank information; KoyoTap does not receive them. The app processes the product ID, purchase status, and purchase token on your device to confirm a purchase and grant an item. A hash derived from the purchase token is stored locally to prevent duplicate grants. Purchase tokens and payment details are not sent to KoyoTap servers. See <a href="https://payments.google.com/" target="_blank" rel="noopener noreferrer">Google Play purchase history and payment settings</a> for Google's handling of payments and purchase records.</p>
 
   <h2 lang="en">Collection and sharing by KoyoTap</h2>
-  <p lang="en">KoyoTap does not require an account or operate a server to store game progress. Optional usage analytics use Google Analytics with the separate permission described below. The app does not collect your name, email address, date of birth, contacts, photos, or precise location. When the advertising SDK or Google Play processes information to provide its services, the providers' policies described above apply.</p>
+  <p lang="en">KoyoTap does not require an account or operate a server to store game progress. Optional analytics and diagnostics use Google Analytics for Firebase and Firebase Crashlytics with the separate permission described below. The app has no feature requesting your name, email address or date of birth, or access to contacts, photos or precise location. The advertising, analytics and diagnostics sections explain SDK processing of app/device identifiers and IP addresses. Google’s policies govern Google Play payment data.</p>
 
   <section lang="en" data-privacy-section="optional-analytics">
   <h2>Optional usage analytics and referral measurement</h2>
   <p>This section applies to Android versions that provide the optional usage analytics setting described below. It does not apply to older versions or iOS builds without that setting.</p>
   <p>The app stores short source, medium, campaign, and content tags extracted from Google Play install referral information, together with the original installation time, on your device. It does not store or send the full referral URL query. Keeping this local record does not by itself send data to Google Analytics.</p>
-  <p>Google Analytics for Firebase is enabled only after you confirm that you are at least 18 and choose to allow optional usage analytics. It is disabled before permission and for users under 18 or whose age has not been confirmed. You can play without allowing it. This choice is separate from advertising consent; consenting to ads does not enable these analytics.</p>
-  <p>If you allow analytics, the app sends the referral tags and original installation date and time (a UTC date and a time in seconds), an app instance identifier, app version, device and operating-system information, and basic events automatically collected by the SDK, such as first launches, sessions, and engagement, to Google. Google processes the IP address used for communications and may derive an approximate region. KoyoTap uses Google Analytics reports to understand which referrals lead to installations and to improve the app. The original installation date may differ from the date an event is sent after permission.</p>
+  <p lang="en">Google Analytics for Firebase is enabled only after you self-declare that you are at least 18 and allow optional usage analytics. The initial age-group choice alone does not enable it. The app does not offer permission to users who selected the child age group; it remains disabled without adult self-confirmation or permission. You can play without allowing it. This choice is separate from advertising consent; consenting to ads does not enable these analytics.</p>
+  <p lang="en">If you allow analytics, the app sends the referral tags, original installation date and time (a UTC date and a time in seconds), an app-instance identifier, app version, and device/operating-system information to Google. The SDK may automatically record basic events such as first launches, sessions and engagement, and in-app purchase information such as product ID, product name and price. Automatic screen-name reporting is disabled. Google processes communication IP addresses and may derive an approximate region. KoyoTap uses Analytics reports to understand referrals and improve the app. The original installation date may differ from the date an event is sent after permission.</p>
   <p>Android advertising ID collection is disabled for these Analytics measurements, and consent for advertising data use and advertising personalization remains denied. We do not add your name, email address, precise location, purchase tokens, or payment details to these analytics. The advertising and purchase sections of this policy describe information separately processed by Google Mobile Ads and Google Play.</p>
   <p>You can withdraw permission in the app's settings at any time to stop subsequent Analytics collection. Withdrawal or uninstalling the app does not immediately delete information already sent to Google. Previously sent information is subject to Google Analytics retention and deletion mechanisms. Contact us using the details at the end of this policy for questions about information handling or deletion. See <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer">Privacy and Security in Firebase</a> and the <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Privacy Policy</a>.</p>
 </section>
+
+
+  <h2>Optional gameplay statistics and diagnostics</h2>
+  <p>Android versions with this feature send gameplay starts and ends, elapsed time, score and merge milestones, tutorial and event unlocks, reward grants, ad presentation and outcomes, and purchase-processing status to Google Analytics for Firebase only with the adult confirmation and optional permission described above. These statistics use fixed fields and short values. They do not add full referral URLs, purchase tokens, payment details, or game saves. This measurement is separate from information handled by the advertising and billing services themselves.</p>
+  <p lang="en">With the same optional permission, Firebase Crashlytics helps investigate crashes, app unresponsiveness, frozen screens and failures to return from ads. Diagnostics include error types, code locations and stack traces, app/OS/device information, Crashlytics installation identifiers and Firebase installation IDs. Analytics events after permission and short app-provided records may also help describe actions before a fault. Additional JavaScript diagnostics remove URL credentials and queries, email addresses and common secret values; they do not add saves, purchase tokens, screenshots or gameplay recordings. Native reports contain the Google SDK’s standard diagnostic data and are handled separately from processing of these additional JavaScript diagnostics.</p>
+  <p>You can use the game, ads, and purchases without permission. Withdrawal in Settings stops new additional diagnostics and subsequent diagnostic report dispatch. The running diagnostic SDK may still keep crash records locally, and re-enabling diagnostics requires an app restart. At the next permitted launch, the app discards unsent records from periods without permission before dispatch. Withdrawal cannot undo transmission already started or delete information already received by Google. See <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer">Privacy and Security in Firebase</a> for retention and deletion information, and contact us below if needed.</p>
 
   <h2 lang="en">Contact</h2>
   <p class="contact" lang="en">Operator: KoyoTap<br>Email: <a href="mailto:contact@koyotap.com">contact@koyotap.com</a></p>
