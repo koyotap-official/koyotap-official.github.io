@@ -1,7 +1,5 @@
 <!doctype html>
-
-<html lang="en">
-<head>
+<html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
@@ -19,41 +17,74 @@
     nav { display:flex; gap:1rem; flex-wrap:wrap; }
     h1 { overflow-wrap:anywhere; }
 </style>
+
 </head>
 <body>
 <main>
-<nav aria-label="Language / 言語"><a href="#en" lang="en">English</a><a href="#ja" lang="ja">日本語</a></nav>
-<section id="en" lang="en">
+<nav aria-label="Language / 言語"><a href="#en" lang="en">English</a> · <a href="#ja" lang="ja">日本語</a></nav>
+<article id="en" lang="en">
 <h1>GlowLine Pipes (iOS) Privacy Policy</h1>
-<p class="updated">Effective date: October 6, 2026</p>
-<p>This policy applies to GlowLine Pipes for iOS (bundle identifier: com.koyotap.glowlinepipes), provided by KoyoTap.</p>
+<p class="updated">Effective date: October 14, 2026</p>
+<p>This policy applies to GlowLine Pipes for iOS (bundle identifier: <code>com.koyotap.glowlinepipes</code>), provided by KoyoTap.</p>
 <h2>Information stored on your device</h2>
-<p>The app stores game progress, scores, settings, tutorial completion, reward balances and an ad-removal entitlement cache on your device. This version does not provide a KoyoTap game account or cloud-progress synchronization service.</p><h2>Advertising and privacy choices</h2>
-<p>The app uses Google Mobile Ads (AdMob) for full-screen advertising, including rewarded ads that you choose to watch. Google and its advertising services may process IP addresses and approximate location derived from them, device identifiers, advertisements viewed, app and ad interactions, crash information, performance information and other diagnostics. Depending on the advertising configuration, Google may use this information to deliver and measure advertising and to analyze and improve its services. Google User Messaging Platform (UMP) may also process consent-related interaction, approximate location and performance information to provide privacy choices.</p>
-<p>See <a href="https://developers.google.com/admob/ios/privacy/data-disclosure" rel="noopener noreferrer">Google’s SDK data disclosure</a> and <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google’s Privacy Policy</a> for its practices.</p>
-<p>The app may display Apple’s App Tracking Transparency request if a tracking choice has not already been made. With your permission, AdMob may use the advertising identifier for advertising measurement and personalization across other companies’ apps and websites. Declining tracking does not prevent you from playing. You can manage app tracking permission in iOS Settings under Privacy &amp; Security &gt; Tracking.</p>
-<p>The app uses Google’s consent flow where applicable. When Google requires privacy options, you can reopen the available choices from the game’s Settings menu under Privacy Options. Availability and the choices shown depend on Google’s consent settings and your region.</p><h2>Purchases</h2>
-<p>Apple processes in-app payments. KoyoTap does not receive your payment-card or Apple payment-account details through this app. The app checks Apple-verified purchase entitlement for ad removal and keeps a local entitlement cache. Restore Purchases checks an eligible non-consumable ad-removal purchase with Apple. Apple manages its purchase records and refund process; removing the app does not erase Apple’s purchase records.</p><h2>Optional sharing</h2>
-<p>If you choose a share button, the app opens an external X or Facebook sharing page with game-result text and a public game link. You decide whether to complete the post in that service. The app does not require social sign-in or automatically publish a post. The external service applies its own privacy practices when you use it.</p><h2>Retention and deletion</h2>
-<p>Local game data remains on your device while the app retains it. You can remove the app’s local data by deleting the app; offloading the app is different and may keep its data. Apple device backups may preserve or restore data under your device settings. Deleting this app does not cancel purchases or erase information retained by Apple or Google. Those services apply their own retention rules and privacy controls. Contact us if you have questions about information you provided directly to KoyoTap or wish to request access or deletion.</p><h2>Contact</h2>
+<p>The app stores game progress, scores, settings, tutorial and reward state, coin and assist-item balances on your device. It uses the ad-removal entitlement state on-device. It does not provide a KoyoTap game account or a service for synchronizing saves between devices.</p>
+<h2>Advertising and privacy choices</h2>
+<p>The app uses Google Mobile Ads (AdMob) for automatic full-screen advertising and optional rewarded videos offered to adult players. This iOS version does not offer a home banner. Ad-removal purchases stop automatic advertising; rewarded videos remain optional.</p>
+<p>Google and its advertising services may process IP addresses and approximate location derived from them, device identifiers, ad views and interactions, app interactions, and crash and performance information for advertising, measurement and service improvement. Google User Messaging Platform (UMP) also handles information needed to provide consent choices. See <a href="https://developers.google.com/admob/ios/privacy/data-disclosure" rel="noopener noreferrer">Google’s iOS SDK data disclosure</a> and <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google’s Privacy Policy</a>.</p>
+<p>The app checks Google’s consent state and requests ads only when requests are permitted. When Google requires privacy options, you can reopen them in the game’s Settings. Choices depend on Google’s settings and your region. If iOS requests a tracking choice, you can decline and continue playing. Manage tracking permission in iOS Settings → Privacy &amp; Security → Tracking. Advertising consent and tracking permission do not authorize the optional statistics and diagnostics below.</p>
+<h2>Optional statistics and diagnostics</h2>
+<p>Optional Google Analytics statistics and Firebase Crashlytics diagnostics require confirmation that you are at least 18 and permission on the current in-app notice. You can decline and still use the game, ads and purchases. The app does not reuse earlier grants that did not explain Crashlytics; earlier refusals remain in effect. You can change the sharing choice in the game’s Settings. Meta measurement dispatch is not enabled in this version.</p>
+<h2>Google Analytics</h2>
+<p>With permission, Google Analytics may receive an app-instance identifier, app/device/OS information and basic session and engagement events. Google can derive approximate location from masked network IP addresses. The SDK may automatically record StoreKit product IDs, names and prices. See <a href="https://support.google.com/analytics/answer/10285841" rel="noopener noreferrer">Google Analytics iOS data disclosure</a>.</p>
+<p>The app also sends bounded events about level and tutorial progress, elapsed time, features, assist items, rewards, advertising results and value, and purchase-processing or ad-removal state. These events include app-generated play-attempt identifiers and app-version context. They do not include a custom account ID, purchase token, payment-card details or complete save data. Automatic screen reporting and Analytics advertising-ID collection are disabled in the app, and Analytics advertising-storage, advertising-user-data and personalization consent remain denied. These Analytics settings do not describe AdMob’s separate data processing.</p>
+<h2>Firebase Crashlytics</h2>
+<p>With the same optional permission, Crashlytics helps investigate crashes, errors, stalls and failures to return from advertising. Reports may include stack traces, device/OS/app information, SDK installation identifiers, and related app state or permitted Analytics breadcrumbs. The app adds bounded diagnostic context, but does not set a name or account ID as its diagnostics user ID.</p>
+<p>Additional JavaScript diagnostics pass through processing that removes URLs, email addresses and common secret-like values. They do not add purchase tokens, complete saves, screenshots or gameplay recordings. This processing does not scrub every field collected by the native SDK. Automatic report upload is disabled; the app can request transmission of unsent reports on a permitted launch.</p>
+<p>Turning sharing off stops new optional statistics and additional diagnostic dispatch. Analytics may resume after a later eligible permission. Once measurement has been used, turning sharing off permanently blocks future diagnostic sends for that installation; allowing sharing again does not remove that block. The app may request deletion of unsent reports, but cannot guarantee complete SDK-cache deletion or recall a report already requested for upload. Crash records may remain locally.</p>
+<p>Google’s <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer">Firebase privacy documentation</a> describes Crashlytics identifiers and crash traces and states that associated data is kept for 90 days before removal from live and backup systems begins. Analytics retention follows the service’s settings and policies. Turning sharing off does not automatically erase information already received by Google.</p>
+<h2>Purchases</h2>
+<p>Apple StoreKit processes ad-removal purchases and checks purchase entitlement. The app uses the entitlement confirmation as app state, and Restore Purchases checks an eligible one-time ad-removal purchase with Apple. KoyoTap does not receive payment-card or Apple payment-account details through this app. This iOS version does not offer coin-pack purchases. Apple manages purchase records and refunds; deleting the app does not erase Apple’s records or request a refund.</p>
+<h2>Optional sharing</h2>
+<p>If you choose a share button, the app may open an external X or Facebook sharing page with game-result text and a public game link. You decide whether to post there. Social sign-in is not required and the app does not automatically publish a post. Each external service applies its own privacy practices.</p>
+<h2>Retention, backup and deletion</h2>
+<p>Deleting the iOS app removes its local app data; offloading can keep that data. Device backups may preserve or restore game saves. The app excludes its own optional-permission and diagnostics-stop records from backup. This does not guarantee that all game data, SDK caches or diagnostic records are excluded or purged.</p>
+<p>Deleting the app or withdrawing permission does not automatically erase Apple’s purchase records or information already received by Google. Their retention and deletion mechanisms apply. Contact KoyoTap about information you provided directly to us, or to request access or deletion.</p>
+<h2>Contact</h2>
 <p>Operator: KoyoTap<br>Privacy and app support: <a href="mailto:dev.contact@koyotap.com">dev.contact@koyotap.com</a>. If you email us, your email address and message are used to respond and handle your request.</p>
-</section>
+</article>
 <hr>
-<section id="ja" lang="ja">
-<h1>GlowLine Pipes (iOS) プライバシーポリシー</h1>
-<p class="updated">施行日：2026年10月6日</p>
-<p>本ポリシーは、KoyoTapが提供するiOS版GlowLine Pipes（バンドルID：com.koyotap.glowlinepipes）に適用されます。</p>
+<article id="ja" lang="ja">
+<h1>GlowLine Pipes（iOS）プライバシーポリシー</h1>
+<p class="updated">施行日：2026年10月14日</p>
+<p>本ポリシーは、KoyoTapが提供するiOS版GlowLine Pipes（バンドルID：<code>com.koyotap.glowlinepipes</code>）に適用されます。</p>
 <h2>端末内に保存する情報</h2>
-<p>ゲームの進行状況、スコア、設定、チュートリアルの完了状況、報酬残高、広告削除の購入権利のキャッシュを端末内に保存します。このバージョンには、KoyoTapのゲームアカウントや進行状況のクラウド同期機能はありません。</p><h2>広告とプライバシーの選択</h2>
-<p>本アプリは、通常の全画面広告と、プレイヤーが選択するリワード広告にGoogle Mobile Ads（AdMob）を使用します。Googleおよびその広告サービスは、IPアドレスとそこから推定されるおおよその位置、端末識別子、表示された広告、アプリや広告との操作情報、クラッシュ情報、パフォーマンス情報、その他の診断情報を取り扱う場合があります。広告の設定に応じて、Googleはこれらの情報を広告の配信と測定、サービスの分析と改善に使用する場合があります。Google User Messaging Platform（UMP）も、プライバシーの選択を提供するため、同意に関する操作情報、おおよその位置、パフォーマンス情報を取り扱う場合があります。</p>
-<p>Googleの取り扱いについては、<a href="https://developers.google.com/admob/ios/privacy/data-disclosure" rel="noopener noreferrer">SDKのデータ開示</a>および<a href="https://policies.google.com/privacy" rel="noopener noreferrer">Googleのプライバシーポリシー</a>をご確認ください。</p>
-<p>トラッキングの選択がまだ行われていない場合、AppleのApp Tracking Transparency確認画面を表示することがあります。許可した場合、AdMobは他社のアプリやWebサイトをまたいだ広告測定やパーソナライズに広告識別子を使用する場合があります。トラッキングを拒否してもゲームを利用できます。許可はiOSの「設定」&gt;「プライバシーとセキュリティ」&gt;「トラッキング」から管理できます。</p>
-<p>対象となる場合はGoogleの同意フローを使用します。Googleがプライバシーオプションを必要とする場合は、ゲーム内の「設定」から「プライバシー設定」を開き、利用可能な選択を確認できます。表示の有無と選択肢は、Googleの同意設定とお住まいの地域によって異なります。</p><h2>アプリ内課金</h2>
-<p>アプリ内課金の決済はAppleが処理します。このアプリを通じてKoyoTapがカード番号やAppleの決済アカウント情報を受け取ることはありません。アプリはAppleが検証した広告削除の購入権利を確認し、そのキャッシュを端末内に保持します。「購入を復元」で、対象となる買い切り型の広告削除購入をAppleに確認できます。購入記録と返金手続きはAppleが管理し、アプリを削除してもAppleの購入記録は削除されません。</p><h2>任意の共有</h2>
-<p>共有ボタンを選択すると、ゲーム結果の文章と公開ゲームのリンクを含むXまたはFacebookの外部共有画面を開きます。実際に投稿するかどうかは、そのサービスでご自身が選択します。アプリはSNSへのログインを要求せず、自動で投稿しません。外部サービスを利用する際は、そのサービスのプライバシーの取り扱いが適用されます。</p><h2>保存と削除</h2>
-<p>端末内のゲーム情報は、アプリが保持している間、端末に保存されます。アプリを削除することで端末内のアプリデータを削除できます。「Appを取り除く」は削除とは異なり、データが残る場合があります。Appleの端末バックアップは、端末設定に応じてデータを保持または復元する場合があります。アプリの削除は、購入の取り消しや、AppleまたはGoogleが保持する情報の削除にはなりません。各サービスが独自の保存期間とプライバシー管理方法を適用します。KoyoTapへ直接提供した情報についてのご質問、確認または削除のご希望は、以下の連絡先へお寄せください。</p><h2>お問い合わせ</h2>
+<p>ゲームの進行状況、スコア、設定、チュートリアルと報酬の状態、コインや補助アイテムの残高を端末内に保存します。広告削除権利の確認結果をアプリ内状態として使用します。KoyoTapのゲームアカウントや、端末間で保存データを同期するサービスはありません。</p>
+<h2>広告とプライバシーの選択</h2>
+<p>自動の全画面広告と、成人プレイヤーが任意に選べる報酬動画にGoogle Mobile Ads（AdMob）を使用します。このiOS版はホームバナーを提供していません。広告削除を購入すると自動広告を停止します。報酬動画は任意で利用できます。</p>
+<p>Googleおよび広告配信に関係するサービスは、広告の配信・測定やサービス改善のため、IPアドレスとそこから推定するおおよその位置、端末識別子、広告の表示と操作、アプリの操作、クラッシュとパフォーマンス情報を取り扱う場合があります。Google User Messaging Platform（UMP）も、同意の選択を提供するために必要な情報を取り扱います。<a href="https://developers.google.com/admob/ios/privacy/data-disclosure" rel="noopener noreferrer">GoogleのiOS SDKデータ開示</a>と<a href="https://policies.google.com/privacy" rel="noopener noreferrer">Googleのプライバシーポリシー</a>をご確認ください。</p>
+<p>Googleの同意状態を確認し、広告をリクエストできる状態の場合にのみ要求します。Googleがプライバシー設定を必須と判定した場合、ゲーム内の「設定」から選択を開き直せます。選択肢はGoogleの設定や地域によって異なります。iOSがトラッキングの選択を求めた場合、拒否してもゲームを利用できます。許可はiOSの「設定」→「プライバシーとセキュリティ」→「トラッキング」で管理できます。広告の同意やトラッキング許可だけでは、以下の任意の統計・診断への許可にはなりません。</p>
+<h2>任意の統計と障害診断</h2>
+<p>任意のGoogle Analytics利用統計とFirebase Crashlytics障害診断には、18歳以上の自己申告と、現在のアプリ内説明での許可が必要です。拒否してもゲーム、広告、購入を利用できます。Crashlyticsを説明していない以前の許可は引き継がず、以前の拒否は維持します。共有の選択はゲーム内の「設定」から変更できます。この版ではMetaへの計測送信を有効にしていません。</p>
+<h2>Google Analytics</h2>
+<p>許可した場合、Google Analyticsはアプリインスタンス識別子、アプリ・端末・OS情報、セッションや利用時間などの基本イベントを受け取る場合があります。Googleはマスクした通信のIPアドレスからおおよその地域を推定できます。SDKはStoreKitの商品ID、商品名、価格を自動記録する場合があります。<a href="https://support.google.com/analytics/answer/10285841" rel="noopener noreferrer">Google AnalyticsのiOSデータ開示</a>をご確認ください。</p>
+<p>アプリは、レベルとチュートリアルの進行、所要時間、機能、補助アイテム、報酬、広告の結果と価値、購入処理や広告削除の状態について、項目を限定したイベントも送信します。アプリで生成したプレイ試行の識別子やアプリ版の情報を含みます。独自のアカウントID、購入トークン、カード情報、保存データ全体は含めません。アプリ側で自動の画面名計測とAnalyticsの広告ID収集を無効にし、Analyticsの広告向け保存・広告ユーザーデータ・パーソナライズへの同意は許可しません。このAnalytics設定は、AdMobによる別のデータ処理を説明するものではありません。</p>
+<h2>Firebase Crashlytics</h2>
+<p>同じ任意の許可に基づき、クラッシュ、エラー、画面の停止、広告からの復帰不良を調べます。報告にはスタック、端末・OS・アプリ情報、SDKのインストール識別子、関連するアプリ状態や許可後のAnalytics操作記録を含む場合があります。アプリが追加する診断項目は限定し、氏名やアカウントIDを診断のユーザーIDとして設定しません。</p>
+<p>追加のJavaScript診断は、URL、メールアドレス、一般的な秘密値を除く加工処理を通します。購入トークン、保存データ全体、スクリーンショット、プレイ録画を追加しません。この処理がネイティブSDKの収集項目すべてを加工するものではありません。自動の報告アップロードを無効にし、許可済みの起動時に未送信報告の送信を依頼する場合があります。</p>
+<p>共有をオフにすると、新しい任意の統計と追加診断の送信を止めます。Analyticsは、その後に必要な条件を満たして許可すれば再開できる場合があります。一度計測を使用した後で共有をオフにすると、そのインストールでの診断送信は停止され、再許可でも解除されません。未送信報告の削除をSDKへ依頼する場合がありますが、SDKキャッシュの完全削除や送信依頼済み報告の取り消しは保証できません。端末内に障害記録が残る場合があります。</p>
+<p><a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer">Firebaseのプライバシー資料</a>は、Crashlyticsの識別子と障害スタックについて説明し、関連データを90日間保持した後、稼働中のシステムとバックアップからの削除処理を開始すると記載しています。Analyticsの保持はサービスの設定と方針に従います。共有を止めても、Googleへ到着した情報が自動で削除されるわけではありません。</p>
+<h2>アプリ内課金</h2>
+<p>AppleのStoreKitが広告削除の購入を処理し、購入権利を確認します。アプリは権利の確認結果をアプリ内状態として使用し、「購入を復元」で対象の買い切り広告削除権利をAppleに確認します。このアプリを通じてKoyoTapがカード番号やAppleの決済アカウント情報を受け取ることはありません。このiOS版はコインパックの購入を提供していません。購入記録と返金はAppleが管理し、アプリを削除してもAppleの記録の削除や返金申請にはなりません。</p>
+<h2>任意の共有</h2>
+<p>共有ボタンを選ぶと、ゲーム結果の文章と公開ゲームのリンクを含むXやFacebookの外部共有画面を開く場合があります。実際に投稿するかどうかは、そのサービスでご自身が選択します。アプリはSNSへのログインを必須にせず、自動投稿しません。各外部サービスのプライバシーの取り扱いが適用されます。</p>
+<h2>保存・バックアップ・削除</h2>
+<p>iOSでアプリを削除すると端末内のアプリデータを削除できます。「Appを取り除く」はデータを残す場合があります。端末バックアップによりゲームの保存データが保持・復元される場合があります。アプリ独自の任意許可と診断停止の記録はバックアップから除外します。これは、ゲームデータ全体、SDKキャッシュ、障害記録のすべてがバックアップ対象外または削除済みであることを保証するものではありません。</p>
+<p>アプリ削除や許可の撤回では、Appleの購入記録やGoogleへ到着した情報は自動削除されません。それぞれの保持・削除の仕組みが適用されます。KoyoTapへ直接提供した情報についてのご質問、確認や削除のご希望は、以下へお問い合わせください。</p>
+<h2>お問い合わせ</h2>
 <p>運営者：KoyoTap<br>プライバシーとアプリのお問い合わせ：<a href="mailto:dev.contact@koyotap.com">dev.contact@koyotap.com</a>。メールでお問い合わせいただいた場合、メールアドレスと内容を返信およびご依頼への対応に使用します。</p>
-</section>
+</article>
+
 </main>
-</body>
-</html>
+
+
+</body></html>
