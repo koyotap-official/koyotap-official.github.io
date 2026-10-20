@@ -19,7 +19,7 @@
 <body>
 <main>
   <h1>Block Crush（Android）プライバシーポリシー</h1>
-  <p class="updated">最終更新日：2026年10月10日</p>
+  <p class="updated">最終更新日：2026年10月20日</p>
   <p>このポリシーは、KoyoTapが提供するAndroid版「Block Crush」（パッケージ名：com.koyotap.blockcrush）に適用されます。</p>
 
   <h2>端末内に保存する情報</h2>
@@ -37,13 +37,17 @@
   <p>本アプリはアカウント登録を求めず、KoyoTap独自の分析・広告サーバーへゲーム進行状況や年齢帯を送信しません。お問い合わせをメールでいただいた場合は、回答のためにメールアドレスとお問い合わせ内容を取り扱います。</p>
 
   <section lang="ja" data-privacy-section="optional-analytics">
-  <h2>任意の利用状況の送信と紹介元の計測</h2>
-  <p>この節は、以下の任意の利用状況の送信設定を提供するAndroid版に適用されます。その設定を備えていない旧バージョンやiOS版は、この節の対象ではありません。</p>
+  <h2>任意の利用状況・診断情報の送信と紹介元の計測</h2>
+  <p>この節は、任意の利用状況の送信設定を提供するAndroid版に適用されます。追加のプレイ統計とクラッシュ診断の説明は、それらの機能を備えるAndroid版1.2.1（バージョンコード5）に適用し、これらの機能を持たない旧バージョンやiOS版は対象に含めません。</p>
   <p>アプリはGoogle Playから受け取った紹介元情報から、媒体名、流入経路、キャンペーン、紹介内容を表す短いタグと、元のインストール日時を端末内に保存します。紹介URLのクエリ全体は保存・送信しません。この端末内の記録だけではGoogle Analyticsへの送信は行いません。</p>
-  <p>18歳以上であることを確認し、任意の利用状況の送信を許可した場合に限り、Google Analytics for Firebaseを有効にします。18歳未満または年齢未確認の利用者については有効にせず、許可する前も無効です。許可しなくてもゲームを利用できます。広告の同意とは別の選択で、広告の同意だけでこの計測が有効になることはありません。</p>
+  <p>18歳以上の年齢帯を自己申告し、その版で説明する任意の送信を別に許可した場合に限り、Google Analytics for Firebaseと、対応する版ではFirebase Crashlyticsを有効にします。18歳未満または年齢未確認の利用者については有効にせず、許可する前も無効です。許可しなくてもゲームを利用できます。広告の同意とは別の選択で、広告の同意だけでこれらの任意機能が有効になることはありません。</p>
   <p>許可した場合、上記の紹介元タグと元のインストール日時（UTCの日付と秒単位の時刻）、アプリインスタンス識別子、アプリのバージョン、端末・OSの情報、初回起動・セッション・利用時間などSDKが自動的に記録する基本的な利用イベントをGoogleに送信します。Googleは通信に伴うIPアドレスを処理し、おおよその地域を推定する場合があります。KoyoTapはGoogle Analyticsのレポートを、どの紹介がインストールにつながったかの把握とアプリの改善に利用します。元のインストール日と、許可後にイベントを送信した日は異なることがあります。</p>
+  <p>追加計測に対応する版では、許可後のゲーム開始・終了、経過時間、スコアの節目、手数・コンボ・消去数、チュートリアルや利用可能な機能の操作、報酬付与、広告の要求・結果、購入・復元処理の状態を、固定した項目と短い値で送信します。ゲームのセーブ全体や盤面全体、購入トークン、取引番号、自由入力文をこの追加統計に含めません。購入に関する追加統計は操作の種類・プラットフォーム・結果を記録し、Analytics SDKは別に商品ID・商品名・価格などのアプリ内購入情報を自動記録する場合があります。これらもゲームの改善に利用します。</p>
+  <h3>任意のクラッシュ診断</h3>
+  <p>対応する版では、同じ任意許可に基づき、Firebase Crashlyticsでクラッシュ、応答停止、JavaScriptのエラーを調査します。診断にはエラーの種類、コードの処理箇所・スタックトレース、アプリ・OS・端末の情報、Crashlyticsのインストール識別子やセッション情報が含まれます。関連SDKはFirebaseインストールIDを扱い、許可後のAnalyticsイベントが障害前の操作の把握に使われる場合があります。</p>
+  <p>アプリが追加するJavaScript診断は、URL内の認証情報・クエリ、メールアドレス、一般的な秘密値を除去し、送信する項目と文字数を制限します。セーブ全体、購入トークン、スクリーンショット、プレイ録画を追加しません。この加工の対象はアプリから渡す診断であり、Google SDKの標準のネイティブ診断をすべて同じ加工に通すものではありません。</p>
   <p>このAnalytics計測ではAndroid広告IDの収集を無効にし、広告向けのデータ利用・パーソナライズの同意は許可しません。氏名、メールアドレス、正確な位置情報、購入トークン、決済情報をこの計測に追加して送信することはありません。Google Mobile AdsとGoogle Playがそれぞれ取り扱う情報については、このポリシーの広告・購入の説明をご確認ください。</p>
-  <p>アプリの設定からいつでもこの許可を撤回し、その後のAnalytics収集を停止できます。撤回やアンインストールで、Googleに送信済みの情報が直ちに削除されるわけではありません。送信済みの情報にはGoogle Analyticsの保持・削除の仕組みが適用されます。情報の取り扱いや削除については、このポリシー末尾の窓口へお問い合わせください。詳しくは<a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer">Firebaseのプライバシーとセキュリティ</a>と<a href="https://policies.google.com/privacy?hl=ja" rel="noopener noreferrer">Googleのプライバシーポリシー</a>をご確認ください。</p>
+  <p>アプリの設定の「インストール元と利用状況」からいつでもこの許可を変更できます。撤回時には、その後のAnalytics収集、追加診断、新たな診断レポート送信を停止する制御を行います。動作中の診断SDKはクラッシュ記録を端末内に残す場合があり、診断の再有効化にはアプリの再起動が必要です。次の起動では、未許可期間の未送信記録を破棄する処理を行い、その処理が完了しない場合は診断を再開しません。撤回、アプリデータの消去やアンインストールでは、開始済みの通信を取り消したり、Googleが受信済みの情報を直ちに削除したりできません。送信済みの情報には各Googleサービスの保持・削除の仕組みが適用されます。情報の取り扱いや削除については、このポリシー末尾の窓口へお問い合わせください。詳しくは<a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer">Firebaseのプライバシーとセキュリティ</a>と<a href="https://policies.google.com/privacy?hl=ja" rel="noopener noreferrer">Googleのプライバシーポリシー</a>をご確認ください。</p>
 </section>
 
   <h2>お問い合わせ</h2>
@@ -51,7 +55,7 @@
 
   <hr>
   <h1 lang="en">Privacy Policy for Block Crush (Android)</h1>
-  <p class="updated" lang="en">Last updated: October 10, 2026</p>
+  <p class="updated" lang="en">Last updated: October 20, 2026</p>
   <p lang="en">This policy applies to Block Crush for Android (package name: com.koyotap.blockcrush), provided by KoyoTap.</p>
 
   <h2 lang="en">Information stored on your device</h2>
@@ -69,13 +73,17 @@
   <p lang="en">The app does not require an account and does not send game progress or your selected age group to KoyoTap's own analytics or advertising servers. If you contact us by email, we use your email address and message to respond.</p>
 
   <section lang="en" data-privacy-section="optional-analytics">
-  <h2>Optional usage analytics and referral measurement</h2>
-  <p>This section applies to Android versions that provide the optional usage analytics setting described below. It does not apply to older versions or iOS builds without that setting.</p>
+  <h2>Optional usage analytics, diagnostics and referral measurement</h2>
+  <p>This section applies to Android versions that provide the optional usage analytics setting. The additional gameplay statistics and crash diagnostics described here apply to Android 1.2.1 (version code 5), which provides those features. Older versions and iOS builds without these features are not covered by those descriptions.</p>
   <p>The app stores short source, medium, campaign, and content tags extracted from Google Play install referral information, together with the original installation time, on your device. It does not store or send the full referral URL query. Keeping this local record does not by itself send data to Google Analytics.</p>
-  <p>Google Analytics for Firebase is enabled only after you confirm that you are at least 18 and choose to allow optional usage analytics. It is disabled before permission and for users under 18 or whose age has not been confirmed. You can play without allowing it. This choice is separate from advertising consent; consenting to ads does not enable these analytics.</p>
+  <p>Google Analytics for Firebase and, in versions providing diagnostics, Firebase Crashlytics are enabled only after you self-report the 18-or-older age group and separately allow the optional sharing described in that version. They are disabled before permission and for users under 18 or whose age is unconfirmed. You can play without allowing them. This choice is separate from advertising consent; consenting to ads does not enable these optional features.</p>
   <p>If you allow analytics, the app sends the referral tags and original installation date and time (a UTC date and a time in seconds), an app instance identifier, app version, device and operating-system information, and basic events automatically collected by the SDK, such as first launches, sessions, and engagement, to Google. Google processes the IP address used for communications and may derive an approximate region. KoyoTap uses Google Analytics reports to understand which referrals lead to installations and to improve the app. The original installation date may differ from the date an event is sent after permission.</p>
+  <p>In versions with additional gameplay measurement, the app sends fixed fields and short values describing gameplay starts and ends, elapsed time, score milestones, moves, combos and cleared groups, tutorial and available-feature interactions, reward grants, ad requests and outcomes, and purchase or restoration status after permission. These additional statistics do not contain entire game saves or boards, purchase tokens, transaction identifiers or freely entered text. Additional purchase statistics record the action, platform and result; the Analytics SDK may separately record in-app purchase information such as product IDs, product names and prices automatically. These reports are also used to improve the game.</p>
+  <h3>Optional crash diagnostics</h3>
+  <p>In versions providing diagnostics, the same optional permission enables Firebase Crashlytics to help investigate crashes, app unresponsiveness and JavaScript errors. Diagnostics include error types, code locations and stack traces, app, OS and device information, and Crashlytics installation identifiers and session information. Related SDKs handle Firebase installation IDs, and Analytics events after permission may help explain actions before a fault.</p>
+  <p>Additional JavaScript diagnostics remove URL credentials and queries, email addresses and common secret values, and limit the fields and text sent. They do not add entire saves, purchase tokens, screenshots or gameplay recordings. This processing applies to diagnostics supplied by the app; it does not apply the same filtering to every standard native diagnostic produced by the Google SDK.</p>
   <p>Android advertising ID collection is disabled for these Analytics measurements, and consent for advertising data use and advertising personalization remains denied. We do not add your name, email address, precise location, purchase tokens, or payment details to these analytics. The advertising and purchase sections of this policy describe information separately processed by Google Mobile Ads and Google Play.</p>
-  <p>You can withdraw permission in the app's settings at any time to stop subsequent Analytics collection. Withdrawal or uninstalling the app does not immediately delete information already sent to Google. Previously sent information is subject to Google Analytics retention and deletion mechanisms. Contact us using the details at the end of this policy for questions about information handling or deletion. See <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer">Privacy and Security in Firebase</a> and the <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Privacy Policy</a>.</p>
+  <p>You can change optional permission at any time through Install and usage data in Settings. On withdrawal, the app applies controls to stop subsequent Analytics collection, new additional diagnostics and new diagnostic report dispatch. The running diagnostic SDK may still keep crash records locally, and re-enabling diagnostics requires an app restart. At the next launch, the app attempts to discard unsent records from periods without permission and does not resume diagnostics if that process fails. Withdrawal, clearing app storage or uninstalling cannot undo transmission already started or immediately delete information already received by Google. Previously sent information is subject to each Google service's retention and deletion mechanisms. Contact us using the details at the end of this policy for questions about information handling or deletion. See <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer">Privacy and Security in Firebase</a> and the <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Privacy Policy</a>.</p>
 </section>
 
   <h2 lang="en">Contact</h2>
