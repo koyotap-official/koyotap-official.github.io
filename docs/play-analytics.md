@@ -1,5 +1,10 @@
 # KoyoTap Play notes
 
+**2026-10-26: Optional analytics is paused.** The events and consent description
+below are historical and inactive. No Google tag or event queue is created.
+See [current scope](legal-web-pause.md).
+
+
 The public game area is `/play/`. It keeps campaign parameters across marked
 internal links (`utm_source`, `utm_medium`, `utm_campaign`, and `utm_content`).
 The wrapper sends the events below through the existing `G-KT8SK6QRFJ` tag. The

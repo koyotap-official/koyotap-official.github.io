@@ -5,15 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 <title>近日公開 ─ 事前登録ハブ</title>
 
-<!-- ===================================================================
-     ★公開前に埋める設定はこのブロックだけ★
-     (1) GA4_MEASUREMENT_ID : GA4の測定ID (G-XXXXXXXXXX)。未設定でもページは壊れず計測をスキップ。
-     (2) REGISTER_URLS      : 事前登録先(Google Form等)。concept_id別。未設定(空文字)なら
-                              ボタンは「準備中」トーストを出すだけ(クリックは計測される=校正モードでは十分)。
-     (3) PRIVACY_URL        : プライバシーポリシーのURL(同梱の privacy.html)。
-     ================================================================== -->
+<!-- Registration destinations remain optional. Measurement is currently paused. -->
 <script>
-  window.GA4_MEASUREMENT_ID = "G-RFENDKLRYS"; // GA4測定ID（organic-lp-batch1 / 2026-07-13設定）
+  window.GA4_MEASUREMENT_ID = ""; // Optional measurement paused.
   window.REGISTER_URLS = {
     control_screw: "",   // TODO: 事前登録フォームURL(任意)
     screw_timebomb: "",
@@ -23,44 +17,12 @@
   window.PRIVACY_URL = "privacy.html";
 </script>
 
-<!-- gtag.js（測定IDが未設定でも読み込み自体は害がないが、未設定時はイベント送信をスキップ） -->
-<script async src="https://www.googletagmanager.com/gtag/js"></script>
+<!-- Optional measurement is paused; interaction helpers stay local and inert. -->
+<script src="../assets/analytics.js?v=legal-20261026-1"></script>
 <script>
-  (function () {
-    var id = window.GA4_MEASUREMENT_ID || "";
-    var ga4Ready = /^G-[A-Z0-9]{6,}$/.test(id) && id !== "G-XXXXXXXXXX";
-
-    window.dataLayer = window.dataLayer || [];
-    window.gtag = function () { dataLayer.push(arguments); };
-
-    // UTM 取得（utm_campaign=batch_<n> を batch として使う）
-    var params = new URLSearchParams(location.search);
-    var batch = params.get("utm_campaign") || "unknown";
-    var utmSource = params.get("utm_source") || "";
-    window.__BATCH__ = batch;
-
-    if (ga4Ready) {
-      // gtag.js 本体を正しい測定IDで読み込む
-      var s = document.querySelector('script[src^="https://www.googletagmanager.com/gtag/js"]');
-      if (s) s.src = "https://www.googletagmanager.com/gtag/js?id=" + id;
-      gtag("js", new Date());
-      gtag("config", id, { batch: batch, utm_source: utmSource });
-      window.__GA4_READY__ = true;
-    } else {
-      window.__GA4_READY__ = false;
-      console.warn("[LP計測] GA4未設定：window.GA4_MEASUREMENT_ID を実際の G-XXXX に差し替えてください。イベントはスキップされます（ページは正常動作）。");
-    }
-
-    // 共通イベント送信ヘルパ（未設定ならコンソール出力のみ）
-    window.trackEvent = function (name, extra) {
-      var payload = Object.assign({ batch: window.__BATCH__ }, extra || {});
-      if (window.__GA4_READY__) {
-        gtag("event", name, payload);
-      } else {
-        console.info("[LP計測 dry-run] event:", name, payload);
-      }
-    };
-  })();
+  window.__BATCH__ = new URLSearchParams(location.search).get("utm_campaign") || "unknown";
+  window.__GA4_READY__ = false;
+  window.trackEvent = function () {};
 </script>
 
 <style>

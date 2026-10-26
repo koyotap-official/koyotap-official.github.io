@@ -55,32 +55,14 @@ google.com, pub-8203691800220653, DIRECT, f08c47fec0942fa0
 
 ## Analytics
 
-Access analytics live in `assets/analytics.js` and use the existing KoyoTap measurement ID
-`G-KT8SK6QRFJ`. The `/puzzle/` landing page keeps its separate `G-RFENDKLRYS` tag.
-Corporate pages retain the existing Consent Mode default with `analytics_storage: "denied"`.
-`/play/` pages also start denied. The first Play click opens a bilingual modal explaining
-that Google Analytics measures site visits and gameplay to improve the games; either choice
-continues into the game. An allow changes analytics storage to granted on later `/play/`
-pages, and an allow clicked on the current page sends one consented `page_view`, because the
-initial denied hit may not be reported. The settings control reopens the same modal so the
-choice can be changed while a game is running.
+Optional Web analytics and home/catalog AdSense loading are paused as of
+2026-10-26. `assets/analytics.js` keeps wrapper APIs inert and does not load a
+Google tag, queue events, or reuse an old grant. The separate `/puzzle/` tag is
+also paused. See [scope and validation](docs/legal-web-pause.md).
 
-To turn it on:
-
-1. In Google Analytics, open **Admin** (the gear, bottom left) and choose
-   **Create property** in the property column. Set the timezone to Japan and the
-   currency to JPY. Do **not** reuse the `G-RFENDKLRYS` property — that one measures the
-   `/puzzle/` landing-page experiment, and mixing the two means every LP figure needs a
-   path filter first.
-2. When asked for a platform, pick **Web**, with the URL
-   `https://koyotap.com`, and create the stream.
-3. The **Web stream details** panel that opens shows the measurement ID (`G-` followed by
-   ten characters). To find it again later: **Admin → Data collection and modification →
-   Data streams →** the stream. Ignore the tag installation instructions it offers; the
-   tag is already implemented here.
-4. Set `KOYOTAP_GA4_MEASUREMENT_ID` at the top of `assets/analytics.js`, then push.
-5. Register the custom dimensions below, then load the site once and watch
-   **Reports → Realtime**.
+Resuming requires reviewed age, consent, data handling, and notice changes;
+inserting a measurement ID is insufficient. The dimensions below describe the
+historical, inactive event schema rather than current collection.
 
 ### Custom dimensions (required to see event breakdowns)
 
