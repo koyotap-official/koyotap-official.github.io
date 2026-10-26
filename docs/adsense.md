@@ -1,6 +1,11 @@
 # Google AdSense setup
 
-## Current integration
+**2026-10-26: Loading is paused on the home page and games catalog.**
+The settings and checks below describe the historical setup; do not restore the
+script or activate ads without a reviewed audience, consent and data-handling
+design. See [the current pause scope](legal-web-pause.md).
+
+## Historical integration (paused)
 
 - Publisher: `ca-pub-8203691800220653`
 - Routes with the asynchronous AdSense base script: `https://koyotap.com/` and `https://koyotap.com/play/`
