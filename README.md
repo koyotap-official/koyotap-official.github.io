@@ -27,6 +27,10 @@ is the public games area.
 | `assets/koyotap-mark.svg` | Square brand mark — favicon and header lockup |
 | `assets/koyotap-logo.svg` | Horizontal brand lockup |
 | `assets/koyotap-og.png` | Open Graph / social preview image |
+| `assets/apple-touch-icon-v2.png` | Opaque 180 × 180 home-screen icon, using the original four-tile brand mark at its natural aspect ratio |
+| `assets/apple-touch-icon-source.svg` | Editable square icon source; its nested mark uses `preserveAspectRatio` |
+| `apple-touch-icon.png` | Matching root fallback for home-screen icon discovery |
+| `assets/home/` | Small 2× game-icon renditions for the home page |
 | `assets/play/` | Source gameplay screenshots used as public card and wrapper posters |
 | `app-ads.txt` | AdMob authorized-seller declaration — **required, do not remove** |
 | `robots.txt`, `sitemap.xml` | Crawler directives |
@@ -207,6 +211,13 @@ Static HTML and CSS with no build step — edit and push to `main`, and GitHub P
 Both languages live in the same markup. Each translated element carries `data-l="ja"` or
 `data-l="en"` (plus a matching `lang` attribute); CSS hides whichever does not match
 `<html data-lang>`. When adding copy, add both languages, or the text disappears in one of them.
+
+The home page puts browser games before news, with compact mobile typography and game cards.
+Game icons use a square display box with `object-fit: contain`; other images retain their
+natural aspect ratio. The wide social-preview image must never be reused as a touch icon.
+All corporate, news, gallery, and game-wrapper pages explicitly select the square 180 × 180
+touch icon. An existing iOS home-screen shortcut may retain its cached artwork; if it does,
+remove that shortcut and add the site to the home screen again.
 
 Page titles and meta descriptions are switched from `data-title-*` / `data-desc-*`
 attributes on the `<html>` element.

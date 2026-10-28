@@ -65,6 +65,12 @@
               {
                 "@type": "ListItem",
                 "position": 2,
+                "name": "GlowLine Pipes",
+                "url": "https://koyotap.com/play/glowline-pipes/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
                 "name": "Cube Merge Shot",
                 "url": "https://koyotap.com/play/cube-merge-shot/"
               }
@@ -75,8 +81,9 @@
     </script>
 
     <link rel="icon" href="assets/koyotap-mark.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="assets/koyotap-og.png">
-    <link rel="stylesheet" href="assets/site.css?v=device-store-20261029-1">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon-v2.png">
+    <meta name="apple-mobile-web-app-title" content="KoyoTap">
+    <link rel="stylesheet" href="assets/site.css?v=mobile-home-20261029-1">
     <script src="assets/store-links.js?v=device-store-20261029-1"></script>
 
     <script>
@@ -92,7 +99,7 @@
     </script>
   </head>
 
-  <body>
+  <body class="home-page">
     <header class="site-header">
       <div class="container nav">
         <a class="brand" href="index.html" aria-label="KoyoTap">
@@ -128,31 +135,21 @@
           <div>
             <p class="eyebrow">Casual Game Studio</p>
             <h1>
-              <span data-l="ja" lang="ja">AIエージェント群で<br>カジュアルゲームを作る。</span>
-              <span data-l="en" lang="en">Casual games, built by a fleet of AI agents.</span>
+              <span data-l="ja" lang="ja">ちょっと遊ぶ。<br>じっくりハマる。</span>
+              <span data-l="en" lang="en">A little play.<br>A lot of replay.</span>
             </h1>
             <p class="lead" data-l="ja" lang="ja">
-              KoyoTapは、ブラウザとスマートフォンで遊べるカジュアルゲームを企画・開発・運営するゲームスタジオです。市場のデータでつくるものを決め、実際の遊ばれ方のデータで磨き続けます。
+              ブラウザでも、スマホでも。<br>KoyoTapのカジュアルゲーム。
             </p>
             <p class="lead" data-l="en" lang="en">
-              KoyoTap is a game studio that designs, builds, and operates casual games for the browser and mobile. Market data decides what we build; play data decides how we improve it.
+              Casual games for your browser and phone, made by KoyoTap.
             </p>
-            <p class="sub" data-l="ja" lang="ja">
-              企画の選定から実装、プレイテスト、公開後の改善まで。ひとつのタイトルを人の手で順番に進める代わりに、AIエージェントの群れが複数タイトルを同時に前へ進める開発体制で運営しています。
-            </p>
-            <p class="sub" data-l="en" lang="en">
-              From concept selection through implementation, playtesting, and post-launch iteration. Instead of moving one title at a time by hand, a fleet of AI agents advances several titles in parallel.
-            </p>
-
-            <div class="actions">
-              <a class="button button--primary" href="https://play.google.com/store/apps/developer?id=KoyoTap">
-                Google Play<span aria-hidden="true">↗</span>
-              </a>
-              <a class="button button--play" href="play/" data-preserve-utm>
+            <div class="actions hero-actions">
+              <a class="button button--primary" href="play/" data-preserve-utm>
                 <span data-l="ja" lang="ja">ゲームで遊ぶ</span><span data-l="en" lang="en">Play games</span>
               </a>
-              <a class="button" href="#contact">
-                <span data-l="ja" lang="ja">お問い合わせ</span><span data-l="en" lang="en">Get in touch</span>
+              <a class="button" href="https://play.google.com/store/apps/developer?id=KoyoTap">
+                Google Play<span aria-hidden="true">↗</span>
               </a>
             </div>
             <nav class="channel-links channel-links--hero" aria-label="公式SNS / Official social accounts">
@@ -170,6 +167,57 @@
               <g class="tile-shape"><rect x="204" y="160" width="168" height="168" rx="50" fill="#22b573"/></g>
             </svg>
           </div>
+        </div>
+      </section>
+
+      <!-- ============================== games ============================== -->
+      <section class="section section--alt" id="games" aria-labelledby="games-title">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">KoyoTap Play</p>
+            <h2 id="games-title"><span data-l="ja" lang="ja">遊べるゲーム</span><span data-l="en" lang="en">Games to play</span></h2>
+            <p data-l="ja" lang="ja">登録不要・無料で遊べます。</p>
+            <p data-l="en" lang="en">Free browser games. No sign-up needed.</p>
+          </div>
+          <div class="home-games-grid">
+            <article class="home-game-card" aria-labelledby="home-block-crush-title">
+              <img class="home-game-icon" src="assets/home/block-crush.webp" width="64" height="64" alt="" loading="lazy">
+              <div class="home-game-copy">
+                <h3 id="home-block-crush-title"><a href="play/block-crush/" data-preserve-utm>Block Crush</a></h3>
+                <p data-l="ja" lang="ja">ラインをそろえて消す。</p>
+                <p data-l="en" lang="en">Place blocks and clear complete lines.</p>
+              </div>
+              <div class="home-game-actions">
+                <a class="button button--play" href="play/block-crush/" data-preserve-utm><span data-l="ja" lang="ja">ブラウザで遊ぶ</span><span data-l="en" lang="en">Play in browser</span></a>
+                <a class="button" href="https://play.google.com/store/apps/details?id=com.koyotap.blockcrush" data-game-store="block-crush" title="Google Play"><span data-l="ja" lang="ja">ストアで遊ぶ</span><span data-l="en" lang="en">Play on Google Play</span><span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+            <article class="home-game-card" aria-labelledby="home-glowline-pipes-title">
+              <img class="home-game-icon" src="assets/home/glowline-pipes.webp" width="64" height="64" alt="" loading="lazy">
+              <div class="home-game-copy">
+                <h3 id="home-glowline-pipes-title"><a href="play/glowline-pipes/" data-preserve-utm>GlowLine Pipes</a></h3>
+                <p data-l="ja" lang="ja">光をつなぐパイプパズル。</p>
+                <p data-l="en" lang="en">Rotate the pipes and connect the glow.</p>
+              </div>
+              <div class="home-game-actions">
+                <a class="button button--play" href="play/glowline-pipes/" data-preserve-utm><span data-l="ja" lang="ja">ブラウザで遊ぶ</span><span data-l="en" lang="en">Play in browser</span></a>
+                <a class="button" href="https://play.google.com/store/apps/details?id=com.koyotap.glowlinepipes" data-game-store="glowline-pipes" title="Google Play"><span data-l="ja" lang="ja">ストアで遊ぶ</span><span data-l="en" lang="en">Play on Google Play</span><span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+            <article class="home-game-card" aria-labelledby="home-cube-merge-shot-title">
+              <img class="home-game-icon" src="assets/home/cube-merge-shot.webp" width="64" height="64" alt="" loading="lazy">
+              <div class="home-game-copy">
+                <h3 id="home-cube-merge-shot-title"><a href="play/cube-merge-shot/" data-preserve-utm>Cube Merge Shot</a></h3>
+                <p data-l="ja" lang="ja">同じ数字を合体させよう。</p>
+                <p data-l="en" lang="en">Merge matching numbers and aim higher.</p>
+              </div>
+              <div class="home-game-actions">
+                <a class="button button--play" href="play/cube-merge-shot/" data-preserve-utm><span data-l="ja" lang="ja">ブラウザで遊ぶ</span><span data-l="en" lang="en">Play in browser</span></a>
+                <a class="button" href="https://play.google.com/store/apps/details?id=com.koyotap.cubemergeshot" data-game-store="cube-merge-shot" title="Google Play"><span data-l="ja" lang="ja">ストアで遊ぶ</span><span data-l="en" lang="en">Play on Google Play</span><span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+          </div>
+          <p class="section-more"><a class="button" href="play/" data-preserve-utm><span data-l="ja" lang="ja">ゲーム一覧を見る</span><span data-l="en" lang="en">See all games</span><span aria-hidden="true">→</span></a></p>
         </div>
       </section>
 
@@ -220,44 +268,6 @@
           <p class="section-more">
             <a class="button" href="news/"><span data-l="ja" lang="ja">お知らせ一覧</span><span data-l="en" lang="en">All news</span></a>
           </p>
-        </div>
-      </section>
-
-      <!-- ============================== games ============================== -->
-      <section class="section section--alt" id="games" aria-labelledby="games-title">
-        <div class="container">
-          <div class="section-head">
-            <p class="eyebrow">KoyoTap Play</p>
-            <h2 id="games-title"><span data-l="ja" lang="ja">ブラウザで遊べるゲーム</span><span data-l="en" lang="en">Play KoyoTap games</span></h2>
-            <p data-l="ja" lang="ja">登録不要・無料で遊べる、KoyoTapのブロック系・マージ系カジュアルゲームです。</p>
-            <p data-l="en" lang="en">Free browser games from KoyoTap: casual block puzzles and merge games with no sign-up required.</p>
-          </div>
-
-          <div class="cards">
-            <article class="card">
-              <h3><a href="play/block-crush/" data-preserve-utm>Block Crush</a></h3>
-              <p data-l="ja" lang="ja">ブロックを盤面に置き、横・縦のラインをそろえて消す、シンプルで繰り返し遊べるブロックパズルゲームです。</p>
-              <p data-l="en" lang="en">A simple, replayable block puzzle game: place pieces on the board and clear complete horizontal or vertical lines.</p>
-              <div class="actions">
-                <a class="button button--play" href="play/block-crush/" data-preserve-utm><span data-l="ja" lang="ja">ブラウザで遊ぶ</span><span data-l="en" lang="en">Play in browser</span></a>
-                <a class="button" href="https://play.google.com/store/apps/details?id=com.koyotap.blockcrush" data-game-store="block-crush" title="Google Play"><span data-l="ja" lang="ja">ストアで遊ぶ</span><span data-l="en" lang="en">Play on Google Play</span><span aria-hidden="true">↗</span></a>
-              </div>
-            </article>
-            <article class="card">
-              <h3><a href="play/cube-merge-shot/" data-preserve-utm>Cube Merge Shot</a></h3>
-              <p data-l="ja" lang="ja">キューブを狙って撃ち、同じ数字を合体させて高いスコアを目指す、ブラウザ向けマージゲームです。</p>
-              <p data-l="en" lang="en">A browser merge game where you aim, shoot cubes, combine matching numbers, and chase a higher score.</p>
-              <div class="actions">
-                <a class="button button--play" href="play/cube-merge-shot/" data-preserve-utm><span data-l="ja" lang="ja">ブラウザで遊ぶ</span><span data-l="en" lang="en">Play in browser</span></a>
-                <a class="button" href="https://play.google.com/store/apps/details?id=com.koyotap.cubemergeshot" data-game-store="cube-merge-shot" title="Google Play"><span data-l="ja" lang="ja">ストアで遊ぶ</span><span data-l="en" lang="en">Play on Google Play</span><span aria-hidden="true">↗</span></a>
-              </div>
-            </article>
-          </div>
-
-          <div class="actions">
-            <a class="button button--play" href="play/" data-preserve-utm><span data-l="ja" lang="ja">ゲーム一覧を見る</span><span data-l="en" lang="en">See all games</span></a>
-            <a class="button" href="https://play.google.com/store/apps/developer?id=KoyoTap"><span data-l="ja" lang="ja">Google Playで見る</span><span data-l="en" lang="en">View on Google Play</span><span aria-hidden="true">↗</span></a>
-          </div>
         </div>
       </section>
 
