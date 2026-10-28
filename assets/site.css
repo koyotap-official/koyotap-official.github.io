@@ -210,7 +210,7 @@ h2 {
 .hero {
   position: relative;
   overflow: hidden;
-  padding: 96px 0 88px;
+  padding: 64px 0;
   border-bottom: 1px solid var(--border);
 }
 
@@ -700,6 +700,38 @@ h2 {
 .footer-links a { text-decoration: none; }
 .footer-links a:hover { color: var(--text); text-decoration: underline; }
 
+/* ---------- store and official social links ---------- */
+.channel-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.channel-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 44px;
+  min-height: 44px;
+  text-decoration: underline;
+  text-decoration-color: var(--border-strong);
+  text-underline-offset: 4px;
+  transition: color .15s ease, text-decoration-color .15s ease;
+}
+
+.channel-links a:hover,
+.channel-links a:focus-visible {
+  color: var(--text);
+  text-decoration-color: currentColor;
+}
+
+.channel-links--hero { margin-top: 12px; }
+.channel-links--footer { flex-basis: 100%; }
+
 /* ---------- responsive ---------- */
 @media (max-width: 940px) {
   .hero-grid { grid-template-columns: 1fr; gap: 40px; }
@@ -724,6 +756,9 @@ h2 {
 @media (max-width: 480px) {
   .pipeline { grid-template-columns: 1fr; gap: 24px; }
   .container { padding-inline: 18px; }
+  .nav { gap: 12px; }
+  .nav-links { gap: 12px; }
+  .nav-links a[href="#contact"] { display: none; }
 }
 
 /* ---------- public games area ------------------------------------------- */

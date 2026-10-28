@@ -45,6 +45,17 @@ is the public games area.
 - Arrow Next privacy policy: `https://koyotap.com/ArrowNext/privacy-policy.html`
 - Games: `https://koyotap.com/play/`
 
+## Store and official social links
+
+The home page and `/play/` link to the published developer catalog and official accounts:
+
+- Google Play: `https://play.google.com/store/apps/developer?id=KoyoTap`
+- X: `https://x.com/KoyoTap`
+- YouTube: `https://www.youtube.com/@KoyoTap`
+- Instagram: `https://www.instagram.com/koyotap_official/`
+
+Keep these destinations consistent with the home page's Organization `sameAs` metadata.
+
 For the Google Play Console developer website field, enter the site root URL, not an individual page.
 
 ## app-ads.txt
