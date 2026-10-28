@@ -92,6 +92,9 @@ a { color: inherit; }
 html[data-lang="ja"] [data-l="en"] { display: none !important; }
 html[data-lang="en"] [data-l="ja"] { display: none !important; }
 
+/* Google Play is unavailable on iOS. A verified App Store href becomes visible after routing. */
+html[data-store-platform="ios"] a[href^="https://play.google.com/"] { display: none !important; }
+
 /* ---------- layout ---------- */
 .container {
   width: 100%;

@@ -66,6 +66,19 @@ the home page's game cards link to the same individual listings:
 Keep store links separate from browser-game links so that opening a store listing does
 not trigger the browser game's selection or start flow.
 
+`assets/store-links.js` detects Android, iPhone/iPad (including iPad desktop browsing),
+and other devices before first paint. Android and desktop keep the Google Play links.
+iOS uses the game's public App Store URL from `iosStoreUrls`; if it is `null`, the store
+action is hidden and browser play remains available. Google Play developer links are
+also hidden on iOS. Nothing automatically navigates away from the website.
+
+As of 2026-10-29, public App Store pages for these three titles could not be verified;
+all three iOS destinations are intentionally `null`. Set each URL only after its public
+listing can be opened and matched to the correct KoyoTap app. Then update the script's
+version query on all five pages so returning visitors receive the new destination.
+
+Check platform routing with `node --test tests/store-links.test.cjs`.
+
 For the Google Play Console developer website field, enter the site root URL, not an individual page.
 
 ## app-ads.txt
