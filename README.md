@@ -56,6 +56,16 @@ The home page and `/play/` link to the published developer catalog and official 
 
 Keep these destinations consistent with the home page's Organization `sameAs` metadata.
 
+Each browser game also has a direct Google Play link on its directory card and game page;
+the home page's game cards link to the same individual listings:
+
+- GlowLine Pipes: `https://play.google.com/store/apps/details?id=com.koyotap.glowlinepipes`
+- Block Crush: `https://play.google.com/store/apps/details?id=com.koyotap.blockcrush`
+- Cube Merge Shot: `https://play.google.com/store/apps/details?id=com.koyotap.cubemergeshot`
+
+Keep store links separate from browser-game links so that opening a store listing does
+not trigger the browser game's selection or start flow.
+
 For the Google Play Console developer website field, enter the site root URL, not an individual page.
 
 ## app-ads.txt
