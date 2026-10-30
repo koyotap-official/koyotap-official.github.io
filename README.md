@@ -67,6 +67,13 @@ the home page's game cards link to the same individual listings:
 - Block Crush: `https://play.google.com/store/apps/details?id=com.koyotap.blockcrush`
 - Cube Merge Shot: `https://play.google.com/store/apps/details?id=com.koyotap.cubemergeshot`
 
+The home page and `/play/` also list the store-only apps Coin Tray Merge
+(`com.koyotap.cointraymerge`) and 雨やどり喫茶 / Rain Shelter Café
+(`com.koyotap.rainsheltercafe`). These cards use the official app artwork and link directly
+to Google Play. They do not have browser wrappers, browser-play controls, or browser-game
+selection attributes. On iOS their unverified store links are hidden; their Google Play
+availability labels remain visible so visitors can still discover the titles.
+
 Keep store links separate from browser-game links so that opening a store listing does
 not trigger the browser game's selection or start flow.
 

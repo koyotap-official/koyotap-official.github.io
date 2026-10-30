@@ -2,19 +2,19 @@
 <html lang="ja" data-lang="ja" data-play-page="true"
   data-title-ja="ゲームで遊ぶ — KoyoTap"
   data-title-en="Play KoyoTap games"
-  data-desc-ja="KoyoTapのカジュアルゲームをブラウザで遊べます。Glowline Pipes、Block Crush、Cube Merge Shotをお楽しみください。"
-  data-desc-en="Play KoyoTap's casual games in your browser: Glowline Pipes, Block Crush, and Cube Merge Shot.">
+  data-desc-ja="KoyoTapのゲーム一覧。ブラウザで遊べる3タイトルと、Coin Tray Merge、雨やどり喫茶のスマートフォンアプリを紹介します。"
+  data-desc-en="Explore KoyoTap browser games and mobile apps, including Coin Tray Merge and Rain Shelter Café.">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ゲームで遊ぶ — KoyoTap</title>
-    <meta name="description" content="KoyoTapのカジュアルゲームをブラウザで遊べます。Glowline Pipes、Block Crush、Cube Merge Shotをお楽しみください。">
+    <meta name="description" content="KoyoTapのゲーム一覧。ブラウザで遊べる3タイトルと、Coin Tray Merge、雨やどり喫茶のスマートフォンアプリを紹介します。">
     <link rel="canonical" href="https://koyotap.com/play/">
     <meta name="theme-color" content="#2f7bff">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="KoyoTap">
     <meta property="og:title" content="ゲームで遊ぶ — KoyoTap">
-    <meta property="og:description" content="KoyoTapのカジュアルゲームをブラウザで遊べます。">
+    <meta property="og:description" content="KoyoTapのブラウザゲームとスマートフォンアプリを紹介します。">
     <meta property="og:url" content="https://koyotap.com/play/">
     <meta property="og:image" content="https://koyotap.com/assets/koyotap-og.png">
     <meta name="twitter:card" content="summary_large_image">
@@ -26,26 +26,68 @@
             "@type": "CollectionPage",
             "@id": "https://koyotap.com/play/#page",
             "url": "https://koyotap.com/play/",
-            "name": "KoyoTap browser games",
-            "description": "Free casual block and merge games playable in a browser.",
-            "isPartOf": { "@id": "https://koyotap.com/#website" },
-            "inLanguage": ["ja", "en"]
+            "name": "KoyoTap games",
+            "description": "Browser games and mobile apps from KoyoTap.",
+            "isPartOf": {
+              "@id": "https://koyotap.com/#website"
+            },
+            "inLanguage": [
+              "ja",
+              "en"
+            ]
           },
           {
             "@type": "ItemList",
             "@id": "https://koyotap.com/play/#item-list",
             "name": "KoyoTap games",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "url": "https://koyotap.com/play/glowline-pipes/", "name": "Glowline Pipes" },
-              { "@type": "ListItem", "position": 2, "url": "https://koyotap.com/play/block-crush/", "name": "Block Crush" },
-              { "@type": "ListItem", "position": 3, "url": "https://koyotap.com/play/cube-merge-shot/", "name": "Cube Merge Shot" }
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "url": "https://koyotap.com/play/glowline-pipes/",
+                "name": "Glowline Pipes"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "url": "https://koyotap.com/play/block-crush/",
+                "name": "Block Crush"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "url": "https://koyotap.com/play/cube-merge-shot/",
+                "name": "Cube Merge Shot"
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Coin Tray Merge",
+                "url": "https://play.google.com/store/apps/details?id=com.koyotap.cointraymerge"
+              },
+              {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "雨やどり喫茶",
+                "url": "https://play.google.com/store/apps/details?id=com.koyotap.rainsheltercafe"
+              }
             ]
           },
           {
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "KoyoTap", "item": "https://koyotap.com/" },
-              { "@type": "ListItem", "position": 2, "name": "Games", "item": "https://koyotap.com/play/" }
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "KoyoTap",
+                "item": "https://koyotap.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Games",
+                "item": "https://koyotap.com/play/"
+              }
             ]
           }
         ]
@@ -54,8 +96,8 @@
     <link rel="icon" href="../assets/koyotap-mark.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon-v2.png">
     <meta name="apple-mobile-web-app-title" content="KoyoTap">
-    <link rel="stylesheet" href="../assets/site.css?v=mobile-home-20261029-1">
-    <script src="../assets/store-links.js?v=device-store-20261029-1"></script>
+    <link rel="stylesheet" href="../assets/site.css?v=catalog-20261031-1">
+    <script src="../assets/store-links.js?v=catalog-20261031-1"></script>
     <script>
       (function () {
         try {
@@ -100,8 +142,8 @@
           <div>
             <p class="eyebrow">KoyoTap Play</p>
             <h1><span data-l="ja" lang="ja">ちょっと遊ぶ。<br>じっくりハマる。</span><span data-l="en" lang="en">A little play.<br>A lot of replay.</span></h1>
-            <p class="lead" data-l="ja" lang="ja">KoyoTapのカジュアルゲームを、ブラウザですぐに遊べます。気になるタイトルを選んでください。</p>
-            <p class="lead" data-l="en" lang="en">Play KoyoTap's casual games right in your browser. Pick a title and jump in.</p>
+            <p class="lead" data-l="ja" lang="ja">ブラウザで遊べるゲームと、スマートフォン向けアプリを紹介しています。</p>
+            <p class="lead" data-l="en" lang="en">Explore KoyoTap browser games and mobile apps.</p>
             <div class="actions">
               <a class="button" href="https://play.google.com/store/apps/developer?id=KoyoTap"><span data-l="ja" lang="ja">Google Playで見る</span><span data-l="en" lang="en">View on Google Play</span><span aria-hidden="true">↗</span></a>
             </div>
@@ -178,6 +220,41 @@
               </div>
             </article>
           </div>
+
+          <section class="app-games-section" id="app-games" aria-labelledby="app-games-title">
+            <h2 id="app-games-title"><span data-l="ja" lang="ja">アプリで遊ぶ</span><span data-l="en" lang="en">Mobile games</span></h2>
+            <p class="app-games-intro"><span data-l="ja" lang="ja">Google Playで配信中</span><span data-l="en" lang="en">Available on Google Play</span></p>
+            <div class="play-games-grid app-games-grid">
+              <article class="game-card game-card--app" data-store-only>
+                <div class="game-card-media game-card-media--app">
+                  <img src="../assets/catalog/coin-tray-merge.webp" width="128" height="128" alt="" loading="lazy">
+                </div>
+                <div class="game-card-body">
+                  <h2>Coin Tray Merge</h2>
+                  <p class="game-availability">Google Play</p>
+                  <p data-l="ja" lang="ja">コインを合体して注文をこなす。</p>
+                  <p data-l="en" lang="en">Sort and merge coins to fill orders.</p>
+                </div>
+                <div class="game-card-actions">
+                  <a class="button" href="https://play.google.com/store/apps/details?id=com.koyotap.cointraymerge" data-game-store="coin-tray-merge" title="Google Play"><span data-l="ja" lang="ja">ストアで遊ぶ</span><span data-l="en" lang="en">Play on Google Play</span><span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+              <article class="game-card game-card--app" data-store-only>
+                <div class="game-card-media game-card-media--app">
+                  <img src="../assets/catalog/rain-shelter-cafe.webp" width="128" height="128" alt="" loading="lazy">
+                </div>
+                <div class="game-card-body">
+                  <h2><span data-l="ja" lang="ja">雨やどり喫茶</span><span data-l="en" lang="en">Rain Shelter Café</span></h2>
+                  <p class="game-availability">Google Play</p>
+                  <p data-l="ja" lang="ja">食材を合体して、喫茶店を整える。</p>
+                  <p data-l="en" lang="en">Merge ingredients and run a forest café.</p>
+                </div>
+                <div class="game-card-actions">
+                  <a class="button" href="https://play.google.com/store/apps/details?id=com.koyotap.rainsheltercafe" data-game-store="rain-shelter-cafe" title="Google Play"><span data-l="ja" lang="ja">ストアで遊ぶ</span><span data-l="en" lang="en">Play on Google Play</span><span aria-hidden="true">↗</span></a>
+                </div>
+              </article>
+            </div>
+          </section>
 
           <p class="play-support-note" data-l="ja" lang="ja">ゲームがうまく表示されない場合は、ページを再読み込みしてお試しください。</p>
           <p class="play-support-note" data-l="en" lang="en">If a game does not appear correctly, reload the page and try again.</p>

@@ -5,7 +5,9 @@
   var iosStoreUrls = {
     "glowline-pipes": null,
     "block-crush": null,
-    "cube-merge-shot": null
+    "cube-merge-shot": null,
+    "coin-tray-merge": null,
+    "rain-shelter-cafe": null
   };
 
   function detectPlatform(nav) {
@@ -33,7 +35,8 @@
         link.hidden = true;
         var parent = link.parentElement;
         if (parent && (parent.classList.contains("game-card-actions") ||
-            parent.classList.contains("play-store-actions"))) parent.hidden = true;
+            parent.classList.contains("play-store-actions") ||
+            parent.classList.contains("home-game-actions--store-only"))) parent.hidden = true;
       }
     }
   }

@@ -1067,6 +1067,39 @@ h2 {
 .game-card:nth-child(2) .game-card-body::before { background: var(--c-red); }
 .game-card:nth-child(3) .game-card-body::before { background: var(--c-green); }
 
+/* Published apps without browser builds. */
+.app-games-section { margin-top: 40px; scroll-margin-top: 88px; }
+.app-games-section > h2 { font-size: 24px; margin-bottom: 8px; }
+.app-games-intro { color: var(--text-muted); font-size: 14px; margin: 0 0 20px; }
+.app-games-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 660px; }
+.game-card-media--app {
+  display: grid;
+  place-items: center;
+  height: 176px;
+  padding: 24px;
+  aspect-ratio: auto;
+  background: var(--bg-alt);
+}
+.game-card-media--app img { width: 128px; height: 128px; object-fit: contain; border-radius: 20px; }
+.game-card-media--app::after { display: none; }
+.game-card-body .game-availability,
+.home-game-copy .game-availability {
+  display: inline-flex;
+  margin: 6px 0 0;
+  padding: 2px 8px;
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  color: var(--text-muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
+.game-card-body .game-availability { margin: 0 0 10px; }
+
+@media (max-width: 760px) {
+  .app-games-grid { grid-template-columns: 1fr; }
+  .game-card-media--app { height: 160px; padding: 16px; }
+}
+
 .play-support-note {
   max-width: 680px;
   margin-top: 28px;

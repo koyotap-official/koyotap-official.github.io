@@ -39,7 +39,7 @@ test('iOS uses a verified App Store URL and matching English label', () => {
   assert.equal(f.link.hidden, false);
 });
 
-for (const parentClass of ['game-card-actions', 'play-store-actions', 'actions']) {
+for (const parentClass of ['game-card-actions', 'play-store-actions', 'home-game-actions--store-only', 'actions']) {
   test('iOS without a public listing hides only the unavailable action: ' + parentClass, () => {
     const f = fixture(parentClass);
     updateStoreLinks(f.doc, 'ios', { 'block-crush': null });
