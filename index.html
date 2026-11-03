@@ -100,7 +100,7 @@
     <link rel="icon" href="assets/koyotap-mark.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon-v2.png">
     <meta name="apple-mobile-web-app-title" content="KoyoTap">
-    <link rel="stylesheet" href="assets/site.css?v=catalog-20261031-1">
+    <link rel="stylesheet" href="assets/site.css?v=details-20261104-1">
     <script src="assets/store-links.js?v=catalog-20261031-1"></script>
 
     <script>
@@ -114,10 +114,22 @@
         } catch (e) { /* keep the markup default (ja) */ }
       })();
     </script>
+    <script>
+      // Keep bookmarks to the former home-page sections working.
+      (function () {
+        function followDetailLink() {
+          var pages = { "#how": "team.html", "#info": "company.html" };
+          var target = pages[window.location.hash];
+          if (target) window.location.replace(target + window.location.search);
+        }
+        followDetailLink();
+        window.addEventListener("hashchange", followDetailLink);
+      })();
+    </script>
   </head>
 
   <body class="home-page">
-    <header class="site-header">
+    <header class="site-header site-header--details">
       <div class="container nav">
         <a class="brand" href="index.html" aria-label="KoyoTap">
           <svg viewBox="0 0 372 370" aria-hidden="true">
@@ -129,12 +141,12 @@
           <span>KoyoTap</span>
         </a>
 
-        <nav class="nav-links" aria-label="ページ内ナビゲーション">
+        <nav class="nav-links" aria-label="ナビゲーション">
           <a class="nav-play nav-keep" href="play/" data-preserve-utm><span data-l="ja" lang="ja">ゲーム</span><span data-l="en" lang="en">Games</span></a>
           <a href="news/"><span data-l="ja" lang="ja">お知らせ</span><span data-l="en" lang="en">News</span></a>
           <a href="#business"><span data-l="ja" lang="ja">事業概要</span><span data-l="en" lang="en">What we do</span></a>
-          <a href="#how"><span data-l="ja" lang="ja">開発体制</span><span data-l="en" lang="en">How we work</span></a>
-          <a href="#info"><span data-l="ja" lang="ja">事業者情報</span><span data-l="en" lang="en">Business info</span></a>
+          <a class="nav-detail" href="team.html"><span data-l="ja" lang="ja">開発体制</span><span data-l="en" lang="en">How we work</span></a>
+          <a class="nav-detail" href="company.html"><span data-l="ja" lang="ja">事業者情報</span><span data-l="en" lang="en">Business info</span></a>
           <a class="nav-keep" href="#contact"><span data-l="ja" lang="ja">お問い合わせ</span><span data-l="en" lang="en">Contact</span></a>
         </nav>
 
@@ -353,118 +365,6 @@
               <p data-l="en" lang="en">We create content and manage social media channels.</p>
             </article>
           </div>
-        </div>
-      </section>
-
-      <!-- ============================== how =============================== -->
-      <section class="section section--alt" id="how">
-        <div class="container">
-          <div class="section-head">
-            <p class="eyebrow">How we work</p>
-            <h2><span data-l="ja" lang="ja">開発体制</span><span data-l="en" lang="en">How we work</span></h2>
-            <p data-l="ja" lang="ja">市場分析から改善までの各工程をAIエージェントに分担させ、複数タイトルを同時に進めます。</p>
-            <p data-l="en" lang="en">Every stage from market analysis to iteration is delegated to AI agents, so several titles move forward at once.</p>
-          </div>
-
-          <div class="pipeline">
-            <div class="step">
-              <div class="step-dot">1</div>
-              <h3><span data-l="ja" lang="ja">市場分析</span><span data-l="en" lang="en">Market analysis</span></h3>
-              <p data-l="ja" lang="ja">配信中タイトルと広告シグナルを定期的に巡回して集めます。</p>
-              <p data-l="en" lang="en">Recurring sweeps collect signals from live titles and ad activity.</p>
-            </div>
-            <div class="step">
-              <div class="step-dot">2</div>
-              <h3><span data-l="ja" lang="ja">企画</span><span data-l="en" lang="en">Concept</span></h3>
-              <p data-l="ja" lang="ja">集めたデータからコンセプトを起案し、評価して作るものを選びます。</p>
-              <p data-l="en" lang="en">Concepts are drafted from that data, scored, and then chosen.</p>
-            </div>
-            <div class="step">
-              <div class="step-dot">3</div>
-              <h3><span data-l="ja" lang="ja">実装</span><span data-l="en" lang="en">Build</span></h3>
-              <p data-l="ja" lang="ja">ロードマップを細かい作業に分解し、実装・テスト・レビューを分担します。</p>
-              <p data-l="en" lang="en">The roadmap is broken into small tasks, with build, test, and review split across agents.</p>
-            </div>
-            <div class="step">
-              <div class="step-dot">4</div>
-              <h3><span data-l="ja" lang="ja">プレイテスト</span><span data-l="en" lang="en">Playtest</span></h3>
-              <p data-l="ja" lang="ja">実際のプレイヤーの記録を集め、離脱とプレイ時間を測ります。</p>
-              <p data-l="en" lang="en">Real player sessions are recorded and measured for drop-off and play time.</p>
-            </div>
-            <div class="step">
-              <div class="step-dot">5</div>
-              <h3><span data-l="ja" lang="ja">改善</span><span data-l="en" lang="en">Iterate</span></h3>
-              <p data-l="ja" lang="ja">基準に届かなければ改善し、届いたら次の工程へ進めます。</p>
-              <p data-l="en" lang="en">Below the bar, we iterate. Above it, the title moves on.</p>
-            </div>
-          </div>
-
-          <div class="callout">
-            <p data-l="ja" lang="ja">
-              <strong>判断は人が持ちます。</strong>
-              各工程は自動化していますが、品質の可否、公開するかどうか、方針を変えるかどうかは人間の承認点を残して決めています。自動化しているのは判断そのものではなく、判断に必要な材料を揃えるまでの作業です。
-            </p>
-            <p data-l="en" lang="en">
-              <strong>Judgement stays with a person.</strong>
-              The stages are automated, but quality calls, release decisions, and changes of direction all pass through a human approval point. What is automated is the work of assembling the evidence — not the decision itself.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- ============================== info ============================== -->
-      <section class="section" id="info">
-        <div class="container">
-          <div class="section-head">
-            <p class="eyebrow">Business information</p>
-            <h2><span data-l="ja" lang="ja">事業者情報</span><span data-l="en" lang="en">Business information</span></h2>
-          </div>
-
-          <dl class="info">
-            <div class="info-row">
-              <dt><span data-l="ja" lang="ja">会社名</span><span data-l="en" lang="en">Company name</span></dt>
-              <dd>
-                <span data-l="ja" lang="ja">合同会社KoyoTap</span>
-                <span data-l="en" lang="en">KoyoTap LLC</span>
-              </dd>
-            </div>
-            <div class="info-row">
-              <dt><span data-l="ja" lang="ja">代表者</span><span data-l="en" lang="en">Representative</span></dt>
-              <dd>
-                <span data-l="ja" lang="ja">山内 龍我<span class="romaji">Ryuga Yamauchi</span></span>
-                <span data-l="en" lang="en">Ryuga Yamauchi<span class="romaji">山内 龍我</span></span>
-              </dd>
-            </div>
-            <div class="info-row">
-              <dt><span data-l="ja" lang="ja">事業内容</span><span data-l="en" lang="en">Business</span></dt>
-              <dd>
-                <span data-l="ja" lang="ja">カジュアルゲームの企画・開発・配信・運営／SNSマーケティング</span>
-                <span data-l="en" lang="en">Design, development, distribution, and operation of casual games; social media marketing</span>
-              </dd>
-            </div>
-            <div class="info-row">
-              <dt><span data-l="ja" lang="ja">開発環境</span><span data-l="en" lang="en">Technology</span></dt>
-              <dd>
-                <span data-l="ja" lang="ja">Unity / C#（WebGL・Android）</span>
-                <span data-l="en" lang="en">Unity / C# (WebGL, Android)</span>
-              </dd>
-            </div>
-            <div class="info-row">
-              <dt><span data-l="ja" lang="ja">配信先</span><span data-l="en" lang="en">Platforms</span></dt>
-              <dd>
-                <span data-l="ja" lang="ja">ウェブゲームプラットフォーム / Google Play（Android）</span>
-                <span data-l="en" lang="en">Web game platforms / Google Play (Android)</span>
-              </dd>
-            </div>
-            <div class="info-row">
-              <dt><span data-l="ja" lang="ja">連絡先</span><span data-l="en" lang="en">Contact</span></dt>
-              <dd><a href="mailto:contact@koyotap.com" data-analytics="business_info">contact@koyotap.com</a></dd>
-            </div>
-            <div class="info-row">
-              <dt><span data-l="ja" lang="ja">公式サイト</span><span data-l="en" lang="en">Website</span></dt>
-              <dd><a href="https://koyotap.com/">koyotap.com</a></dd>
-            </div>
-          </dl>
         </div>
       </section>
 

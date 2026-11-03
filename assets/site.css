@@ -1509,3 +1509,32 @@ h2 {
   .analytics-consent-content { padding: 26px 20px 20px; }
   .analytics-consent-actions { grid-template-columns: 1fr; gap: 9px; margin-top: 18px; }
 }
+
+/* Detail pages remain reachable from the header on smaller screens. */
+.detail-page .section-head h1 { margin: 0 0 12px; font-size: clamp(27px, 4vw, 38px); font-weight: 800; }
+.site-header--details .nav-links a[aria-current="page"] { color: var(--text); }
+@media (max-width: 940px) {
+  .site-header--details .nav { flex-wrap: wrap; row-gap: 6px; padding-top: 6px; }
+  .site-header--details .nav .nav-links {
+    display: flex;
+    order: 3;
+    flex-basis: 100%;
+    justify-content: space-between;
+    gap: 12px;
+    border-top: 1px solid var(--border);
+  }
+  .site-header--details .nav-links a:not(.nav-detail):not(.nav-play) { display: none; }
+  .site-header--details .nav-links a.nav-detail,
+  .site-header--details .nav-links a.nav-play {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  .site-header--details .lang-switch button { min-width: 44px; min-height: 44px; padding: 2px 6px; }
+}
+@media (max-width: 720px) {
+  .detail-page .section { padding: 36px 0; }
+  .detail-page .info dd .romaji { display: block; margin-left: 0; }
+}

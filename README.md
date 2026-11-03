@@ -11,7 +11,7 @@ is the public games area.
 
 | Path | Purpose |
 |---|---|
-| `index.html` | Home page — business overview, development process, business information, contact |
+| `index.html` | Home page — vision, games, news, business overview, contact |
 | `news/index.html` | News archive with dated press release listings |
 | `news/20260929-company-established.html` | Dedicated article page for the company establishment announcement |
 | `play/index.html` | Public games area with Block Crush and Cube Merge Shot cards |
@@ -19,7 +19,9 @@ is the public games area.
 | `privacy-policy.html` | Privacy policy (Japanese is the governing text; English is a reference translation) |
 | `glowline-pipes-privacy-policy.html` | Per-app bilingual privacy policy for GlowLine Pipes on Android (English governs) |
 | `404.html` | Custom not-found page served by GitHub Pages |
-| `services.html`, `team.html` | Legacy URLs kept alive; they redirect into `index.html` sections |
+| `team.html` | Development process, linked from the shared header |
+| `company.html` | Business information, linked from the shared header |
+| `services.html` | Legacy service URL; redirects to the home business section |
 | `assets/site.css` | Shared styles (light / dark aware, brand palette) |
 | `assets/site.js` | JA / EN language switch and campaign parameter preservation |
 | `assets/play.js` | Games gallery, lazy iframe player, lifecycle message validation, and funnel events |
@@ -38,9 +40,15 @@ is the public games area.
 | `ArrowNext/privacy-policy.html` | Per-app privacy policy referenced by the Arrow Next store listing |
 | `puzzle/` | Standalone pre-registration landing page with its own GA4 tag (not part of the main site) |
 
+The development process and company information are separate pages as of 2026-11-04.
+The shared header links to both, including on mobile. Old home bookmarks `#how` and `#info`
+redirect to the corresponding page, preserving the query string.
+
 ## Public URLs
 
 - Home / developer website: `https://koyotap.com/`
+- Development process: `https://koyotap.com/team.html`
+- Business information: `https://koyotap.com/company.html`
 - News archive: `https://koyotap.com/news/`
 - Company establishment announcement: `https://koyotap.com/news/20260929-company-established.html`
 - Privacy policy: `https://koyotap.com/privacy-policy.html`
