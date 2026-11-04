@@ -193,7 +193,7 @@
       });
       if (gameId === "tall-tales") {
         var gameLang = document.documentElement.getAttribute("data-lang") === "en" ? "en" : "ja";
-        frame.src = "./game/?lang=" + gameLang;
+        frame.src = "./game/?lang=" + gameLang + "&v=release-x-20261104";
       } else {
         frame.src = gameId === "glowline-pipes" ? "./game/?standalone=1" : "./game/";
       }
