@@ -10,7 +10,8 @@
   var ALLOWED_GAMES = {
     "glowline-pipes": true,
     "block-crush": true,
-    "cube-merge-shot": true
+    "cube-merge-shot": true,
+    "tall-tales": true
   };
   var EVENT_NAMES = {
     game_select: true,
@@ -190,7 +191,12 @@
       sendEvent("play_click", gameId, {
         attempt: attempt
       });
-      frame.src = gameId === "glowline-pipes" ? "./game/?standalone=1" : "./game/";
+      if (gameId === "tall-tales") {
+        var gameLang = document.documentElement.getAttribute("data-lang") === "en" ? "en" : "ja";
+        frame.src = "./game/?lang=" + gameLang;
+      } else {
+        frame.src = gameId === "glowline-pipes" ? "./game/?standalone=1" : "./game/";
+      }
       if (frame.focus) frame.focus();
       if (frameWrap.scrollIntoView) {
         window.setTimeout(function () {
