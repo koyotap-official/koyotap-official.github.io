@@ -11,7 +11,8 @@
     "glowline-pipes": true,
     "block-crush": true,
     "cube-merge-shot": true,
-    "tall-tales": true
+    "tall-tales": true,
+    "idiom-lab": true
   };
   var EVENT_NAMES = {
     game_select: true,
@@ -191,7 +192,14 @@
       sendEvent("play_click", gameId, {
         attempt: attempt
       });
-      if (gameId === "tall-tales") {
+      if (gameId === "idiom-lab") {
+        var query = new URLSearchParams(window.location.search);
+        var gameChoice = query.get("game");
+        if (["mouth", "deadline", "burden", "heart", "dream"].indexOf(gameChoice) < 0) gameChoice = "mouth";
+        var chosenLang = query.get("lang");
+        if (["ja", "en", "fr", "it", "de", "es", "tr", "zh-CN", "ko", "pt-BR", "ru"].indexOf(chosenLang) < 0) chosenLang = document.documentElement.getAttribute("data-lang") === "en" ? "en" : "ja";
+        frame.src = "./game/?lang=" + encodeURIComponent(chosenLang) + "&game=" + gameChoice + "&v=idiom-lab-20261105-v1";
+      } else if (gameId === "tall-tales") {
         var gameLang = document.documentElement.getAttribute("data-lang") === "en" ? "en" : "ja";
         frame.src = "./game/?lang=" + gameLang + "&v=release-x-20261104";
       } else {
