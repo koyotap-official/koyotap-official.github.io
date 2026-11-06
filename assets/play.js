@@ -198,7 +198,7 @@
         if (["mouth", "deadline", "burden", "heart", "dream"].indexOf(gameChoice) < 0) gameChoice = "mouth";
         var chosenLang = query.get("lang");
         if (["ja", "en", "fr", "it", "de", "es", "tr", "zh-CN", "ko", "pt-BR", "ru"].indexOf(chosenLang) < 0) chosenLang = document.documentElement.getAttribute("data-lang") === "en" ? "en" : "ja";
-        frame.src = "./game/?lang=" + encodeURIComponent(chosenLang) + "&game=" + gameChoice + "&v=idiom-lab-20261106-v2";
+        frame.src = "./game/?lang=" + encodeURIComponent(chosenLang) + "&game=" + gameChoice + "&v=idiom-lab-20261106-v3";
       } else if (gameId === "tall-tales") {
         var gameLang = document.documentElement.getAttribute("data-lang") === "en" ? "en" : "ja";
         frame.src = "./game/?lang=" + gameLang + "&v=release-x-20261104";
