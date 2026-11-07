@@ -204,11 +204,10 @@
         frame.src = "./game/?lang=" + encodeURIComponent(chosenLang) + "&game=" + gameChoice + "&v=idiom-lab-20261106-v3";
       } else if (gameId === "craft-studio") {
         var craftQuery = new URLSearchParams(window.location.search);
-        var craftChoice = craftQuery.get("game");
-        if (["pottery", "cake", "candy"].indexOf(craftChoice) < 0) craftChoice = "pottery";
+        var craftChoice = "pottery";
         var craftLang = craftQuery.get("lang");
         if (["ja", "en", "fr", "it", "de", "es", "tr", "zh-CN", "ko", "pt-BR", "ru"].indexOf(craftLang) < 0) craftLang = document.documentElement.getAttribute("data-lang") === "en" ? "en" : "ja";
-        frame.src = "./game/?lang=" + encodeURIComponent(craftLang) + "&game=" + craftChoice + "&v=craft-studio-20261107-v4";
+        frame.src = "./game/?lang=" + encodeURIComponent(craftLang) + "&game=" + craftChoice + "&v=craft-studio-20261107-v5";
       } else if (gameId === "color-sculptures") {
         var sculptureLang = document.documentElement.getAttribute("data-lang") === "en" ? "en" : "ja";
         frame.src = "./game/?lang=" + sculptureLang + "&v=color-sculptures-20261107-v3";
