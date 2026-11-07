@@ -1,0 +1,12 @@
+Little Fish Trios — audio effects
+
+Kenney: Interface Sounds and Music Jingles, CC0 1.0.
+https://kenney.nl/assets/interface-sounds
+https://kenney.nl/assets/music-jingles
+https://creativecommons.org/publicdomain/zero/1.0/
+Credit is optional.
+
+Sonniss GDC 2026 Game Audio Bundle: Cartoon Bubbles Short (Cinematic Sound Design) and Water Liquid Impact Bubble Hit 04 (344 Audio).
+Royalty-free game incorporation under the bundled GameAudioGDC license, documented in the existing library LICENSE-NOTES.md. These are edited, shortened game cues; no source library is distributed. No AI training use or standalone resale of source recordings.
+https://sonniss.com/gameaudiogdc
+See sources.json for source filenames, transformations and hashes.
