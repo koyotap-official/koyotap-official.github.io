@@ -206,7 +206,7 @@
         if (["pottery", "cake", "candy"].indexOf(craftChoice) < 0) craftChoice = "pottery";
         var craftLang = craftQuery.get("lang");
         if (["ja", "en", "fr", "it", "de", "es", "tr", "zh-CN", "ko", "pt-BR", "ru"].indexOf(craftLang) < 0) craftLang = document.documentElement.getAttribute("data-lang") === "en" ? "en" : "ja";
-        frame.src = "./game/?lang=" + encodeURIComponent(craftLang) + "&game=" + craftChoice + "&v=craft-studio-20261107-v1";
+        frame.src = "./game/?lang=" + encodeURIComponent(craftLang) + "&game=" + craftChoice + "&v=craft-studio-20261107-v2";
       } else if (gameId === "tall-tales") {
         var gameLang = document.documentElement.getAttribute("data-lang") === "en" ? "en" : "ja";
         frame.src = "./game/?lang=" + gameLang + "&v=release-x-20261104";
