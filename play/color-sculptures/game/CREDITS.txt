@@ -3,3 +3,5 @@ Three.js: MIT, see LICENSE-THREE.txt
 Music: Cozy Puzzle Title — MintoDog / OpenGameArt, CC0
 https://opengameart.org/content/cozy-puzzle-title
 Game art: generated with ChatGPT
+SFX: Kenney interface / sci-fi / digital audio packs, CC0
+https://kenney.nl/assets
