@@ -12,7 +12,8 @@
     "block-crush": true,
     "cube-merge-shot": true,
     "tall-tales": true,
-    "idiom-lab": true
+    "idiom-lab": true,
+    "craft-studio": true
   };
   var EVENT_NAMES = {
     game_select: true,
@@ -199,6 +200,13 @@
         var chosenLang = query.get("lang");
         if (["ja", "en", "fr", "it", "de", "es", "tr", "zh-CN", "ko", "pt-BR", "ru"].indexOf(chosenLang) < 0) chosenLang = document.documentElement.getAttribute("data-lang") === "en" ? "en" : "ja";
         frame.src = "./game/?lang=" + encodeURIComponent(chosenLang) + "&game=" + gameChoice + "&v=idiom-lab-20261106-v3";
+      } else if (gameId === "craft-studio") {
+        var craftQuery = new URLSearchParams(window.location.search);
+        var craftChoice = craftQuery.get("game");
+        if (["pottery", "cake", "candy"].indexOf(craftChoice) < 0) craftChoice = "pottery";
+        var craftLang = craftQuery.get("lang");
+        if (["ja", "en", "fr", "it", "de", "es", "tr", "zh-CN", "ko", "pt-BR", "ru"].indexOf(craftLang) < 0) craftLang = document.documentElement.getAttribute("data-lang") === "en" ? "en" : "ja";
+        frame.src = "./game/?lang=" + encodeURIComponent(craftLang) + "&game=" + craftChoice + "&v=craft-studio-20261107-v1";
       } else if (gameId === "tall-tales") {
         var gameLang = document.documentElement.getAttribute("data-lang") === "en" ? "en" : "ja";
         frame.src = "./game/?lang=" + gameLang + "&v=release-x-20261104";

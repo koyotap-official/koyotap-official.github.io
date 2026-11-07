@@ -1,1 +1,4 @@
 /play/idiom-lab/game/index.html -text
+/play/craft-studio/game/** -text
+# Preserve upstream GLSL source strings inside the validated generated bundle.
+/play/craft-studio/game/index.html whitespace=-blank-at-eol,-space-before-tab
