@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="ja" data-lang="ja" data-play-page="true" data-game-id="little-fish-trios"
+  data-title-ja="Little Fish Trios — KoyoTap"
+  data-title-en="Little Fish Trios — KoyoTap"
+  data-desc-ja="泡を選んで、同じ魚を3匹そろえよう。7つの待機枠を使って海の仲間を救う、無料の3Dパズル。"
+  data-desc-en="Pop bubbles and match three fish. Rescue a colorful reef in this free 3D puzzle with seven waiting slots.">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Little Fish Trios — KoyoTap</title>
+    <meta name="description" content="泡を選んで、同じ魚を3匹そろえよう。7つの待機枠を使って海の仲間を救う、無料の3Dパズル。">
+    <link rel="canonical" href="https://koyotap.com/play/little-fish-trios/">
+    <meta name="theme-color" content="#07505b">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="KoyoTap">
+    <meta property="og:title" content="Little Fish Trios — KoyoTap">
+    <meta property="og:description" content="泡を選び、同じ魚を3匹そろえる海の3Dパズル。スマートフォンでもPCでも、インストールなしで遊べます。">
+    <meta property="og:url" content="https://koyotap.com/play/little-fish-trios/">
+    <meta property="og:image" content="https://koyotap.com/assets/play/little-fish-trios-poster.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": ["VideoGame", "WebApplication"],
+            "@id": "https://koyotap.com/play/little-fish-trios/#game",
+            "name": "Little Fish Trios",
+            "url": "https://koyotap.com/play/little-fish-trios/",
+            "description": "A free 3D fish puzzle. Select bubbles, match three identical fish, and clear the reef before seven waiting slots fill up.",
+            "image": "https://koyotap.com/assets/play/little-fish-trios-poster.jpg",
+            "applicationCategory": "GameApplication",
+            "operatingSystem": "Any modern web browser",
+            "gamePlatform": ["Web browser", "Mobile web"],
+            "genre": ["Puzzle", "Casual game", "Matching game"],
+            "playMode": "SinglePlayer",
+            "isAccessibleForFree": true,
+            "offers": { "@type": "Offer", "price": 0, "priceCurrency": "USD" },
+            "publisher": { "@id": "https://koyotap.com/#organization" },
+            "inLanguage": ["ja", "en", "fr", "it", "de", "es", "tr", "zh-CN", "ko", "pt-BR", "ru"]
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "KoyoTap", "item": "https://koyotap.com/" },
+              { "@type": "ListItem", "position": 2, "name": "Games", "item": "https://koyotap.com/play/" },
+              { "@type": "ListItem", "position": 3, "name": "Little Fish Trios", "item": "https://koyotap.com/play/little-fish-trios/" }
+            ]
+          }
+        ]
+      }
+    </script>
+    <link rel="icon" href="../../assets/koyotap-mark.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="../../assets/apple-touch-icon-v2.png">
+    <meta name="apple-mobile-web-app-title" content="KoyoTap">
+    <link rel="stylesheet" href="../../assets/site.css?v=mobile-home-20261029-1">
+    <style>
+      html, body { scrollbar-width: none; }
+      html::-webkit-scrollbar, body::-webkit-scrollbar { display: none; }
+      .play-body { font-size: 16px; }
+      .play-body button { min-width: 48px; min-height: 48px; font-size: max(12px, 1em); }
+      .play-body .nav-links a, .play-body .brand, .play-controls a, .footer-links a { min-height: 48px; display: inline-flex; align-items: center; }
+      .play-stage { max-width: 1024px; }
+      .play-frame-toolbar { margin-bottom: 8px; }
+      .play-frame-toolbar button { font-size: 14px; }
+      .play-frame-wrap { scroll-margin-top: 70px; }
+      .play-frame-shell { min-height: 0; height: min(760px, calc(100svh - 128px)); height: min(760px, calc(100dvh - 128px)); background: #07505b; }
+      .play-frame-shell iframe { background: #07505b; }
+      .play-frame-shell:fullscreen, .play-frame-shell--fallback-fullscreen { width: 100vw; height: 100svh; height: 100dvh; min-height: 0; border: 0; border-radius: 0; }
+      .play-poster--little-fish-trios { width: min(100%, 520px); margin: auto; background: #07505b; }
+      .play-poster--little-fish-trios img { object-fit: contain; object-position: center; }
+      @media (max-width: 480px) {
+        .play-body .nav-links a:not(.nav-play) { display: none; }
+        .play-game-container { padding-left: 12px; padding-right: 12px; }
+        .play-game-head h1 { font-size: 28px; }
+        .play-breadcrumb { margin-bottom: 10px; }
+        .play-game-head { margin-bottom: 12px; }
+        .play-poster--little-fish-trios { aspect-ratio: auto; height: min(640px, calc(100svh - 180px)); height: min(640px, calc(100dvh - 180px)); }
+        .play-frame-shell { border-radius: 12px; }
+        .play-frame-shell:fullscreen, .play-frame-shell--fallback-fullscreen { border-radius: 0; }
+      }
+    </style>
+    <script>
+      (function () {
+        var query = new URLSearchParams(location.search).get("lang");
+        var saved = "";
+        try { saved = localStorage.getItem("koyotap-lang"); } catch (e) { /* Storage is optional. */ }
+        var lang = query ? (query === "ja" ? "ja" : "en") :
+          (saved === "ja" || saved === "en" ? saved : (String(navigator.language || "").toLowerCase().indexOf("ja") === 0 ? "ja" : "en"));
+        document.documentElement.setAttribute("data-lang", lang);
+        document.documentElement.lang = lang;
+      })();
+    </script>
+  </head>
+
+  <body class="play-body">
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="../../index.html" data-preserve-utm aria-label="KoyoTap">
+          <svg viewBox="0 0 372 370" aria-hidden="true">
+            <rect x="0" y="38" width="168" height="168" rx="50" fill="#2f7bff"/>
+            <rect x="144" y="0" width="168" height="168" rx="50" fill="#ff4a3d"/>
+            <rect x="42" y="202" width="168" height="168" rx="50" fill="#ffd23f"/>
+            <rect x="204" y="160" width="168" height="168" rx="50" fill="#22b573"/>
+          </svg>
+          <span>KoyoTap</span>
+        </a>
+        <nav class="nav-links" aria-label="サイトナビゲーション">
+          <a class="nav-play nav-keep" href="../" data-preserve-utm><span data-l="ja" lang="ja">ゲーム</span><span data-l="en" lang="en">Games</span></a>
+          <a href="../../index.html#business" data-preserve-utm><span data-l="ja" lang="ja">事業概要</span><span data-l="en" lang="en">What we do</span></a>
+          <a class="nav-keep nav-contact" href="../../index.html#contact" data-preserve-utm><span data-l="ja" lang="ja">お問い合わせ</span><span data-l="en" lang="en">Contact</span></a>
+        </nav>
+        <div class="lang-switch" role="group" aria-label="Language / 言語">
+          <button type="button" data-set-lang="ja" aria-pressed="true">JA</button>
+          <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="play-game-main">
+      <div class="container play-game-container">
+        <nav class="play-breadcrumb" aria-label="パンくずリスト">
+          <a href="../" data-preserve-utm><span data-l="ja" lang="ja">ゲーム</span><span data-l="en" lang="en">Games</span></a>
+          <span aria-hidden="true">/</span><span>Little Fish Trios</span>
+        </nav>
+        <div class="play-game-head">
+          <h1>Little Fish Trios</h1>
+          <p data-l="ja" lang="ja">泡を選んで、同じ魚を3匹そろえよう。</p>
+          <p data-l="en" lang="en">Pop a bubble. Match three. Rescue the reef.</p>
+        </div>
+
+        <div class="play-stage">
+          <div class="play-poster play-poster--little-fish-trios" data-game-poster>
+            <img src="../../assets/play/little-fish-trios-poster.jpg" alt="Little Fish Trios: colorful fish in bubbles beneath seven waiting slots" fetchpriority="high">
+            <div class="play-poster-overlay">
+              <p data-l="ja" lang="ja">ブラウザですぐ遊べます</p>
+              <p data-l="en" lang="en">Ready in your browser</p>
+              <button class="play-start-button" type="button" data-game-start><span data-l="ja" lang="ja">プレイ</span><span data-l="en" lang="en">Play</span></button>
+            </div>
+          </div>
+          <div class="play-frame-wrap" data-game-frame-wrap hidden>
+            <div class="play-frame-toolbar">
+              <button type="button" data-game-fullscreen><span data-l="ja" lang="ja">全画面</span><span data-l="en" lang="en">Fullscreen</span></button>
+              <button class="play-retry" type="button" data-game-retry hidden><span data-l="ja" lang="ja">再試行</span><span data-l="en" lang="en">Try again</span></button>
+            </div>
+            <div class="play-frame-shell" data-game-frame-shell>
+              <iframe data-game-frame title="Little Fish Trios fish puzzle" loading="lazy" allow="fullscreen; autoplay" referrerpolicy="strict-origin-when-cross-origin" tabindex="0"></iframe>
+            </div>
+            <p class="play-status" data-game-status role="status" aria-live="polite" hidden></p>
+          </div>
+        </div>
+
+        <div class="play-controls">
+          <p data-l="ja" lang="ja">泡の魚はまとめて移動。同じ魚を3匹そろえ、7つの枠が埋まる前に救出しよう。</p>
+          <p data-l="en" lang="en">A bubble releases all its fish. Match three before the seven waiting slots fill up.</p>
+          <a href="../glowline-pipes/" data-preserve-utm><span data-l="ja" lang="ja">Glowline Pipesも遊ぶ →</span><span data-l="en" lang="en">Play Glowline Pipes →</span></a>
+        </div>
+
+        <section class="play-seo-copy play-seo-copy--detail" aria-labelledby="little-fish-trios-about-title">
+          <h2 id="little-fish-trios-about-title"><span data-l="ja" lang="ja">Little Fish Triosとは？</span><span data-l="en" lang="en">About Little Fish Trios</span></h2>
+          <p data-l="ja" lang="ja">Little Fish Triosは、泡の中の魚を選び、同じ魚を3匹ずつそろえる無料の3Dパズルです。選ぶ順番を考えながら7つの待機枠を使い、海の仲間をすべて救いましょう。スマートフォンでもPCでも、インストールなしで遊べます。</p>
+          <p data-l="en" lang="en">Little Fish Trios is a free 3D puzzle about matching fish in bubbles. Plan which bubble to pop, make groups of three, and rescue every fish without filling the seven waiting slots. Play on mobile or desktop with no installation.</p>
+          <h3><span data-l="ja" lang="ja">遊び方</span><span data-l="en" lang="en">How to play</span></h3>
+          <ul>
+            <li data-l="ja" lang="ja">泡をタップすると、中の魚が待機枠へ順に移動します。</li>
+            <li data-l="en" lang="en">Tap a bubble to move its fish into the waiting slots, one by one.</li>
+            <li data-l="ja" lang="ja">同じ魚が3匹そろうと水槽へ。すべて救出するとクリアです。</li>
+            <li data-l="en" lang="en">Three matching fish move to the aquarium. Rescue them all to clear the level.</li>
+            <li data-l="ja" lang="ja">枠が埋まりそうなら、「もどす」「ヒント」「シャッフル」を使いましょう。</li>
+            <li data-l="en" lang="en">Use Undo, Hint, or Shuffle when the slots are filling up.</li>
+          </ul>
+        </section>
+        <p class="play-footer-note"><a href="../../privacy-policy.html" data-preserve-utm><span data-l="ja" lang="ja">プライバシーポリシー</span><span data-l="en" lang="en">Privacy Policy</span></a></p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>&copy; 2026 KoyoTap</span>
+        <div class="footer-links">
+          <a href="../" data-preserve-utm><span data-l="ja" lang="ja">ゲーム一覧</span><span data-l="en" lang="en">All games</span></a>
+          <a href="../../index.html" data-preserve-utm><span data-l="ja" lang="ja">ホーム</span><span data-l="en" lang="en">Home</span></a>
+          <a href="mailto:contact@koyotap.com"><span data-l="ja" lang="ja">お問い合わせ</span><span data-l="en" lang="en">Contact</span></a>
+        </div>
+      </div>
+    </footer>
+    <script src="../../assets/site.js?v=play-20260914-consent-1"></script>
+    <script src="../../assets/analytics.js?v=legal-20261026-1"></script>
+    <script src="../../assets/play.js?v=little-fish-trios-20261107-v1"></script>
+  </body>
+</html>

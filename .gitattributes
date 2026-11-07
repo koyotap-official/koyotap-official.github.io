@@ -2,3 +2,6 @@
 /play/craft-studio/game/** -text
 # Preserve upstream GLSL source strings inside the validated generated bundle.
 /play/craft-studio/game/index.html whitespace=-blank-at-eol,-space-before-tab
+# Keep validated Little Fish Trios output byte-identical, including upstream shader strings.
+/play/little-fish-trios/game/** -text whitespace=cr-at-eol
+/play/little-fish-trios/game/assets/*.js whitespace=cr-at-eol,-blank-at-eol,-space-before-tab

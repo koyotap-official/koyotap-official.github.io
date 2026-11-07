@@ -14,7 +14,8 @@
     "tall-tales": true,
     "idiom-lab": true,
     "craft-studio": true,
-    "color-sculptures": true
+    "color-sculptures": true,
+    "little-fish-trios": true
   };
   var EVENT_NAMES = {
     game_select: true,
@@ -211,6 +212,11 @@
       } else if (gameId === "color-sculptures") {
         var sculptureLang = document.documentElement.getAttribute("data-lang") === "en" ? "en" : "ja";
         frame.src = "./game/?lang=" + sculptureLang + "&v=color-sculptures-20261107-v1";
+      } else if (gameId === "little-fish-trios") {
+        var fishQuery = new URLSearchParams(window.location.search);
+        var fishLang = fishQuery.get("lang");
+        if (["ja", "en", "fr", "it", "de", "es", "tr", "zh", "zh-CN", "ko", "pt-BR", "ru"].indexOf(fishLang) < 0) fishLang = document.documentElement.getAttribute("data-lang") === "en" ? "en" : "ja";
+        frame.src = "./game/?lang=" + encodeURIComponent(fishLang) + "&v=little-fish-trios-20261107-v1";
       } else if (gameId === "tall-tales") {
         var gameLang = document.documentElement.getAttribute("data-lang") === "en" ? "en" : "ja";
         frame.src = "./game/?lang=" + gameLang + "&v=release-x-20261104";
