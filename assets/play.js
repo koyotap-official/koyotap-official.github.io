@@ -207,7 +207,7 @@
         var craftChoice = "pottery";
         var craftLang = craftQuery.get("lang");
         if (["ja", "en", "fr", "it", "de", "es", "tr", "zh-CN", "ko", "pt-BR", "ru"].indexOf(craftLang) < 0) craftLang = document.documentElement.getAttribute("data-lang") === "en" ? "en" : "ja";
-        frame.src = "./game/?lang=" + encodeURIComponent(craftLang) + "&game=" + craftChoice + "&v=craft-studio-20261108-v7";
+        frame.src = "./game/?lang=" + encodeURIComponent(craftLang) + "&game=" + craftChoice + "&v=craft-studio-20261108-v8";
       } else if (gameId === "color-sculptures") {
         var sculptureLang = document.documentElement.getAttribute("data-lang") === "en" ? "en" : "ja";
         frame.src = "./game/?lang=" + sculptureLang + "&v=color-sculptures-20261108-v4";
