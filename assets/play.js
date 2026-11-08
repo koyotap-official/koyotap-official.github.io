@@ -211,7 +211,7 @@
         frame.src = "./game/?lang=" + encodeURIComponent(craftLang) + "&game=" + craftChoice + "&v=craft-studio-20261108-v9";
       } else if (gameId === "cake-lettering") {
         var cakeLang = document.documentElement.getAttribute("data-lang") === "ja" ? "ja" : "en";
-        frame.src = "./game/?lang=" + encodeURIComponent(cakeLang) + "&v=cake-lettering-20261108-v4";
+        frame.src = "./game/?lang=" + encodeURIComponent(cakeLang) + "&v=cake-lettering-20261108-v4-1";
       } else if (gameId === "color-sculptures") {
         var sculptureLang = document.documentElement.getAttribute("data-lang") === "en" ? "en" : "ja";
         frame.src = "./game/?lang=" + sculptureLang + "&v=color-sculptures-20261108-v8";
