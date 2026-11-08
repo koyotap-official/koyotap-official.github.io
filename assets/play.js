@@ -215,7 +215,7 @@
         var fishQuery = new URLSearchParams(window.location.search);
         var fishLang = fishQuery.get("lang");
         if (["ja", "en", "fr", "it", "de", "es", "tr", "zh", "zh-CN", "ko", "pt-BR", "ru"].indexOf(fishLang) < 0) fishLang = document.documentElement.getAttribute("data-lang") === "en" ? "en" : "ja";
-        frame.src = "./game/?lang=" + encodeURIComponent(fishLang) + "&v=little-fish-trios-20261107-v2";
+        frame.src = "./game/?lang=" + encodeURIComponent(fishLang) + "&v=little-fish-trios-20261108-v3";
       } else if (gameId === "tall-tales") {
         var gameLang = document.documentElement.getAttribute("data-lang") === "en" ? "en" : "ja";
         frame.src = "./game/?lang=" + gameLang + "&v=release-x-20261104";
