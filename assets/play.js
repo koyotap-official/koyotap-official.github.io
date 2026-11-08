@@ -210,7 +210,7 @@
         frame.src = "./game/?lang=" + encodeURIComponent(craftLang) + "&game=" + craftChoice + "&v=craft-studio-20261108-v8";
       } else if (gameId === "color-sculptures") {
         var sculptureLang = document.documentElement.getAttribute("data-lang") === "en" ? "en" : "ja";
-        frame.src = "./game/?lang=" + sculptureLang + "&v=color-sculptures-20261108-v5";
+        frame.src = "./game/?lang=" + sculptureLang + "&v=color-sculptures-20261108-v5-1";
       } else if (gameId === "little-fish-trios") {
         var fishQuery = new URLSearchParams(window.location.search);
         var fishLang = fishQuery.get("lang");
