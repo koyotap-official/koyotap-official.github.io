@@ -228,7 +228,7 @@
         var bentoQuery = new URLSearchParams(window.location.search);
         var bentoLang = bentoQuery.get("lang");
         if (["ja", "en", "fr", "it", "de", "es", "tr", "zh-CN", "ko", "pt-BR", "ru"].indexOf(bentoLang) < 0) bentoLang = document.documentElement.getAttribute("data-lang") === "en" ? "en" : "ja";
-        gameUrl = "./game/?lang=" + encodeURIComponent(bentoLang) + "&v=bento-box-20261110-v3";
+        gameUrl = "./game/?lang=" + encodeURIComponent(bentoLang) + "&v=bento-box-20261110-v4";
       } else if (gameId === "color-sculptures") {
         var sculptureLang = document.documentElement.getAttribute("data-lang") === "en" ? "en" : "ja";
         gameUrl = "./game/?lang=" + sculptureLang + "&v=color-sculptures-20261109-v9";
