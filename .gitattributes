@@ -8,3 +8,7 @@
 
 /play/cake-lettering/game/** -text
 /play/cake-lettering/game/index.html whitespace=-blank-at-eol,-space-before-tab
+
+# Preserve verified unlisted Bento output bytes and upstream Three.js GLSL strings.
+/browser_play/bento-box/game/** -text
+/browser_play/bento-box/game/assets/*.js whitespace=cr-at-eol,-blank-at-eol,-space-before-tab

@@ -15,6 +15,7 @@
     "idiom-lab": true,
     "craft-studio": true,
     "cake-lettering": true,
+    "bento-box": true,
     "color-sculptures": true,
     "little-fish-trios": true
   };
@@ -223,6 +224,11 @@
       } else if (gameId === "cake-lettering") {
         var cakeLang = document.documentElement.getAttribute("data-lang") === "ja" ? "ja" : "en";
         gameUrl = "./game/?lang=" + encodeURIComponent(cakeLang) + "&v=cake-lettering-20261108-v4-1";
+      } else if (gameId === "bento-box") {
+        var bentoQuery = new URLSearchParams(window.location.search);
+        var bentoLang = bentoQuery.get("lang");
+        if (["ja", "en", "fr", "it", "de", "es", "tr", "zh-CN", "ko", "pt-BR", "ru"].indexOf(bentoLang) < 0) bentoLang = document.documentElement.getAttribute("data-lang") === "en" ? "en" : "ja";
+        gameUrl = "./game/?lang=" + encodeURIComponent(bentoLang) + "&v=bento-box-20261110-v1";
       } else if (gameId === "color-sculptures") {
         var sculptureLang = document.documentElement.getAttribute("data-lang") === "en" ? "en" : "ja";
         gameUrl = "./game/?lang=" + sculptureLang + "&v=color-sculptures-20261109-v9";
