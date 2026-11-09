@@ -107,6 +107,13 @@
     var firstActionSent = false;
     var loadErrorSent = false;
     var loadTimer = 0;
+    var adStartup = false;
+    var adStartupSeen = false;
+
+    function armLoadTimer() {
+      clearLoadTimer();
+      loadTimer = window.setTimeout(showError, 15000);
+    }
 
     function setStatus(message, visible) {
       status.textContent = message || "";
@@ -154,6 +161,9 @@
 
     function resetFrame() {
       clearLoadTimer();
+      adStartup = false;
+      adStartupSeen = false;
+      if (fullscreenButton) fullscreenButton.disabled = false;
       // Replacing the node makes messages from a timed-out/old attempt fail
       // the source allowlist check below.
       var oldFrame = frame;
@@ -196,44 +206,49 @@
       sendEvent("play_click", gameId, {
         attempt: attempt
       });
+      var gameUrl;
       if (gameId === "idiom-lab") {
         var query = new URLSearchParams(window.location.search);
         var gameChoice = query.get("game");
         if (["mouth", "deadline", "burden", "heart", "dream"].indexOf(gameChoice) < 0) gameChoice = "mouth";
         var chosenLang = query.get("lang");
         if (["ja", "en", "fr", "it", "de", "es", "tr", "zh-CN", "ko", "pt-BR", "ru"].indexOf(chosenLang) < 0) chosenLang = document.documentElement.getAttribute("data-lang") === "en" ? "en" : "ja";
-        frame.src = "./game/?lang=" + encodeURIComponent(chosenLang) + "&game=" + gameChoice + "&v=idiom-lab-20261106-v3";
+        gameUrl = "./game/?lang=" + encodeURIComponent(chosenLang) + "&game=" + gameChoice + "&v=idiom-lab-20261106-v3";
       } else if (gameId === "craft-studio") {
         var craftQuery = new URLSearchParams(window.location.search);
         var craftChoice = "pottery";
         var craftLang = craftQuery.get("lang");
         if (["ja", "en", "fr", "it", "de", "es", "tr", "zh-CN", "ko", "pt-BR", "ru"].indexOf(craftLang) < 0) craftLang = document.documentElement.getAttribute("data-lang") === "en" ? "en" : "ja";
-        frame.src = "./game/?lang=" + encodeURIComponent(craftLang) + "&game=" + craftChoice + "&v=craft-studio-20261108-v9";
+        gameUrl = "./game/?lang=" + encodeURIComponent(craftLang) + "&game=" + craftChoice + "&v=craft-studio-20261108-v9";
       } else if (gameId === "cake-lettering") {
         var cakeLang = document.documentElement.getAttribute("data-lang") === "ja" ? "ja" : "en";
-        frame.src = "./game/?lang=" + encodeURIComponent(cakeLang) + "&v=cake-lettering-20261108-v4-1";
+        gameUrl = "./game/?lang=" + encodeURIComponent(cakeLang) + "&v=cake-lettering-20261108-v4-1";
       } else if (gameId === "color-sculptures") {
         var sculptureLang = document.documentElement.getAttribute("data-lang") === "en" ? "en" : "ja";
-        frame.src = "./game/?lang=" + sculptureLang + "&v=color-sculptures-20261109-v9";
+        gameUrl = "./game/?lang=" + sculptureLang + "&v=color-sculptures-20261109-v9";
       } else if (gameId === "little-fish-trios") {
         var fishQuery = new URLSearchParams(window.location.search);
         var fishLang = fishQuery.get("lang");
         if (["ja", "en", "fr", "it", "de", "es", "tr", "zh", "zh-CN", "ko", "pt-BR", "ru"].indexOf(fishLang) < 0) fishLang = document.documentElement.getAttribute("data-lang") === "en" ? "en" : "ja";
-        frame.src = "./game/?lang=" + encodeURIComponent(fishLang) + "&v=little-fish-trios-20261108-v4";
+        gameUrl = "./game/?lang=" + encodeURIComponent(fishLang) + "&v=little-fish-trios-20261108-v4";
       } else if (gameId === "tall-tales") {
         var gameLang = document.documentElement.getAttribute("data-lang") === "en" ? "en" : "ja";
-        frame.src = "./game/?lang=" + gameLang + "&v=release-x-20261104";
+        gameUrl = "./game/?lang=" + gameLang + "&v=release-x-20261104";
       } else {
-        frame.src = gameId === "glowline-pipes" ? "./game/?standalone=1" : "./game/";
+        gameUrl = gameId === "glowline-pipes" ? "./game/?standalone=1" : "./game/";
       }
+      // Forward only Google's explicit fake-ad mode; retain each game's route.
+      if (new URLSearchParams(window.location.search).get("h5ads") === "test") {
+        gameUrl += (gameUrl.indexOf("?") === -1 ? "?" : "&") + "h5ads=test";
+      }
+      frame.src = gameUrl;
       if (frame.focus) frame.focus();
       if (frameWrap.scrollIntoView) {
         window.setTimeout(function () {
           frameWrap.scrollIntoView({ behavior: "smooth", block: "start" });
         }, 20);
       }
-      clearLoadTimer();
-      loadTimer = window.setTimeout(showError, 15000);
+      armLoadTimer();
     }
 
     startButton.addEventListener("click", function () {
@@ -287,10 +302,30 @@
       if (data.type !== "koyotap:game" || data.gameId !== gameId) return;
       if (typeof data.event !== "string") return;
 
+      // Do not count advertising time against the game module's load deadline.
+      if (data.event === "ad_startup_begin") {
+        if (!gameStarted || ready || adStartupSeen) return;
+        adStartupSeen = true;
+        adStartup = true;
+        clearLoadTimer();
+        retryButton.hidden = true;
+        if (fullscreenButton) fullscreenButton.disabled = true;
+        return;
+      }
+      if (data.event === "ad_startup_end") {
+        if (!adStartup || ready) return;
+        adStartup = false;
+        if (fullscreenButton) fullscreenButton.disabled = false;
+        armLoadTimer();
+        return;
+      }
+
       if (data.event === "ready") {
         if (readyEventSent) return;
         readyEventSent = true;
         ready = true;
+        adStartup = false;
+        if (fullscreenButton) fullscreenButton.disabled = false;
         clearLoadTimer();
         retryButton.hidden = true;
         setStatus(

@@ -219,7 +219,15 @@ parent.postMessage({
 clamps and forwards only those numeric fields. Retry creates a fresh iframe and accepts
 `game_start` once for that iframe lifetime.
 
-## Editing
+## H5 game advertising
+
+The nine public games share a startup ad loader and a reusable interstitial/reward
+API. Live requests are disabled pending actual serving-domain approval. See
+[docs/h5-games-ads.md](docs/h5-games-ads.md) for integration, testing, and activation.
+The existing game code is preserved byte for byte; five inline entries are extracted
+without rebuilding. Existing analytics and homepage/catalog advertising stay paused.
+
+## Editing the static site
 
 Static HTML and CSS with no build step — edit and push to `main`, and GitHub Pages redeploys.
 

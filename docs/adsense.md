@@ -1,5 +1,13 @@
 # Google AdSense setup
 
+## 2026-11-09 H5 game integration
+
+The nine own-site games now use the shared startup preroll loader described in
+[h5-games-ads.md](h5-games-ads.md). Live H5 requests are disabled until the actual
+serving domain is approved and the required consent settings are ready. Google's
+official fake-ad mode is available with `?h5ads=test`. This does not restore the
+historical homepage/catalog Auto ads or optional analytics described below.
+
 **2026-10-26: Loading is paused on the home page and games catalog.**
 The settings and checks below describe the historical setup; do not restore the
 script or activate ads without a reviewed audience, consent and data-handling
