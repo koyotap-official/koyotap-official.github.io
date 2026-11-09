@@ -130,7 +130,23 @@
       "originalHtmlSha256": "648c8c3ea742f08e72605a74cc08467409cbe3de0e92c7f38e4d72c72c54d941",
       "integratedHtmlSha256": "6c25fd4222453a2c17d749cd2f12dccc4613e1054c7a5044f6828151231ce9e8",
       "originalScriptAttributes": "",
-      "standalone": false
+      "standalone": false,
+      "updates": [
+        {
+          "version": "color-sculptures-20261110-v10",
+          "entryKind": "classic",
+          "entry": "./color-sculptures-v10.js",
+          "entryPath": "play/color-sculptures/game/color-sculptures-v10.js",
+          "sourceCommit": "407fe99a044e6bf15def0f256ddafc4e6f9aaccf",
+          "standaloneSha256": "56ebb4616882dcb359d57bbaa99f1398944396e02eba90b74c6659d308a199fe",
+          "previousEntrySha256": "281f7af76aff3e250203a1f021d911697deb30f70560662a857f8e01ba993f60",
+          "entrySha256": "5ca6cbe0d9fdfe84e7bc21c5cd7dc9d58967cd1899b7cfec893c1ac42ae8af1f",
+          "entryBytes": 5274006,
+          "integratedHtmlSha256": "af85b4c9a8081ec6e0ee1ae6db6bc5c52f33beae1c144976b90ee5d36872e79c",
+          "wrapperVersion": "color-sculptures-20261110-v10",
+          "wrapperSha256": "9527e857889c4fed9154899802e1204536ddb6e460240bddbd486e6b917d947b"
+        }
+      ]
     },
     {
       "gameId": "little-fish-trios",

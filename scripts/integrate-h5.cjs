@@ -38,14 +38,14 @@ function publicBytes(relative, bytes) {
   return normalized;
 }
 
-function wrapperWithVersion(text, gameId) {
+function wrapperWithVersion(text, gameId, targetVersion = version) {
   let count = 0;
   const next = text.replace(/(<script\b[^>]*\bsrc=)(["'])([^"']+)(\2)/gi, (match, prefix, quote, src) => {
     if (!/(?:^|\/)assets\/play\.js(?:\?|$)/.test(src)) return match;
     count++;
     const updated = /[?&]v=/.test(src)
-      ? src.replace(/([?&]v=)[^&#]*/, '$1' + version)
-      : src + (src.includes('?') ? '&' : '?') + 'v=' + version;
+      ? src.replace(/([?&]v=)[^&#]*/, '$1' + targetVersion)
+      : src + (src.includes('?') ? '&' : '?') + 'v=' + targetVersion;
     return prefix + quote + updated + quote;
   });
   check(count === 1, gameId + ': expected one wrapper play.js reference');
@@ -63,9 +63,27 @@ function verifyManifest(manifest) {
     check(sha256(entry) === game.originalEntrySha256 && sha256(entry) === game.entrySha256,
       gameId + ': published entry bytes changed');
     check(entry.length === game.entryBytes, gameId + ': entry byte length changed');
-    check(sha256(publicBytes(game.htmlPath, read(game.htmlPath))) === game.integratedHtmlSha256, gameId + ': integrated HTML changed');
+    let current = game;
+    const versions = new Set();
+    // Explicit game releases keep the first integrated JS immutable. Every later
+    // entry is also immutable; only the latest HTML/wrapper points to it.
+    for (const update of game.updates || []) {
+      const directory = 'play/' + gameId + '/game/';
+      check(/^[a-zA-Z0-9_-]+$/.test(update.version) && !versions.has(update.version), gameId + ': invalid or duplicate release');
+      versions.add(update.version);
+      check(/^\.\/[a-zA-Z0-9_-]+\.js$/.test(update.entry) && update.entryPath === directory + update.entry.slice(2), gameId + ': release entry must stay in game directory');
+      check(update.entryKind === game.entryKind && /^[a-f0-9]{40}$/.test(update.sourceCommit), gameId + ': missing source provenance');
+      check(update.previousEntrySha256 === current.entrySha256, gameId + ': broken release chain');
+      const released = publicBytes(update.entryPath, read(update.entryPath));
+      check(sha256(released) === update.entrySha256 && released.length === update.entryBytes, gameId + ': released entry changed');
+      current = update;
+    }
+    const html = publicBytes(game.htmlPath, read(game.htmlPath));
+    check(sha256(html) === current.integratedHtmlSha256, gameId + ': integrated HTML changed');
+    check(html.toString('utf8').includes('data-game-entry="' + current.entry + '"'), gameId + ': HTML points to another entry');
     const wrapper = read('play/' + gameId + '/index.html').toString('utf8');
-    check(wrapperWithVersion(wrapper, gameId) === wrapper, gameId + ': wrapper version changed');
+    check(wrapperWithVersion(wrapper, gameId, current.wrapperVersion || version) === wrapper, gameId + ': wrapper version changed');
+    if(current.wrapperSha256)check(sha256(publicBytes('play/' + gameId + '/index.html', Buffer.from(wrapper))) === current.wrapperSha256, gameId + ': released wrapper changed');
   }
 }
 
