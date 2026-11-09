@@ -1,0 +1,2129 @@
+[
+  {
+    "id": "R01",
+    "type": "reel",
+    "title": "横顔から、目が合う",
+    "summary": "前髪と目元を見せる、静かな表情のリール。",
+    "steps": [
+      "横顔を近めで撮る",
+      "ゆっくりカメラを見る",
+      "少し微笑んで2秒キープ"
+    ],
+    "duration": "6〜8秒",
+    "priority": true,
+    "tags": [
+      "顔",
+      "目線",
+      "壁",
+      "私服"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/sugar_79/reel/Db-hJaxv3xx/",
+      "creator": "佐藤ノア",
+      "sourceType": "reel",
+      "referencePoint": "髪を整えた日の、斜め向きの顔・前髪・カメラ目線の見せ方。胸上の近い画角を参考にする。",
+      "match": "partial",
+      "originalAddition": "横顔から正面へ向く順番と、最後の微笑みはなおい用に追加する。",
+      "referencePointEn": "How an angled face, bangs, and camera-facing gaze are shown after a hair appointment. Use the close, chest-up framing as a reference.",
+      "originalAdditionEn": "For Naoi, add the sequence of turning from profile to front and finishing with a slight smile."
+    },
+    "en": {
+      "title": "From profile to eye contact",
+      "summary": "A quiet expression reel that highlights Naoi's bangs and eyes.",
+      "steps": [
+        "Film a close profile view",
+        "Have her slowly look at the camera",
+        "Hold a slight smile for 2 seconds"
+      ],
+      "duration": "6–8 sec",
+      "tags": [
+        "Face",
+        "Eye contact",
+        "Wall",
+        "Everyday outfit"
+      ]
+    }
+  },
+  {
+    "id": "R02",
+    "type": "reel",
+    "title": "静止画だと思ったら",
+    "summary": "止まった姿から小さく動き出す、ポートレート風の一本。",
+    "steps": [
+      "写真のように2秒止まる",
+      "まばたきして髪に触れる",
+      "最後は自然な表情で止まる"
+    ],
+    "duration": "5〜7秒",
+    "priority": false,
+    "tags": [
+      "顔",
+      "表情",
+      "壁"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/takanehina1234/reel/DMsNvkOzvsZ/",
+      "creator": "高嶺ヒナ",
+      "sourceType": "reel",
+      "referencePoint": "白い背景で顔を大きく見せる、ポートレート中心の映像。目元と前髪が目立つ正面寄りの画角。",
+      "match": "partial",
+      "originalAddition": "冒頭で2秒止まり、その後まばたき・髪を触る構成はなおい用の演出。",
+      "referencePointEn": "Portrait-focused footage with a large face against a white background. The near-frontal framing highlights the eyes and bangs.",
+      "originalAdditionEn": "For Naoi, begin with a 2-second still pose, then add a blink and a touch of the hair."
+    },
+    "en": {
+      "title": "A still portrait comes to life",
+      "summary": "A portrait-style clip that begins motionless, then adds a small movement.",
+      "steps": [
+        "Stay still like a photograph for 2 seconds",
+        "Blink and touch the hair",
+        "Finish with a relaxed expression"
+      ],
+      "duration": "5–7 sec",
+      "tags": [
+        "Face",
+        "Expression",
+        "Wall"
+      ]
+    }
+  },
+  {
+    "id": "R03",
+    "type": "reel",
+    "title": "今日の私服、一気見",
+    "summary": "完成したコーデを最初に見せ、顔と細部へつなぐ。",
+    "steps": [
+      "靴まで入る全身を撮る",
+      "顔・袖・バッグなどを寄りで撮る",
+      "全身→寄り→全身の順で編集"
+    ],
+    "duration": "10〜12秒",
+    "priority": true,
+    "tags": [
+      "全身",
+      "服",
+      "小物"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/naenano0114/p/Dc-4gsNE3qM/",
+      "creator": "なえなの",
+      "sourceType": "photo",
+      "referencePoint": "5枚目のバッグを肩に掛けた全身横姿で、服のシルエットと小物が同時に分かる構図。補助リールは私服・顔・日常の組み合わせを参照。",
+      "match": "partial",
+      "originalAddition": "全身→顔→細部→全身のカット順はなおい用の構成。",
+      "referencePointEn": "Slide 5: a full-length side view with a bag on the shoulder, showing the clothing silhouette and accessories together. The secondary reel offers an example of combining an everyday outfit, face, and daily-life moments.",
+      "originalAdditionEn": "For Naoi, arrange the cuts as full length, face, details, then full length again.",
+      "slide": "5",
+      "secondaryUrl": "https://www.instagram.com/sugar_79/reel/De6mmqPyM9Y/"
+    },
+    "en": {
+      "title": "Today's outfit at a glance",
+      "summary": "Show the finished outfit first, then move to the face and details.",
+      "steps": [
+        "Film a full-length view including the shoes",
+        "Capture close-ups of the face, sleeves, and bag",
+        "Edit in the order: full length, details, full length"
+      ],
+      "duration": "10–12 sec",
+      "tags": [
+        "Full length",
+        "Outfit",
+        "Accessories"
+      ]
+    }
+  },
+  {
+    "id": "R04",
+    "type": "reel",
+    "title": "3歩だけのランウェイ",
+    "summary": "短い距離を歩き、私服のシルエットと動きを見せる。",
+    "steps": [
+      "少し離れた位置から3歩歩く",
+      "止まって目線を外す",
+      "正面と斜めの2方向で撮る"
+    ],
+    "duration": "8〜10秒",
+    "priority": false,
+    "tags": [
+      "全身",
+      "歩く",
+      "服"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/sugar_79/reel/De6mmqPyM9Y/",
+      "creator": "佐藤ノア",
+      "sourceType": "reel",
+      "referencePoint": "外出先での私服と、近い距離から撮る自然な表情。服を着てその場にいる日常の空気感を参考にする。",
+      "match": "partial",
+      "originalAddition": "3歩歩く→止まる→目線を外す動きはなおい用に設計する。参考動画と同じ動作の完全再現ではない。",
+      "referencePointEn": "An everyday outfit on an outing, with natural expressions filmed at close range. Refer to the relaxed feeling of being in a real place in her own clothes.",
+      "originalAdditionEn": "For Naoi, design a three-step walk, a stop, and an off-camera glance. These movements are added for this shoot rather than copied from the reference."
+    },
+    "en": {
+      "title": "A three-step runway",
+      "summary": "A short walk shows the outfit's silhouette and movement.",
+      "steps": [
+        "Walk three steps from a short distance away",
+        "Stop and look away from the camera",
+        "Film from the front and at an angle"
+      ],
+      "duration": "8–10 sec",
+      "tags": [
+        "Full length",
+        "Walking",
+        "Outfit"
+      ]
+    }
+  },
+  {
+    "id": "R05",
+    "type": "reel",
+    "title": "好きな部分だけ5連発",
+    "summary": "顔・服・小物の好きなところを短いカットで並べる。",
+    "steps": [
+      "前髪・アクセ・袖・バッグ・顔を撮る",
+      "各カットを2秒ずつ長めに残す",
+      "5カットをテンポよくつなぐ"
+    ],
+    "duration": "7〜10秒",
+    "priority": false,
+    "tags": [
+      "ディテール",
+      "小物",
+      "服"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/sugar_79/reel/DdBcdOFP5pk/",
+      "creator": "佐藤ノア",
+      "sourceType": "reel",
+      "referencePoint": "白いバッグ・服・ネックレス・ぬいぐるみを近距離で見せる細部の画角。『持っている物』から好みを伝える。",
+      "match": "partial",
+      "originalAddition": "前髪・アクセ・袖・バッグ・顔の5カットに置き換える。",
+      "referencePointEn": "Close framing of a white bag, clothing, a necklace, and a plush toy. Use personal belongings to communicate taste.",
+      "originalAdditionEn": "Replace the details with five shots of Naoi's bangs, jewelry, sleeves, bag, and face."
+    },
+    "en": {
+      "title": "Five favorite details",
+      "summary": "A quick sequence of favorite details from the face, outfit, and accessories.",
+      "steps": [
+        "Capture bangs, jewelry, sleeves, bag, and face",
+        "Record at least 2 seconds of each detail",
+        "Join the five shots with a clear rhythm"
+      ],
+      "duration": "7–10 sec",
+      "tags": [
+        "Details",
+        "Accessories",
+        "Outfit"
+      ]
+    }
+  },
+  {
+    "id": "R06",
+    "type": "reel",
+    "title": "羽織るだけで変わる",
+    "summary": "ジャケットやカーディガンを羽織る動きを見せる。",
+    "steps": [
+      "羽織りを手に持った姿から撮る",
+      "その場で羽織り、襟か袖を整える",
+      "完成した姿でポーズを取る"
+    ],
+    "duration": "8〜12秒",
+    "priority": true,
+    "tags": [
+      "服",
+      "着替え",
+      "全身"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/naenano0114/p/Dc-4gsNE3qM/",
+      "creator": "なえなの",
+      "sourceType": "photo",
+      "referencePoint": "3枚目は肩にチェックシャツを結ぶ着方、4枚目はジャージの肩掛け。羽織りの扱い方を参考にする。",
+      "match": "partial",
+      "originalAddition": "着用前→羽織る→襟や袖を整える動作をつないだリールにする。",
+      "referencePointEn": "Slide 3 shows a checked shirt tied around the shoulders; slide 4 shows a track jacket draped over the shoulders. Refer to how the outer layers are styled.",
+      "originalAdditionEn": "Create a reel linking the look before the layer is worn, putting it on, and adjusting the collar or sleeves.",
+      "slide": "3〜4"
+    },
+    "en": {
+      "title": "One layer changes the look",
+      "summary": "Show the movement of putting on a jacket or cardigan.",
+      "steps": [
+        "Start with the outer layer in hand",
+        "Put it on and adjust the collar or sleeves",
+        "Finish with a pose in the complete look"
+      ],
+      "duration": "8–12 sec",
+      "tags": [
+        "Outfit",
+        "Changing looks",
+        "Full length"
+      ]
+    }
+  },
+  {
+    "id": "R07",
+    "type": "reel",
+    "title": "黒コーデと明るいコーデ",
+    "summary": "同じ構図の2着を切り替え、印象の違いを見せる。",
+    "steps": [
+      "カメラ位置と立ち位置を固定",
+      "2着で同じポーズを撮る",
+      "全身と顔の寄りを交互につなぐ"
+    ],
+    "duration": "8〜10秒",
+    "priority": false,
+    "tags": [
+      "服",
+      "2着",
+      "比較"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/takanehina1234/reel/DPd1qD_D0N_/",
+      "creator": "高嶺ヒナ",
+      "sourceType": "reel",
+      "referencePoint": "白・グレー系と黒系の2人が、同じ明るい背景で並ぶ。配色差と服の形が分かる正面の見せ方。",
+      "match": "partial",
+      "originalAddition": "元は2人の投稿。なおい1人で同じ位置・ポーズを2着撮影し、交互につなぐ。",
+      "referencePointEn": "Two people in white/gray and black stand together against the same bright background. Refer to the front-facing view that makes the colors and clothing shapes easy to compare.",
+      "originalAdditionEn": "The original features two people. Film Naoi alone in two outfits, using the same position and poses, then alternate the shots."
+    },
+    "en": {
+      "title": "Dark look, light look",
+      "summary": "Switch between two outfits in the same composition to show their different moods.",
+      "steps": [
+        "Keep the camera and standing position fixed",
+        "Film the same poses in both outfits",
+        "Alternate full-length shots and face close-ups"
+      ],
+      "duration": "8–10 sec",
+      "tags": [
+        "Outfit",
+        "Two outfits",
+        "Comparison"
+      ]
+    }
+  },
+  {
+    "id": "R08",
+    "type": "reel",
+    "title": "同じ服で3つの着方",
+    "summary": "手持ちの羽織りや小物で着こなしを変える。",
+    "steps": [
+      "羽織りを着る姿を撮る",
+      "肩に掛ける・手に持つ姿を撮る",
+      "同じ位置の3カットで比較"
+    ],
+    "duration": "10〜15秒",
+    "priority": false,
+    "tags": [
+      "服",
+      "小物",
+      "比較"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/naenano0114/p/Dc-4gsNE3qM/",
+      "creator": "なえなの",
+      "sourceType": "photo",
+      "referencePoint": "2枚目の裾を持つ手、3枚目のシャツの肩結び、4枚目の肩掛け、5枚目のバッグを持った全身。服と小物の扱いを参考にする。",
+      "match": "partial",
+      "originalAddition": "元投稿は同じ1着の3通りではない。なおいの手持ちの羽織りを『着る・肩掛け・手持ち』へ展開する。",
+      "referencePointEn": "Slides 2–5: hands holding a hem, a shirt tied around the shoulders, a draped outer layer, and a full-length view with a bag. Refer to how the clothing and accessories are handled.",
+      "originalAdditionEn": "The original does not show one outfit styled three ways. Use Naoi's own outer layer worn normally, draped over the shoulders, and held in hand.",
+      "slide": "2〜5"
+    },
+    "en": {
+      "title": "One outfit, three ways",
+      "summary": "Restyle the look using an outer layer or accessories already on hand.",
+      "steps": [
+        "Film the outer layer worn normally",
+        "Film it draped over the shoulders and held in hand",
+        "Compare three shots from the same position"
+      ],
+      "duration": "10–15 sec",
+      "tags": [
+        "Outfit",
+        "Accessories",
+        "Comparison"
+      ]
+    }
+  },
+  {
+    "id": "R09",
+    "type": "reel",
+    "title": "鏡の中から目が合う",
+    "summary": "鏡越しに、服を整える自然な動きと目線を撮る。",
+    "steps": [
+      "鏡に全身か上半身を入れる",
+      "服を整えてスマホから目を離す",
+      "鏡の中のカメラを見る"
+    ],
+    "duration": "6〜9秒",
+    "priority": false,
+    "tags": [
+      "鏡",
+      "服",
+      "目線"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/naenano0114/p/DdOQ1DBkwUr/",
+      "creator": "なえなの",
+      "sourceType": "photo",
+      "referencePoint": "1枚目の鏡越しの顔寄り、4枚目の鏡越しの腰上。顔とスマホ・カメラの距離感を参考にする。",
+      "match": "partial",
+      "originalAddition": "服を整える→スマホから目を離す→鏡の中で目線を合わせる動きを追加する。",
+      "referencePointEn": "Slide 1: a close mirror portrait. Slide 4: a waist-up mirror view. Refer to the distance between the face, phone, and camera.",
+      "originalAdditionEn": "Add the movements of adjusting the outfit, looking away from the phone, and making eye contact through the mirror.",
+      "slide": "1・4"
+    },
+    "en": {
+      "title": "Eye contact in the mirror",
+      "summary": "Capture a natural outfit adjustment and a glance through the mirror.",
+      "steps": [
+        "Frame the full body or upper body in the mirror",
+        "Adjust the outfit and look away from the phone",
+        "Look at the camera through the mirror"
+      ],
+      "duration": "6–9 sec",
+      "tags": [
+        "Mirror",
+        "Outfit",
+        "Eye contact"
+      ]
+    }
+  },
+  {
+    "id": "R10",
+    "type": "reel",
+    "title": "座ったときもかわいい服",
+    "summary": "座る・立つ動きで、服の形や落ち方を見せる。",
+    "steps": [
+      "椅子に座った全身を撮る",
+      "袖や手元を寄りで撮る",
+      "立ち上がった全身で終える"
+    ],
+    "duration": "10〜12秒",
+    "priority": false,
+    "tags": [
+      "椅子",
+      "全身",
+      "服"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/yura_pk/p/DczSL1Pk-Md/",
+      "creator": "ゆら",
+      "sourceType": "photo",
+      "referencePoint": "黒い服でソファに座り、靴まで全身を入れた構図。座ったときの服の落ち方と手足の配置を参考にする。",
+      "match": "partial",
+      "originalAddition": "座り全身→手元→立ち上がった全身の3カットへ展開する。",
+      "referencePointEn": "Slide 1: a seated sofa portrait in black, framed from face to shoes. Refer to the clothing drape and placement of the hands and feet.",
+      "originalAdditionEn": "Develop it into three shots: seated full length, hands, then standing full length.",
+      "slide": "1"
+    },
+    "en": {
+      "title": "The outfit looks good seated, too",
+      "summary": "Use sitting and standing to show the outfit's shape and drape.",
+      "steps": [
+        "Film a full-length seated view",
+        "Capture close-ups of sleeves and hands",
+        "End with a full-length standing view"
+      ],
+      "duration": "10–12 sec",
+      "tags": [
+        "Chair",
+        "Full length",
+        "Outfit"
+      ]
+    }
+  },
+  {
+    "id": "R11",
+    "type": "reel",
+    "title": "バッグの中の「好き」3つ",
+    "summary": "本人が見せたい小物で、趣味や好みを伝える。",
+    "steps": [
+      "バッグから小物を3つ出す",
+      "それぞれを手元の寄りで撮る",
+      "一番好きな物を顔の横に持つ"
+    ],
+    "duration": "12〜18秒",
+    "priority": false,
+    "tags": [
+      "バッグ",
+      "小物",
+      "人柄"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/sugar_79/reel/DcZ95cBvHVz/",
+      "creator": "佐藤ノア",
+      "sourceType": "reel",
+      "referencePoint": "本人が長く続けているシール帳の趣味を、手元の寄りで見せる。持ち物から人物像を伝える発想。",
+      "match": "partial",
+      "originalAddition": "元はバッグ紹介ではない。なおいが見せたい小物3つをバッグから出す演出へ置き換える。",
+      "referencePointEn": "A long-standing sticker-album hobby is shown through close-ups of the hands. Refer to the idea of revealing personality through personal belongings.",
+      "originalAdditionEn": "The original is not a bag tour. Have Naoi take three items she wants to share out of her bag."
+    },
+    "en": {
+      "title": "Three favorites from the bag",
+      "summary": "Let the small items Naoi chooses to share reveal her interests and taste.",
+      "steps": [
+        "Take three items out of the bag",
+        "Film each item in a close-up of the hands",
+        "Hold the favorite item beside the face"
+      ],
+      "duration": "12–18 sec",
+      "tags": [
+        "Bag",
+        "Accessories",
+        "Personality"
+      ]
+    }
+  },
+  {
+    "id": "R12",
+    "type": "reel",
+    "title": "決め顔の、その直後",
+    "summary": "きれいな決め顔と、自然に笑う瞬間を一本にする。",
+    "steps": [
+      "決めた表情を2秒撮る",
+      "撮影を止めず会話を続ける",
+      "自然に笑った瞬間につなぐ"
+    ],
+    "duration": "7〜10秒",
+    "priority": true,
+    "tags": [
+      "顔",
+      "笑顔",
+      "人柄"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/naenano0114/reel/DbxfCqBvHib/",
+      "creator": "なえなの",
+      "sourceType": "reel",
+      "referencePoint": "屋外の自然光で、カップを持ちながら近い距離で見せる柔らかな表情。自然な笑顔の近さを参考にする。",
+      "match": "partial",
+      "originalAddition": "決め顔→撮影後の笑いという対比はなおい用の構成。海や帽子を再現する必要はない。",
+      "referencePointEn": "Soft expressions filmed at close range outdoors in natural light while holding a cup. Refer to the camera distance and approachable smile.",
+      "originalAdditionEn": "The contrast between a posed expression and laughter after the shot is an added structure for Naoi. The beach and hat are not required."
+    },
+    "en": {
+      "title": "Right after the perfect pose",
+      "summary": "Pair a polished expression with a moment of genuine laughter.",
+      "steps": [
+        "Record the posed expression for 2 seconds",
+        "Keep filming while the conversation continues",
+        "Cut to the moment she naturally laughs"
+      ],
+      "duration": "7–10 sec",
+      "tags": [
+        "Face",
+        "Smile",
+        "Personality"
+      ]
+    }
+  },
+  {
+    "id": "R13",
+    "type": "reel",
+    "title": "撮影を待っているなおい",
+    "summary": "待機中の仕草から撮影モードへ変わる瞬間。",
+    "steps": [
+      "待っている自然な姿を撮る",
+      "合図で姿勢と目線を切り替える",
+      "撮影前後に2秒ずつ余白を残す"
+    ],
+    "duration": "8〜12秒",
+    "priority": false,
+    "tags": [
+      "人柄",
+      "裏側",
+      "表情"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/takanehina1234/reel/DM2aT_EyIwP/",
+      "creator": "高嶺ヒナ（gai_hasunumaとの共同投稿）",
+      "sourceType": "reel",
+      "referencePoint": "ヘアセット中に鏡の前で待つ表情・頬に添えた手・前髪の準備を、胸上で撮る場面。",
+      "match": "partial",
+      "originalAddition": "待機中→撮影開始に気付く→姿勢が変わる構成はなおい用に追加。",
+      "referencePointEn": "A chest-up view of waiting in front of a mirror during hairstyling, including the expression, a hand near the cheek, and bang preparation.",
+      "originalAdditionEn": "For Naoi, add the sequence of waiting, noticing that filming has started, and changing her posture."
+    },
+    "en": {
+      "title": "Naoi between takes",
+      "summary": "Catch the shift from waiting naturally to being ready for the camera.",
+      "steps": [
+        "Film her natural movements while waiting",
+        "Use a cue to change posture and gaze",
+        "Leave 2 seconds before and after the action"
+      ],
+      "duration": "8–12 sec",
+      "tags": [
+        "Personality",
+        "Behind the scenes",
+        "Expression"
+      ]
+    }
+  },
+  {
+    "id": "R14",
+    "type": "reel",
+    "title": "無言で答えるファッション二択",
+    "summary": "服や小物を選ぶ姿から本人の好みを見せる。",
+    "steps": [
+      "服か小物を左右に提示",
+      "本人が好きな方を選ぶ",
+      "選んだ物を身に着けた姿で終える"
+    ],
+    "duration": "12〜15秒",
+    "priority": false,
+    "tags": [
+      "服",
+      "小物",
+      "人柄",
+      "比較"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/sugar_79/reel/DdBcdOFP5pk/",
+      "creator": "佐藤ノア",
+      "sourceType": "reel",
+      "referencePoint": "お気に入りの物を手に取って見せ、本人の好みが伝わる見せ方。本文にも迷って選んだ物の説明がある。",
+      "match": "partial",
+      "originalAddition": "元はぬいぐるみの買い物紹介。服・小物の左右二択と指差しの流れはなおい用に追加する。",
+      "referencePointEn": "Holding up favorite objects to communicate personal taste. The caption also describes items chosen after some deliberation.",
+      "originalAdditionEn": "The original introduces purchased plush toys. Add left/right clothing or accessory choices and pointing gestures for Naoi."
+    },
+    "en": {
+      "title": "This or that: outfit edition",
+      "summary": "Show personal taste through a silent choice of clothes or accessories.",
+      "steps": [
+        "Present one option on each side",
+        "Have her choose the one she likes",
+        "Finish with the chosen item being worn"
+      ],
+      "duration": "12–15 sec",
+      "tags": [
+        "Outfit",
+        "Accessories",
+        "Personality",
+        "Comparison"
+      ]
+    }
+  },
+  {
+    "id": "R15",
+    "type": "reel",
+    "title": "好きな曲を聴いている顔",
+    "summary": "音楽を楽しむ小さな動きや表情を残す。",
+    "steps": [
+      "最初は静かな表情を撮る",
+      "本人が自然にリズムに乗る",
+      "楽しそうな表情まで長めに回す"
+    ],
+    "duration": "8〜12秒",
+    "priority": false,
+    "tags": [
+      "音楽",
+      "人柄",
+      "表情"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/sugar_79/reel/DaiGhbEvt0z/",
+      "creator": "佐藤ノア",
+      "sourceType": "reel",
+      "referencePoint": "ヘッドホン姿と横顔を近くから写し、本人と音楽との関係を伝える場面。",
+      "match": "partial",
+      "originalAddition": "元は自作曲の仮歌収録。なおいは歌唱の再現をせず、好きな曲を聴く表情と小さなリズムの動きへ置き換える。",
+      "referencePointEn": "Close views of a side profile wearing headphones, showing the person's connection with music.",
+      "originalAdditionEn": "The original shows guide-vocal recording for an original song. For Naoi, use listening expressions and small rhythmic movements rather than recreating the singing."
+    },
+    "en": {
+      "title": "When her favorite song plays",
+      "summary": "Capture the small movements and expressions of enjoying music.",
+      "steps": [
+        "Begin with a quiet expression",
+        "Let her naturally move with the rhythm",
+        "Keep filming until a happy expression appears"
+      ],
+      "duration": "8–12 sec",
+      "tags": [
+        "Music",
+        "Personality",
+        "Expression"
+      ]
+    }
+  },
+  {
+    "id": "R16",
+    "type": "reel",
+    "title": "撮影準備を10秒に",
+    "summary": "髪・アクセ・服を整える準備から完成まで。",
+    "steps": [
+      "髪・アクセ・袖を整える姿を撮る",
+      "手元の寄りと上半身を残す",
+      "完成した姿のカットで締める"
+    ],
+    "duration": "10〜15秒",
+    "priority": false,
+    "tags": [
+      "準備",
+      "髪",
+      "小物",
+      "裏側"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/sugar_79/reel/DdWDU_nPy5Y/",
+      "creator": "佐藤ノア",
+      "sourceType": "reel",
+      "referencePoint": "室内で髪をまとめる手や顔を近距離で写す、ケア・準備の画角。",
+      "match": "partial",
+      "originalAddition": "髪→アクセ→袖→完成姿の4カットに整理し、10〜15秒へまとめる。",
+      "referencePointEn": "Close indoor framing of the face and hands gathering the hair. Refer to the camera distance used for a care or preparation moment.",
+      "originalAdditionEn": "Arrange four shots—hair, accessories, sleeves, finished look—into a 10–15-second sequence."
+    },
+    "en": {
+      "title": "Shoot prep in ten seconds",
+      "summary": "Follow hair, accessories, and outfit adjustments through to the finished look.",
+      "steps": [
+        "Film hair, jewelry, and sleeve adjustments",
+        "Capture hands close-up and upper-body shots",
+        "Finish on the completed look"
+      ],
+      "duration": "10–15 sec",
+      "tags": [
+        "Preparation",
+        "Hair",
+        "Accessories",
+        "Behind the scenes"
+      ]
+    }
+  },
+  {
+    "id": "R17",
+    "type": "reel",
+    "title": "撮られている姿と完成写真",
+    "summary": "撮影の裏側と、その瞬間の仕上がりをつなぐ。",
+    "steps": [
+      "横から撮影風景を動画で撮る",
+      "同じ瞬間に写真も撮る",
+      "撮影風景→完成写真→オフの表情"
+    ],
+    "duration": "10〜15秒",
+    "priority": false,
+    "tags": [
+      "裏側",
+      "写真",
+      "人柄"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/sugar_79/reel/DaDAjiuvyCG/",
+      "creator": "佐藤ノア（noranosatonoahとの共同投稿）",
+      "sourceType": "reel",
+      "referencePoint": "撮影日のsetlog。衣装ラックや撮影セットを含む、完成前の現場を見せる構成。",
+      "match": "partial",
+      "originalAddition": "横から撮ったBTS→その瞬間の完成写真→撮影後の表情、という順番はなおい用に組む。",
+      "referencePointEn": "A shoot-day setlog showing the setting before the finished images, including clothing racks and the shoot setup.",
+      "originalAdditionEn": "For Naoi, edit side-view behind-the-scenes footage, the photo made in that moment, then her relaxed expression afterward."
+    },
+    "en": {
+      "title": "Behind the shot and the final photo",
+      "summary": "Connect the shooting process with the photograph made in that moment.",
+      "steps": [
+        "Film the photo session from the side",
+        "Take a still photo at the same moment",
+        "Edit: behind the scenes, final photo, relaxed expression"
+      ],
+      "duration": "10–15 sec",
+      "tags": [
+        "Behind the scenes",
+        "Photography",
+        "Personality"
+      ]
+    }
+  },
+  {
+    "id": "R18",
+    "type": "reel",
+    "title": "私服のまま、ステージの目線",
+    "summary": "普段の表情と、ライブを意識した強い目線を見せる。",
+    "steps": [
+      "普段の柔らかい表情から撮る",
+      "ライブを意識した立ち姿と目線へ",
+      "最後は普段の表情に戻る"
+    ],
+    "duration": "8〜12秒",
+    "priority": true,
+    "tags": [
+      "目線",
+      "アイドル",
+      "表情"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/mmgjp_mob/reel/DY9wzi4zwRS/",
+      "creator": "鈴木Mob.",
+      "sourceType": "reel",
+      "referencePoint": "ソロ生誕祭の記録で、アイドルとしての完成した衣装姿と正面の表情を見せる。『ステージ側の自分』の参考。",
+      "match": "partial",
+      "originalAddition": "衣装やライブを再現せず、私服の柔らかい表情→ステージを意識した目線→普段の表情へ切り替える。",
+      "referencePointEn": "A solo birthday-event record showing a finished idol outfit and a front-facing expression. Refer to the presentation of her on-stage identity.",
+      "originalAdditionEn": "Keep Naoi in everyday clothes and move from a soft expression to a stage-inspired gaze, then back to her everyday expression. The costume and live event are not recreated."
+    },
+    "en": {
+      "title": "Stage presence in everyday clothes",
+      "summary": "Show both her everyday expression and the strong gaze she brings to a performance.",
+      "steps": [
+        "Start with a soft, everyday expression",
+        "Shift to a stage-inspired posture and gaze",
+        "Return to her everyday expression at the end"
+      ],
+      "duration": "8–12 sec",
+      "tags": [
+        "Eye contact",
+        "Idol",
+        "Expression"
+      ]
+    }
+  },
+  {
+    "id": "R19",
+    "type": "reel",
+    "title": "会ったときのなおいちゃん",
+    "summary": "カメラに気付き、挨拶するような距離感の一本。",
+    "steps": [
+      "少し離れた位置から近づく",
+      "本人が気付いて小さく手を振る",
+      "目が合って笑うところまで撮る"
+    ],
+    "duration": "6〜9秒",
+    "priority": false,
+    "tags": [
+      "笑顔",
+      "人柄",
+      "目線"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/sugar_79/reel/DdoVMf_Pm_7/",
+      "creator": "佐藤ノア",
+      "sourceType": "reel",
+      "referencePoint": "お祭りで近い距離からカメラに笑いかける場面。友達が撮っているような距離感と顔の高さを参照。",
+      "match": "partial",
+      "originalAddition": "カメラに気付く→小さく手を振る→笑う動きはなおい用に追加。浴衣・祭りは不要。",
+      "referencePointEn": "A festival moment with a smile toward a nearby camera. Refer to the face height and close distance, like footage taken by a friend.",
+      "originalAdditionEn": "For Naoi, add noticing the camera, a small wave, then a smile. The reference does not establish the waving action; a yukata or festival setting is not needed."
+    },
+    "en": {
+      "title": "Meeting Naoi",
+      "summary": "A friendly greeting as she notices the approaching camera.",
+      "steps": [
+        "Approach from a short distance away",
+        "Have her notice the camera and give a small wave",
+        "Keep filming through eye contact and a smile"
+      ],
+      "duration": "6–9 sec",
+      "tags": [
+        "Smile",
+        "Personality",
+        "Eye contact"
+      ]
+    }
+  },
+  {
+    "id": "R20",
+    "type": "reel",
+    "title": "撮影日のミニVlog",
+    "summary": "撮影日の流れそのものを短い記録にする。",
+    "steps": [
+      "到着・服選び・撮影を短く撮る",
+      "休憩中の表情や小物も残す",
+      "今日のベストカットで終える"
+    ],
+    "duration": "20〜30秒",
+    "priority": true,
+    "tags": [
+      "Vlog",
+      "裏側",
+      "人柄"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/sugar_79/reel/DdQZjXAv5OQ/",
+      "creator": "佐藤ノア",
+      "sourceType": "reel",
+      "referencePoint": "時刻付きで生活の断片をつなぐsetlog。補助リールは高尾山へ行った日の私服・食べ物・遊び心を見せる日常記録。",
+      "match": "partial",
+      "originalAddition": "到着→服選び→撮影→休憩→ベストカットの撮影日記に置き換え、20〜30秒へ短くする。",
+      "referencePointEn": "A timestamped setlog connecting small moments from daily life. The secondary reel records a Mount Takao outing through casual clothing, food, and playful moments.",
+      "originalAdditionEn": "Make a 20–30-second shoot-day diary: arrival, outfit selection, shooting, a break, and the best shot.",
+      "secondaryUrl": "https://www.instagram.com/sugar_79/reel/DfhSseuSQj6/"
+    },
+    "en": {
+      "title": "A mini shoot-day vlog",
+      "summary": "Turn the day's actual flow into a short visual diary.",
+      "steps": [
+        "Capture short clips of arrival, outfit selection, and shooting",
+        "Keep moments from breaks and close-ups of small items",
+        "End with the day's best shot"
+      ],
+      "duration": "20–30 sec",
+      "tags": [
+        "Vlog",
+        "Behind the scenes",
+        "Personality"
+      ]
+    }
+  },
+  {
+    "id": "P01",
+    "type": "photo",
+    "title": "正面のプロフィール写真",
+    "summary": "胸から上。前髪と輪郭が分かる基本の一枚。",
+    "steps": [
+      "胸から上を入れる",
+      "目に光が入る位置へ顔を向ける",
+      "正面と微笑みを数枚残す"
+    ],
+    "priority": true,
+    "tags": [
+      "顔",
+      "プロフィール",
+      "壁"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/sugar_79/p/DZ88IJePmns/",
+      "creator": "佐藤ノア @sugar_79",
+      "sourceType": "photo",
+      "referencePoint": "1枚目。白い背景と白いトップス、正面に近い胸上ポートレート。顔を主役にした明るさと背景の簡潔さ。",
+      "match": "exact",
+      "originalAddition": "頭は少し傾いている。服・髪型をそのまま合わせる必要はない。",
+      "referencePointEn": "Slide 1: a nearly front-facing, chest-up portrait with a white top and white background. Refer to the face-focused brightness and simple background.",
+      "originalAdditionEn": "The head is slightly tilted in the reference. Use Naoi's own clothing and hairstyle.",
+      "slide": "1"
+    },
+    "en": {
+      "title": "A front-facing profile portrait",
+      "summary": "A chest-up portrait that clearly shows the bangs and face shape.",
+      "steps": [
+        "Frame from the chest up",
+        "Turn the face toward light that creates a catchlight",
+        "Take several front-facing and softly smiling shots"
+      ],
+      "tags": [
+        "Face",
+        "Profile photo",
+        "Wall"
+      ]
+    }
+  },
+  {
+    "id": "P02",
+    "type": "photo",
+    "title": "斜め45度の顔",
+    "summary": "肩は斜め、顔はカメラへ。本人が好きな角度を探す。",
+    "steps": [
+      "肩を斜めに向ける",
+      "顔だけカメラへ向ける",
+      "左右の角度を撮り比べる"
+    ],
+    "priority": true,
+    "tags": [
+      "顔",
+      "角度"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/sugar_79/p/DejWu8lklnH/",
+      "creator": "佐藤ノア @sugar_79",
+      "sourceType": "photo",
+      "referencePoint": "2〜3枚目。花柄ワンピースの胸上、肩を斜めにしてカメラへ顔を向ける角度。",
+      "match": "exact",
+      "originalAddition": "カルーセルの2〜3枚目を見る。",
+      "referencePointEn": "Slides 2–3: a chest-up portrait in a floral dress, with the shoulders angled and the face turned toward the camera.",
+      "originalAdditionEn": "Refer to slides 2–3 of the carousel.",
+      "slide": "2〜3"
+    },
+    "en": {
+      "title": "A 45-degree portrait",
+      "summary": "Angle the shoulders and turn the face toward the camera to find a favorite view.",
+      "steps": [
+        "Turn the shoulders slightly to one side",
+        "Turn only the face toward the camera",
+        "Compare angles from both sides"
+      ],
+      "tags": [
+        "Face",
+        "Angle"
+      ]
+    }
+  },
+  {
+    "id": "P03",
+    "type": "photo",
+    "title": "真横の横顔",
+    "summary": "鼻先から首元のラインと髪を見せる。",
+    "steps": [
+      "真横から胸上を撮る",
+      "髪を下ろす・耳に掛けるの両方",
+      "背景をシンプルにする"
+    ],
+    "priority": false,
+    "tags": [
+      "顔",
+      "横顔",
+      "髪"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/naenano0114/p/DdOQ1DBkwUr/",
+      "creator": "なえなの @naenano0114",
+      "sourceType": "photo",
+      "referencePoint": "6枚目。目線を外した横向きの顔と、頬・顎・髪の輪郭。",
+      "match": "partial",
+      "originalAddition": "参考は真横90度ではなく斜め横顔。撮影時はさらに横を向くアレンジ。",
+      "referencePointEn": "Slide 6: an off-camera, sideways gaze showing the outlines of the cheek, jaw, and hair.",
+      "originalAdditionEn": "The reference is a three-quarter side view, not a 90-degree profile. Have Naoi turn farther to the side.",
+      "slide": "6"
+    },
+    "en": {
+      "title": "A true side profile",
+      "summary": "Show the line from nose to neck together with the hair.",
+      "steps": [
+        "Shoot a chest-up view directly from the side",
+        "Try hair down and tucked behind the ear",
+        "Keep the background simple"
+      ],
+      "tags": [
+        "Face",
+        "Side profile",
+        "Hair"
+      ]
+    }
+  },
+  {
+    "id": "P04",
+    "type": "photo",
+    "title": "前髪と目元の寄り",
+    "summary": "前髪・目元・メイクを主役に切り取る。",
+    "steps": [
+      "前髪と両目が分かる距離へ",
+      "正面と少し目線を外した姿",
+      "目元が暗くならない光で撮る"
+    ],
+    "priority": false,
+    "tags": [
+      "顔",
+      "前髪",
+      "メイク"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/naenano0114/p/DdOQ1DBkwUr/",
+      "creator": "なえなの @naenano0114",
+      "sourceType": "photo",
+      "referencePoint": "2枚目。前髪と目元がよく見える顔の寄り。目に光を入れる距離感。",
+      "match": "partial",
+      "originalAddition": "参考は顔全体の寄り。なおい案はさらに目元側へ寄せる。",
+      "referencePointEn": "Slide 2: a close face view with clear bangs and eyes. Refer to the framing and light in the eyes.",
+      "originalAdditionEn": "The reference includes the whole face. Frame Naoi more tightly around the eyes.",
+      "slide": "2"
+    },
+    "en": {
+      "title": "Bangs and eyes, close-up",
+      "summary": "Make the bangs, eyes, and makeup the focus.",
+      "steps": [
+        "Move close enough to show the bangs and both eyes",
+        "Shoot straight ahead and with the gaze slightly off-camera",
+        "Use light that keeps the eye area visible"
+      ],
+      "tags": [
+        "Face",
+        "Bangs",
+        "Makeup"
+      ]
+    }
+  },
+  {
+    "id": "P05",
+    "type": "photo",
+    "title": "笑った瞬間",
+    "summary": "会話中の自然な笑顔を残す。",
+    "steps": [
+      "会話しながら撮り続ける",
+      "ポーズが終わった直後も連写",
+      "歯が見える笑顔も残す"
+    ],
+    "priority": true,
+    "tags": [
+      "顔",
+      "笑顔",
+      "人柄"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/sugar_79/p/DfcTN3okpMM/",
+      "creator": "佐藤ノア @sugar_79",
+      "sourceType": "photo",
+      "referencePoint": "1枚目。グレージャケット、夜景を背に歯が見える笑顔と少し傾いた姿勢。",
+      "match": "exact",
+      "originalAddition": "決めポーズの直後にも撮り続け、自然な笑顔を狙う。",
+      "referencePointEn": "Slide 1: a gray jacket, nightscape background, a smile showing teeth, and a slightly tilted posture.",
+      "originalAdditionEn": "Keep shooting immediately after the pose to catch a natural smile.",
+      "slide": "1"
+    },
+    "en": {
+      "title": "A genuine laugh",
+      "summary": "Keep a natural smile that appears during conversation.",
+      "steps": [
+        "Keep shooting while talking",
+        "Continue the burst after the pose ends",
+        "Include a smile with teeth showing"
+      ],
+      "tags": [
+        "Face",
+        "Smile",
+        "Personality"
+      ]
+    }
+  },
+  {
+    "id": "P06",
+    "type": "photo",
+    "title": "無表情でまっすぐ",
+    "summary": "まっすぐな目線を生かした一枚。",
+    "steps": [
+      "無地に近い背景を選ぶ",
+      "正面から目の高さで撮る",
+      "口元と肩の力を抜く"
+    ],
+    "priority": false,
+    "tags": [
+      "顔",
+      "目線",
+      "壁"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/yura_pk/p/DdshlnrGODs/",
+      "creator": "ゆら @yura_pk",
+      "sourceType": "photo",
+      "referencePoint": "1枚目。黒髪、レースの服、シンプルな壁を背景にしたニュートラルな表情。",
+      "match": "exact",
+      "originalAddition": "カメラを見た穏やかな無表情と髪・顔のバランスを参考。",
+      "referencePointEn": "Slide 1: dark hair, a lace outfit, and a neutral expression against a simple wall.",
+      "originalAdditionEn": "Refer to the calm, camera-facing expression and the balance of hair and face.",
+      "slide": "1"
+    },
+    "en": {
+      "title": "A calm, direct gaze",
+      "summary": "Build a portrait around a steady look into the camera.",
+      "steps": [
+        "Choose a plain or simple background",
+        "Shoot from the front at eye level",
+        "Relax the mouth and shoulders"
+      ],
+      "tags": [
+        "Face",
+        "Eye contact",
+        "Wall"
+      ]
+    }
+  },
+  {
+    "id": "P07",
+    "type": "photo",
+    "title": "コーデが全部分かる全身",
+    "summary": "靴まで入れ、服の形と組み合わせを伝える。",
+    "steps": [
+      "頭から靴までを入れる",
+      "正面で一枚撮る",
+      "手の位置を変えて数枚残す"
+    ],
+    "priority": true,
+    "tags": [
+      "全身",
+      "服"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/sugar_79/p/DfRqpj0EoDc/",
+      "creator": "佐藤ノア @sugar_79",
+      "sourceType": "photo",
+      "referencePoint": "2枚目。白いカーディガンと紺のボトム、バッグと靴まで入れた全身。",
+      "match": "exact",
+      "originalAddition": "装飾エフェクトは参考対象外。服全体が分かる距離を参考。",
+      "referencePointEn": "Slide 2: a white cardigan and navy bottoms in a full-length frame that includes the bag and shoes.",
+      "originalAdditionEn": "Refer to the distance needed to show the complete outfit; the decorative effects are not part of the shoot reference.",
+      "slide": "2"
+    },
+    "en": {
+      "title": "The complete outfit",
+      "summary": "Include the shoes to show the full shape and styling.",
+      "steps": [
+        "Frame from the top of the head to the shoes",
+        "Take a straight-on shot",
+        "Keep several versions with different hand positions"
+      ],
+      "tags": [
+        "Full length",
+        "Outfit"
+      ]
+    }
+  },
+  {
+    "id": "P08",
+    "type": "photo",
+    "title": "斜めからの全身",
+    "summary": "服の横のラインとバッグを見せる。",
+    "steps": [
+      "体を少し斜めに向ける",
+      "バッグや服の横側を見せる",
+      "足元まで入れる"
+    ],
+    "priority": false,
+    "tags": [
+      "全身",
+      "服",
+      "バッグ"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/yura_pk/p/Db3LCmLRo_o/",
+      "creator": "ゆら @yura_pk",
+      "sourceType": "photo",
+      "referencePoint": "1枚目。体を斜めにし、手を前に置いた立ち姿。黒いトップスと柄のボトムの組み合わせ。",
+      "match": "partial",
+      "originalAddition": "参考は膝より上の構図。なおい案では靴まで画角を広げる。",
+      "referencePointEn": "Slide 1: an angled standing pose with the hands in front, wearing a black top and patterned bottoms.",
+      "originalAdditionEn": "The reference is framed above the knees. Widen Naoi's composition to include the shoes.",
+      "slide": "1"
+    },
+    "en": {
+      "title": "Full length at an angle",
+      "summary": "Show the side silhouette of the outfit and the bag.",
+      "steps": [
+        "Turn the body slightly to one side",
+        "Show the side of the outfit and the bag",
+        "Keep the feet in frame"
+      ],
+      "tags": [
+        "Full length",
+        "Outfit",
+        "Bag"
+      ]
+    }
+  },
+  {
+    "id": "P09",
+    "type": "photo",
+    "title": "後ろ姿から振り向く",
+    "summary": "背中・髪・肩越しの顔を一枚に。",
+    "steps": [
+      "後ろ向きに立つ",
+      "肩越しにゆっくり振り向く",
+      "背面の服と顔を一緒に撮る"
+    ],
+    "priority": false,
+    "tags": [
+      "全身",
+      "振り向く",
+      "髪"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/naenano0114/p/Dc-4gsNE3qM/",
+      "creator": "なえなの @naenano0114",
+      "sourceType": "photo",
+      "referencePoint": "5枚目。トートを肩に掛けた横向きの全身で、顔だけカメラ側を向くバランス。",
+      "match": "partial",
+      "originalAddition": "参考は横向き。なおい案は体をさらに後ろ向きにして振り向く。",
+      "referencePointEn": "Slide 5: a full-length side pose with a tote on the shoulder and the face turned toward the camera.",
+      "originalAdditionEn": "The reference is side-on. Have Naoi turn her body farther away and look back.",
+      "slide": "5"
+    },
+    "en": {
+      "title": "An over-the-shoulder turn",
+      "summary": "Bring the back of the outfit, hair, and face into one frame.",
+      "steps": [
+        "Start facing away from the camera",
+        "Slowly look back over the shoulder",
+        "Photograph the back of the outfit together with the face"
+      ],
+      "tags": [
+        "Full length",
+        "Turning",
+        "Hair"
+      ]
+    }
+  },
+  {
+    "id": "P10",
+    "type": "photo",
+    "title": "歩いている途中",
+    "summary": "服や髪に自然な動きを付ける。",
+    "steps": [
+      "短い距離をゆっくり歩く",
+      "歩き出しと止まる直前を連写",
+      "斜めからも撮る"
+    ],
+    "priority": true,
+    "tags": [
+      "全身",
+      "歩く",
+      "服"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/naenano0114/p/Dc-4gsNE3qM/",
+      "creator": "なえなの @naenano0114",
+      "sourceType": "photo",
+      "referencePoint": "6枚目。片脚を前へ出した全身と、服・足元が一緒に分かる構図。",
+      "match": "partial",
+      "originalAddition": "参考はポーズ写真。歩く動きそのものは撮影時に加える。傘は不要。",
+      "referencePointEn": "Slide 6: a full-length pose with one leg forward, showing the outfit and footwear together.",
+      "originalAdditionEn": "The reference is a posed photograph. Add actual walking during Naoi's shoot; the umbrella is not needed.",
+      "slide": "6"
+    },
+    "en": {
+      "title": "Mid-step",
+      "summary": "Give the clothes and hair natural movement.",
+      "steps": [
+        "Walk slowly over a short distance",
+        "Shoot bursts as she starts and just before she stops",
+        "Also shoot from an angle"
+      ],
+      "tags": [
+        "Full length",
+        "Walking",
+        "Outfit"
+      ]
+    }
+  },
+  {
+    "id": "P11",
+    "type": "photo",
+    "title": "椅子に座った全身",
+    "summary": "座ったときの服の形を見せる。",
+    "steps": [
+      "靴まで入る位置にカメラを置く",
+      "背筋を伸ばす姿を撮る",
+      "少し力を抜いた姿も残す"
+    ],
+    "priority": false,
+    "tags": [
+      "椅子",
+      "全身",
+      "服"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/yura_pk/p/DczSL1Pk-Md/",
+      "creator": "ゆら @yura_pk",
+      "sourceType": "photo",
+      "referencePoint": "1枚目。ソファに座り、顔から靴まで入れた黒い服の全身。座った服の形と手の置き方。",
+      "match": "exact",
+      "originalAddition": "バー・お酒は再現せず、手持ちの椅子と小物で撮る。",
+      "referencePointEn": "Slide 1: a full-length sofa portrait in black, framed from face to shoes. Refer to the seated clothing shape and hand placement.",
+      "originalAdditionEn": "Use a chair and small items already available for the shoot; the bar and alcohol are not required.",
+      "slide": "1"
+    },
+    "en": {
+      "title": "A seated full-length portrait",
+      "summary": "Show how the outfit falls when seated.",
+      "steps": [
+        "Position the camera to include the shoes",
+        "Shoot with an upright posture",
+        "Keep a more relaxed version, too"
+      ],
+      "tags": [
+        "Chair",
+        "Full length",
+        "Outfit"
+      ]
+    }
+  },
+  {
+    "id": "P12",
+    "type": "photo",
+    "title": "壁にもたれる",
+    "summary": "壁と体のラインでかっこよさを出す。",
+    "steps": [
+      "肩か背中を軽く壁へ寄せる",
+      "手を下ろす・ポケットに入れる",
+      "顔の目線を2方向で撮る"
+    ],
+    "priority": false,
+    "tags": [
+      "壁",
+      "全身",
+      "目線"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/naenano0114/p/Dc-4gsNE3qM/",
+      "creator": "なえなの @naenano0114",
+      "sourceType": "photo",
+      "referencePoint": "4枚目。淡い壁の前で上着を肩に掛け、肩を少し壁側に寄せた立ち姿。",
+      "match": "exact",
+      "originalAddition": "背景の簡潔さ、肩の力を抜いた姿勢を参考。",
+      "referencePointEn": "Slide 4: standing before a pale wall with an outer layer over the shoulders and one shoulder angled slightly toward the wall.",
+      "originalAdditionEn": "Refer to the simple background and relaxed shoulders.",
+      "slide": "4"
+    },
+    "en": {
+      "title": "Leaning against a wall",
+      "summary": "Use the wall and the body's lines to create a confident look.",
+      "steps": [
+        "Rest a shoulder or the back lightly against the wall",
+        "Try hands down and hands in pockets",
+        "Shoot with the gaze in two directions"
+      ],
+      "tags": [
+        "Wall",
+        "Full length",
+        "Eye contact"
+      ]
+    }
+  },
+  {
+    "id": "P13",
+    "type": "photo",
+    "title": "鏡越しの私服写真",
+    "summary": "顔とコーデが分かる鏡の写真。",
+    "steps": [
+      "全身が入る位置で一枚",
+      "上半身でも一枚",
+      "スマホで顔を隠しすぎない位置を探す"
+    ],
+    "priority": true,
+    "tags": [
+      "鏡",
+      "服",
+      "全身"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/naenano0114/p/DdOQ1DBkwUr/",
+      "creator": "なえなの @naenano0114",
+      "sourceType": "photo",
+      "referencePoint": "4枚目。鏡越しにカメラを持ち、顔と上半身の服を一緒に見せる。",
+      "match": "exact",
+      "originalAddition": "全身版は同じ配置から撮影距離を広げる。",
+      "referencePointEn": "Slide 4: a mirror photograph showing the camera, face, and upper-body outfit together.",
+      "originalAdditionEn": "Move farther from the mirror to add a full-length version with the same arrangement.",
+      "slide": "4"
+    },
+    "en": {
+      "title": "A mirror outfit photo",
+      "summary": "A mirror photograph that shows both the face and the outfit.",
+      "steps": [
+        "Take a full-length shot",
+        "Take an upper-body version",
+        "Find a phone position that keeps the face visible"
+      ],
+      "tags": [
+        "Mirror",
+        "Outfit",
+        "Full length"
+      ]
+    }
+  },
+  {
+    "id": "P14",
+    "type": "photo",
+    "title": "振り返りざまの上半身",
+    "summary": "名前を呼ばれたような自然な振り向き。",
+    "steps": [
+      "カメラから少し目線を外す",
+      "合図で振り向く",
+      "動きの途中を連写する"
+    ],
+    "priority": false,
+    "tags": [
+      "顔",
+      "振り向く",
+      "人柄"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/naenano0114/p/Dc-4gsNE3qM/",
+      "creator": "なえなの @naenano0114",
+      "sourceType": "photo",
+      "referencePoint": "5枚目。体を横に、顔をカメラへ向けたポーズの顔と肩の関係。",
+      "match": "partial",
+      "originalAddition": "参考は全身の静止ポーズ。上半身へ寄せ、振り向く瞬間を連写する。",
+      "referencePointEn": "Slide 5: the relationship between the face and shoulders in a side-facing body pose with the face toward the camera.",
+      "originalAdditionEn": "The reference is a full-length still pose. Move closer and shoot a burst as Naoi turns back.",
+      "slide": "5"
+    },
+    "en": {
+      "title": "An upper-body glance back",
+      "summary": "A natural turn, as if someone has called her name.",
+      "steps": [
+        "Start looking slightly away from the camera",
+        "Turn back on a cue",
+        "Shoot a burst during the movement"
+      ],
+      "tags": [
+        "Face",
+        "Turning",
+        "Personality"
+      ]
+    }
+  },
+  {
+    "id": "P15",
+    "type": "photo",
+    "title": "髪を整えている途中",
+    "summary": "髪を直す仕草と指先を見せる。",
+    "steps": [
+      "前髪を直すか耳に掛ける",
+      "指先まで画角に入れる",
+      "手を下ろす途中も残す"
+    ],
+    "priority": false,
+    "tags": [
+      "髪",
+      "手元",
+      "仕草"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/naenano0114/p/Deyr0iyEz2T/",
+      "creator": "なえなの @naenano0114",
+      "sourceType": "photo",
+      "referencePoint": "1枚目。片手を顔の近くに上げた、少し上から撮る自然な表情と手の位置。",
+      "match": "partial",
+      "originalAddition": "参考写真で髪を直しているわけではない。手を上げた配置を髪を整える仕草に置き換える。",
+      "referencePointEn": "Slide 1: a hand raised near the face, a natural expression, and a camera position slightly above eye level.",
+      "originalAdditionEn": "The reference does not show hair being adjusted. Use the raised-hand placement for a hair-adjusting gesture.",
+      "slide": "1"
+    },
+    "en": {
+      "title": "Adjusting her hair",
+      "summary": "Show the gesture of fixing her hair, including the fingertips.",
+      "steps": [
+        "Adjust the bangs or tuck hair behind an ear",
+        "Keep the fingertips in frame",
+        "Keep shooting as the hand lowers"
+      ],
+      "tags": [
+        "Hair",
+        "Hands",
+        "Gesture"
+      ]
+    }
+  },
+  {
+    "id": "P16",
+    "type": "photo",
+    "title": "袖や襟を直す仕草",
+    "summary": "服に目を落とす顔と手元を一緒に。",
+    "steps": [
+      "袖か襟をゆっくり整える",
+      "顔と手元が入る胸上で撮る",
+      "目線を上げた姿も残す"
+    ],
+    "priority": true,
+    "tags": [
+      "服",
+      "手元",
+      "仕草"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/naenano0114/p/Dc-4gsNE3qM/",
+      "creator": "なえなの @naenano0114",
+      "sourceType": "photo",
+      "referencePoint": "2枚目。Tシャツの裾を両手で持って服と指先を一緒に見せる。",
+      "match": "partial",
+      "originalAddition": "参考は裾を持つポーズ。なおい案では袖・襟を整える動作へ置き換える。",
+      "referencePointEn": "Slide 2: both hands hold the T-shirt hem, showing the clothing and fingertips together.",
+      "originalAdditionEn": "The reference is a hem-holding pose. Replace it with adjusting a sleeve or collar during Naoi's shoot.",
+      "slide": "2"
+    },
+    "en": {
+      "title": "Adjusting a sleeve or collar",
+      "summary": "Include the lowered gaze and the hands touching the outfit.",
+      "steps": [
+        "Slowly adjust a sleeve or the collar",
+        "Use a chest-up frame including the face and hands",
+        "Also capture the moment she looks up"
+      ],
+      "tags": [
+        "Outfit",
+        "Hands",
+        "Gesture"
+      ]
+    }
+  },
+  {
+    "id": "P17",
+    "type": "photo",
+    "title": "バッグを肩に掛ける瞬間",
+    "summary": "バッグの動きから自然なポーズを作る。",
+    "steps": [
+      "バッグを手から肩へ掛ける",
+      "掛け終わりまで連写",
+      "顔は少し目線を外す"
+    ],
+    "priority": false,
+    "tags": [
+      "バッグ",
+      "服",
+      "仕草"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/naenano0114/p/Dc-4gsNE3qM/",
+      "creator": "なえなの @naenano0114",
+      "sourceType": "photo",
+      "referencePoint": "5枚目。トートの持ち手を肩の近くで持ち、バッグと横向きの体を見せる。",
+      "match": "partial",
+      "originalAddition": "参考は掛けた後のポーズ。掛ける途中の動きを連写する。",
+      "referencePointEn": "Slide 5: a tote strap held near the shoulder, showing the bag and the side-facing body together.",
+      "originalAdditionEn": "The reference shows the bag already on the shoulder. Shoot a burst while Naoi puts it on.",
+      "slide": "5"
+    },
+    "en": {
+      "title": "Putting the bag on her shoulder",
+      "summary": "Let the movement of the bag create a natural pose.",
+      "steps": [
+        "Move the bag from the hand onto the shoulder",
+        "Shoot a burst through the end of the movement",
+        "Keep the gaze slightly off-camera"
+      ],
+      "tags": [
+        "Bag",
+        "Outfit",
+        "Gesture"
+      ]
+    }
+  },
+  {
+    "id": "P18",
+    "type": "photo",
+    "title": "服のお気に入り部分",
+    "summary": "レース・ボタン・プリント・素材を寄りで。",
+    "steps": [
+      "本人が好きな部分を選ぶ",
+      "形や素材が分かる寄りで撮る",
+      "全身写真と組み合わせる"
+    ],
+    "priority": true,
+    "tags": [
+      "服",
+      "ディテール"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/yura_pk/p/DdshlnrGODs/",
+      "creator": "ゆら @yura_pk",
+      "sourceType": "photo",
+      "referencePoint": "1枚目。レース・リボンと黒いインナー、黒髪を一緒に見せる服の質感。",
+      "match": "partial",
+      "originalAddition": "参考は上半身。なおい案では好きな素材やボタンへさらに寄る。",
+      "referencePointEn": "Slide 1: the texture of lace and a ribbon shown together with a black inner layer and dark hair.",
+      "originalAdditionEn": "The reference is an upper-body portrait. Move closer to Naoi's favorite fabric, buttons, or other details.",
+      "slide": "1"
+    },
+    "en": {
+      "title": "A favorite outfit detail",
+      "summary": "Close-ups of lace, buttons, prints, or fabric texture.",
+      "steps": [
+        "Have her choose a favorite detail",
+        "Move close enough to show its shape or texture",
+        "Pair it with a full-length photo"
+      ],
+      "tags": [
+        "Outfit",
+        "Details"
+      ]
+    }
+  },
+  {
+    "id": "P19",
+    "type": "photo",
+    "title": "首元とアクセサリー",
+    "summary": "襟とネックレス、顔の下半分を切り取る。",
+    "steps": [
+      "襟とアクセが見える角度へ",
+      "首元から顔の下半分まで入れる",
+      "アクセに触れた手も撮る"
+    ],
+    "priority": false,
+    "tags": [
+      "小物",
+      "アクセ",
+      "ディテール"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/sugar_79/p/DejWu8lklnH/",
+      "creator": "佐藤ノア @sugar_79",
+      "sourceType": "photo",
+      "referencePoint": "2枚目。首元の花柄と耳元の小さなアクセサリーを顔・髪と一緒に入れる。",
+      "match": "partial",
+      "originalAddition": "参考は胸上ポートレート。なおい案では首元とアクセに画角を絞る。",
+      "referencePointEn": "Slide 2: floral detail at the neckline and small earrings included with the face and hair.",
+      "originalAdditionEn": "The reference is chest-up. Tighten the frame around the neckline and jewelry for Naoi.",
+      "slide": "2"
+    },
+    "en": {
+      "title": "Neckline and jewelry",
+      "summary": "Frame the collar, necklace, and lower part of the face.",
+      "steps": [
+        "Find an angle that shows the collar and jewelry",
+        "Include the neckline and lower face",
+        "Also capture a hand touching the jewelry"
+      ],
+      "tags": [
+        "Accessories",
+        "Jewelry",
+        "Details"
+      ]
+    }
+  },
+  {
+    "id": "P20",
+    "type": "photo",
+    "title": "手元とリング・ネイル",
+    "summary": "袖と手元を主役にしたカルーセル用の一枚。",
+    "steps": [
+      "袖と手を一緒に入れる",
+      "リングやネイルが見える向きへ",
+      "顔の写真の間に挟む想定で撮る"
+    ],
+    "priority": false,
+    "tags": [
+      "手元",
+      "ネイル",
+      "アクセ"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/naenano0114/p/DdOQ1DBkwUr/",
+      "creator": "なえなの @naenano0114",
+      "sourceType": "photo",
+      "referencePoint": "1枚目・6枚目。顎の近くに置いた手とリング、袖、顔を一緒に写す。",
+      "match": "partial",
+      "originalAddition": "参考は顔の寄り。なおい案では手元を主役に切り取る。",
+      "referencePointEn": "Slides 1 and 6: a hand near the chin, with a ring, sleeve, and face in the same frame.",
+      "originalAdditionEn": "The reference is a close face portrait. Reframe with Naoi's hands as the main subject.",
+      "slide": "1"
+    },
+    "en": {
+      "title": "Hands, rings, and nails",
+      "summary": "A sleeve-and-hands detail for a photo carousel.",
+      "steps": [
+        "Include the sleeve and hand together",
+        "Turn the hand to show rings or nails",
+        "Shoot a detail that can sit between portraits"
+      ],
+      "tags": [
+        "Hands",
+        "Nails",
+        "Jewelry"
+      ]
+    }
+  },
+  {
+    "id": "P21",
+    "type": "photo",
+    "title": "靴とボトムの裾",
+    "summary": "全身コーデの補足になる足元。",
+    "steps": [
+      "裾と靴を一緒に撮る",
+      "立った姿と一歩出した姿",
+      "カメラを低くしすぎず形を見せる"
+    ],
+    "priority": false,
+    "tags": [
+      "足元",
+      "服",
+      "ディテール"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/sugar_79/p/DfRqpj0EoDc/",
+      "creator": "佐藤ノア @sugar_79",
+      "sourceType": "photo",
+      "referencePoint": "4枚目。座った本人の目線から、ボトム・靴・バッグを見下ろす構図。",
+      "match": "exact",
+      "originalAddition": "立ち版も同じ服で撮り足すと使いやすい。",
+      "referencePointEn": "Slide 4: a downward view from the seated person's perspective, showing bottoms, shoes, and a bag.",
+      "originalAdditionEn": "Add a standing version in the same outfit for more options.",
+      "slide": "4"
+    },
+    "en": {
+      "title": "Shoes and hems",
+      "summary": "A footwear detail that completes the outfit story.",
+      "steps": [
+        "Frame the hem and shoes together",
+        "Try standing still and stepping forward",
+        "Keep the camera high enough to show their shape clearly"
+      ],
+      "tags": [
+        "Footwear",
+        "Outfit",
+        "Details"
+      ]
+    }
+  },
+  {
+    "id": "P22",
+    "type": "photo",
+    "title": "バッグと小物の置き写真",
+    "summary": "少数の小物で本人の好みを見せる。",
+    "steps": [
+      "バッグと小物2〜3点を置く",
+      "真上か斜め上から撮る",
+      "色と形が重ならないよう整える"
+    ],
+    "priority": false,
+    "tags": [
+      "バッグ",
+      "小物",
+      "置き写真"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/sugar_79/p/DfRqpj0EoDc/",
+      "creator": "佐藤ノア @sugar_79",
+      "sourceType": "photo",
+      "referencePoint": "4枚目。バッグ・キーホルダー・服・靴を一つの画面でまとめる色と物の配置。",
+      "match": "partial",
+      "originalAddition": "参考は膝の上。なおい案ではテーブルなどに置き、小物だけで撮る。",
+      "referencePointEn": "Slide 4: the colors and arrangement of a bag, keychain, clothing, and shoes within one frame.",
+      "originalAdditionEn": "The reference is a lap view. Place the items on a table or similar surface and photograph the objects on their own.",
+      "slide": "4"
+    },
+    "en": {
+      "title": "A bag-and-accessory flat lay",
+      "summary": "Use a small selection of items to show personal taste.",
+      "steps": [
+        "Arrange the bag with two or three small items",
+        "Shoot directly or diagonally from above",
+        "Separate the colors and shapes so they remain clear"
+      ],
+      "tags": [
+        "Bag",
+        "Accessories",
+        "Flat lay"
+      ]
+    }
+  },
+  {
+    "id": "P23",
+    "type": "photo",
+    "title": "メガネなどの小物あり",
+    "summary": "手持ちの小物で印象を変える。",
+    "steps": [
+      "手持ちにあればメガネなどを着ける",
+      "あり・なしを同じ構図で撮る",
+      "小物に触れる仕草も残す"
+    ],
+    "priority": false,
+    "tags": [
+      "顔",
+      "メガネ",
+      "小物"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/sugar_79/p/DejWu8lklnH/",
+      "creator": "佐藤ノア @sugar_79",
+      "sourceType": "photo",
+      "referencePoint": "5枚目。メガネを少し下げ、顔の横に袖のある手を置いた胸上ポートレート。",
+      "match": "exact",
+      "originalAddition": "手持ちのメガネがある場合に採用。",
+      "referencePointEn": "Slide 5: a chest-up portrait with the glasses slightly lowered and a sleeved hand beside the face.",
+      "originalAdditionEn": "Use this idea if glasses are already available.",
+      "slide": "5"
+    },
+    "en": {
+      "title": "A different look with glasses",
+      "summary": "Change the impression using accessories already on hand.",
+      "steps": [
+        "Use glasses or another accessory if available",
+        "Shoot with and without it in the same composition",
+        "Keep a shot of her touching the accessory"
+      ],
+      "tags": [
+        "Face",
+        "Glasses",
+        "Accessories"
+      ]
+    }
+  },
+  {
+    "id": "P24",
+    "type": "photo",
+    "title": "カップを持つ顔",
+    "summary": "休憩中のような自然な表情。",
+    "steps": [
+      "カップを両手か片手で持つ",
+      "顔の近くと胸元の2位置で撮る",
+      "会話しながら表情を残す"
+    ],
+    "priority": false,
+    "tags": [
+      "顔",
+      "カップ",
+      "日常"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/naenano0114/p/DdtCNKOE4Z-/",
+      "creator": "なえなの @naenano0114",
+      "sourceType": "photo",
+      "referencePoint": "1枚目。カップを顔の横に持ち、顔・指先・小物を同じ高さにまとめる。",
+      "match": "exact",
+      "originalAddition": "カップは普段使いの物一つに置き換えられる。",
+      "referencePointEn": "Slide 1: a cup held beside the face, keeping the face, fingertips, and small object at a similar height.",
+      "originalAdditionEn": "An everyday cup can replace the one in the reference.",
+      "slide": "1"
+    },
+    "en": {
+      "title": "Holding a cup",
+      "summary": "A relaxed expression, like a moment during a break.",
+      "steps": [
+        "Hold a cup with one or both hands",
+        "Try it near the face and at chest height",
+        "Capture expressions while chatting"
+      ],
+      "tags": [
+        "Face",
+        "Cup",
+        "Everyday life"
+      ]
+    }
+  },
+  {
+    "id": "P25",
+    "type": "photo",
+    "title": "趣味の物と一緒に",
+    "summary": "本人が語れる好きな物を写真に入れる。",
+    "steps": [
+      "音楽・本・キャラクターなどを選ぶ",
+      "顔の横に持つか膝に置く",
+      "物を見ている表情も撮る"
+    ],
+    "priority": true,
+    "tags": [
+      "人柄",
+      "小物",
+      "趣味"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/naenano0114/p/DdtCNKOE4Z-/",
+      "creator": "なえなの @naenano0114",
+      "sourceType": "photo",
+      "referencePoint": "1枚目。キャラクターの小物と本人の顔を同じ画面に入れる。",
+      "match": "partial",
+      "originalAddition": "参考はテーマパークの小物。なおい自身の好きな本・音楽・キャラなどに置き換える。",
+      "referencePointEn": "Slide 1: a character accessory and the person's face included together in one frame.",
+      "originalAdditionEn": "Replace the theme-park item with a book, music item, character, or other object Naoi personally likes.",
+      "slide": "1"
+    },
+    "en": {
+      "title": "With something she loves",
+      "summary": "Include a favorite item she can talk about.",
+      "steps": [
+        "Choose music, a book, a character item, or another favorite",
+        "Hold it beside the face or place it on the lap",
+        "Also capture her looking at the item"
+      ],
+      "tags": [
+        "Personality",
+        "Accessories",
+        "Interests"
+      ]
+    }
+  },
+  {
+    "id": "P26",
+    "type": "photo",
+    "title": "友達目線の距離感",
+    "summary": "会話への反応を目の高さから撮る。",
+    "steps": [
+      "カメラを本人の目の高さへ",
+      "近い距離で会話しながら撮る",
+      "ふとした反応を数枚残す"
+    ],
+    "priority": false,
+    "tags": [
+      "顔",
+      "人柄",
+      "日常"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/sugar_79/p/DfevJVkj9eu/",
+      "creator": "佐藤ノア @sugar_79",
+      "sourceType": "photo",
+      "referencePoint": "1枚目。テーブル越しの近い距離で、座った顔と自然な手元を撮る。",
+      "match": "exact",
+      "originalAddition": "タバコなどの小道具は再現せず、距離感と表情のみ参考。",
+      "referencePointEn": "Slide 1: a seated face and natural hand placement photographed closely from across a table.",
+      "originalAdditionEn": "Refer to the expression and camera distance; props such as cigarettes are not required.",
+      "slide": "1"
+    },
+    "en": {
+      "title": "A friend's point of view",
+      "summary": "Capture her reactions during conversation at eye level.",
+      "steps": [
+        "Set the camera at her eye level",
+        "Shoot close while having a conversation",
+        "Keep several spontaneous reactions"
+      ],
+      "tags": [
+        "Face",
+        "Personality",
+        "Everyday life"
+      ]
+    }
+  },
+  {
+    "id": "P27",
+    "type": "photo",
+    "title": "撮影の合間の一枚",
+    "summary": "その日に実際に起きたオフの場面を残す。",
+    "steps": [
+      "休む・服を確認する姿を撮る",
+      "背景を少し入れて状況を伝える",
+      "撮影用のポーズを求めず残す"
+    ],
+    "priority": false,
+    "tags": [
+      "裏側",
+      "人柄",
+      "日常"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/naenano0114/p/Deyr0iyEz2T/",
+      "creator": "なえなの @naenano0114",
+      "sourceType": "photo",
+      "referencePoint": "1枚目。ピクニックで座った姿を少し上から撮る、力の抜けた日常感。",
+      "match": "partial",
+      "originalAddition": "参考は公園の写真。撮影日の休憩や座った瞬間へ置き換える。",
+      "referencePointEn": "Slide 1: a relaxed, everyday feeling, photographed slightly from above while seated at a picnic.",
+      "originalAdditionEn": "Use a break or seated moment from the actual shoot day in place of the park setting.",
+      "slide": "1"
+    },
+    "en": {
+      "title": "Between shots",
+      "summary": "Keep an authentic off-camera moment from the day.",
+      "steps": [
+        "Photograph her resting or checking the outfit",
+        "Include a little background for context",
+        "Keep the moment without asking for a pose"
+      ],
+      "tags": [
+        "Behind the scenes",
+        "Personality",
+        "Everyday life"
+      ]
+    }
+  },
+  {
+    "id": "P28",
+    "type": "photo",
+    "title": "光が横から入る顔",
+    "summary": "窓などの横からの光を生かす。",
+    "steps": [
+      "窓などがあれば横に立つ",
+      "顔を少し光へ向ける",
+      "目元が暗くなりすぎない位置で撮る"
+    ],
+    "priority": false,
+    "tags": [
+      "顔",
+      "光",
+      "窓"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/sugar_79/p/DfRqpj0EoDc/",
+      "creator": "佐藤ノア @sugar_79",
+      "sourceType": "photo",
+      "referencePoint": "3枚目の顔コラージュ。屋外の柔らかい光と、目線の方向ごとの顔の見え方。",
+      "match": "partial",
+      "originalAddition": "参考は屋外の柔らかい光。窓の横光に変えるときは顔の明暗を見ながら位置を調整。",
+      "referencePointEn": "Slide 3: a collage of face angles in soft outdoor light, showing how the face looks with different gaze directions.",
+      "originalAdditionEn": "When adapting the soft outdoor light to side light from a window, adjust the position while watching the light and shadow on the face.",
+      "slide": "3"
+    },
+    "en": {
+      "title": "A portrait in side light",
+      "summary": "Use light coming from the side, such as a window.",
+      "steps": [
+        "Stand beside a window if one is available",
+        "Turn the face slightly toward the light",
+        "Find a position that keeps the eye area visible"
+      ],
+      "tags": [
+        "Face",
+        "Light",
+        "Window"
+      ]
+    }
+  },
+  {
+    "id": "P29",
+    "type": "photo",
+    "title": "背景を広く入れた全身",
+    "summary": "空間ごと見せ、写真の並びに変化を付ける。",
+    "steps": [
+      "本人を中央から少しずらす",
+      "背景を広めに入れる",
+      "全身と空間のバランスを整える"
+    ],
+    "priority": false,
+    "tags": [
+      "全身",
+      "余白",
+      "背景"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/sugar_79/p/DejWu8lklnH/",
+      "creator": "佐藤ノア @sugar_79",
+      "sourceType": "photo",
+      "referencePoint": "4枚目。ピンクの壁の前で、頭上と左右の余白を広く取った全身。",
+      "match": "exact",
+      "originalAddition": "壁色は手持ちの場所に合わせてよい。人物と背景の比率を参考。",
+      "referencePointEn": "Slide 4: a full-length portrait before a pink wall, with generous room above the head and on both sides.",
+      "originalAdditionEn": "Use the available wall color and refer to the proportion of person to background.",
+      "slide": "4"
+    },
+    "en": {
+      "title": "Full length with room to breathe",
+      "summary": "Show the surroundings to add variety to the photo sequence.",
+      "steps": [
+        "Place her slightly off-center",
+        "Include a wider view of the background",
+        "Balance the full body with the surrounding space"
+      ],
+      "tags": [
+        "Full length",
+        "Negative space",
+        "Background"
+      ]
+    }
+  },
+  {
+    "id": "P30",
+    "type": "photo",
+    "title": "文字を置ける余白のある写真",
+    "summary": "後日の告知や自己紹介にも使える一枚。",
+    "steps": [
+      "本人を左右どちらかに配置",
+      "反対側に広く余白を残す",
+      "顔の寄りと上半身の両方を撮る"
+    ],
+    "priority": true,
+    "tags": [
+      "顔",
+      "余白",
+      "告知"
+    ],
+    "reference": {
+      "url": "https://www.instagram.com/sugar_79/p/DZ88IJePmns/",
+      "creator": "佐藤ノア @sugar_79",
+      "sourceType": "photo",
+      "referencePoint": "1枚目。単色の淡い背景と、顔の左右に背景を残したポートレート。",
+      "match": "partial",
+      "originalAddition": "参考そのものには文字なし。撮影時はさらに片側へ人物を寄せて余白を確保。",
+      "referencePointEn": "Slide 1: a portrait with a pale, plain background visible on both sides of the face.",
+      "originalAdditionEn": "The reference has no text. Move Naoi farther to one side of the frame to create more room for future copy.",
+      "slide": "1"
+    },
+    "en": {
+      "title": "A portrait with space for text",
+      "summary": "A flexible image for a future announcement or introduction.",
+      "steps": [
+        "Place her on either side of the frame",
+        "Leave generous space on the opposite side",
+        "Shoot both a close portrait and an upper-body version"
+      ],
+      "tags": [
+        "Face",
+        "Negative space",
+        "Announcement"
+      ]
+    }
+  }
+]

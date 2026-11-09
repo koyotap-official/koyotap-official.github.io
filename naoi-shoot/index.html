@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#f6f4ef">
+  <meta name="description" content="なおいの私服撮影ガイド。リール20本・写真30案と参考投稿、撮影チェックリスト。">
+  <title>NAOI / SHOOT NOTES — 私服撮影ガイド</title>
+  <link rel="canonical" href="https://koyotap.com/naoi-shoot/">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles.css?v=20261110-1">
+  <script defer src="app.js?v=20261110-1"></script>
+</head>
+<body>
+  <a class="skip-link" href="#ideas" data-i18n="skip">撮影案へ</a>
+  <div class="shell">
+    <header class="topbar">
+      <a class="wordmark" href="./" aria-label="NAOI SHOOT NOTES"><strong>NAOI</strong><span>/</span>SHOOT NOTES</a>
+      <div class="utilities">
+        <button id="sound" class="utility-button" type="button" aria-pressed="false" title="チェック音"><span aria-hidden="true">♪</span><span data-i18n="soundOff">音 OFF</span></button>
+        <button id="language" class="utility-button" type="button" aria-label="Switch to English">EN</button>
+      </div>
+    </header>
+
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <div class="eyebrow">PRIVATE CLOTHES / PORTRAIT SESSION</div>
+        <h1 id="page-title" data-i18n="title">私服撮影ガイド</h1>
+        <p class="hero-lead" data-i18n="lead">リール20本・写真30案。</p>
+        <p class="hero-description" data-i18n="description">参考投稿を見て、撮って、チェック。<br>きれいな表情も、いつものなおいも。</p>
+        <div class="hero-meta"><span data-i18n="outfit">私服2パターン</span><span data-i18n="priorityMeta">優先16案</span><span data-i18n="checked">参考確認 2026.11.10</span></div>
+      </div>
+      <img class="hero-art" src="header.png" width="1659" height="948" alt="" fetchpriority="high">
+    </section>
+
+    <section class="session-note" aria-label="撮影のメモ">
+      <span class="note-label" data-i18n="sessionLabel">撮影の流れ</span>
+      <p data-i18n="sessionOrder">1着目：写真→動画　／　2着目：写真→動画　／　最後に小物とオフショット</p>
+      <details><summary data-i18n="beforeShoot">撮り始める前に</summary><p data-i18n="shootTip">縦動画は9:16。動きの前後を2秒ずつ長めに撮る。写真は寄り・全身・細部をセットで。光と背景を整え、本人の好きな角度を先に確認。</p></details>
+    </section>
+
+    <section class="controls" aria-label="撮影案の絞り込み">
+      <div class="filter-row">
+        <div class="type-filters" aria-label="種類">
+          <button class="filter active" type="button" data-type="all" aria-pressed="true"><span data-i18n="all">すべて</span><span>50</span></button>
+          <button class="filter" type="button" data-type="reel" aria-pressed="false"><span data-i18n="reel">リール</span><span>20</span></button>
+          <button class="filter" type="button" data-type="photo" aria-pressed="false"><span data-i18n="photo">写真</span><span>30</span></button>
+        </div>
+        <button id="priority" class="filter priority-filter" type="button" aria-pressed="false"><span aria-hidden="true">☆</span><span data-i18n="priorityOnly">優先案だけ</span><span>16</span></button>
+      </div>
+      <div class="search-row">
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="search" type="search" aria-label="撮影案を検索" placeholder="横顔・全身・鏡などで検索" autocomplete="off"></label>
+        <label class="status-label"><span data-i18n="show">表示</span><select id="status" aria-label="撮影状態で絞り込み"><option value="all" data-i18n="allStatus">すべて</option><option value="todo" data-i18n="todo">未撮影</option><option value="done" data-i18n="done">撮影済み</option></select></label>
+      </div>
+    </section>
+
+    <div class="results-bar"><p id="results" role="status" aria-live="polite">読み込み中…</p><button id="clear" type="button" data-i18n="clearFilters">絞り込みを解除</button></div>
+    <main id="ideas" class="idea-grid" tabindex="-1" aria-label="撮影案一覧"></main>
+    <div id="empty" class="empty-state" hidden><span aria-hidden="true">⌕</span><p data-i18n="empty">条件に合う撮影案がありません。</p><button id="empty-clear" type="button" data-i18n="clearFilters">絞り込みを解除</button></div>
+    <p id="storage-note" class="storage-note" hidden data-i18n="storageError">この端末にはチェックを保存できません。現在の画面ではそのまま使えます。</p>
+
+    <footer class="footer">
+      <div><strong>NAOI / SHOOT NOTES</strong><p data-i18n="referenceNote">参考投稿の構図・目線・動きなど、各カードに書いた箇所を参考に撮影します。カルーセルは指定の枚数へ進んでください。</p><p data-i18n="instagramNote">元投稿はInstagramで開きます。表示にログインが必要な場合があります。</p></div>
+      <div class="footer-meta"><p data-i18n="saveNote">チェックはこの端末のブラウザに保存されます。</p><p data-i18n="imageCredit">ヘッダーイラスト：ChatGPTで生成</p><button id="print" type="button" data-i18n="print">印刷・PDF保存</button></div>
+    </footer>
+  </div>
+  <aside class="progress-dock" aria-label="撮影の進み具合"><div class="progress-inner"><div><span class="progress-label" data-i18n="progress">撮影の進み具合</span><strong id="progress-count">0 <span>/ 50</span></strong></div><div class="progress-track"><div id="progress-fill"></div></div><button id="show-todo" type="button" data-i18n="showTodo">未撮影を見る</button></div></aside>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <noscript><p class="noscript">撮影案の表示にはJavaScriptを有効にしてください。 / Enable JavaScript to view the guide.</p></noscript>
+</body>
+</html>
