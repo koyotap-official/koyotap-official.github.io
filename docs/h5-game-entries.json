@@ -159,6 +159,20 @@
           "integratedHtmlSha256": "a3146c1618fb3e8628060225bed0ec2d1d1331c1e00a65167434a3719f6a3ca3",
           "wrapperVersion": "color-sculptures-20261110-v10r2",
           "wrapperSha256": "8a316e803ac72fcf3d607f8c6b2d9cf7af9cb7ce7dc22ce6b818dd389d699810"
+        },
+        {
+          "version": "color-sculptures-20261113-v11",
+          "entryKind": "classic",
+          "entry": "./color-sculptures-v11.js",
+          "entryPath": "play/color-sculptures/game/color-sculptures-v11.js",
+          "sourceCommit": "26f3402ac7a05f5fa56c3fb512210b62f73bbe25",
+          "standaloneSha256": "1373086fa88044bfa213dd9719bbaf6016893897d8ad2b76b98e137dd049905f",
+          "previousEntrySha256": "7f10d87274c260159bcd93724ab6f9cb1a95f7b9e9ed44451b0387bca9a9c639",
+          "entrySha256": "26875dd336d55e1b0d98be5d187bcb049c51802fa9963983e0a8b506fda6fa00",
+          "entryBytes": 5274462,
+          "integratedHtmlSha256": "d7c5aca0ca7c8c3f6d6655b398576131481073360a88a233a135d596abde9065",
+          "wrapperVersion": "color-sculptures-20261113-v11",
+          "wrapperSha256": "8b468f0a035e22ddb5dc377c4ea9ca38aaa5f4db35cdc38a7091e61b6dc6ab98"
         }
       ]
     },

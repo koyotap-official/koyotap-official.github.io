@@ -231,7 +231,7 @@
         gameUrl = "./game/?lang=" + encodeURIComponent(bentoLang) + "&v=bento-box-20261110-v5";
       } else if (gameId === "color-sculptures") {
         var sculptureLang = document.documentElement.getAttribute("data-lang") === "en" ? "en" : "ja";
-        gameUrl = "./game/?lang=" + sculptureLang + "&v=color-sculptures-20261110-v10r2";
+        gameUrl = "./game/?lang=" + sculptureLang + "&v=color-sculptures-20261113-v11";
       } else if (gameId === "little-fish-trios") {
         var fishQuery = new URLSearchParams(window.location.search);
         var fishLang = fishQuery.get("lang");
