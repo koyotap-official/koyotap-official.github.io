@@ -1,0 +1,3 @@
+# Keep this verified generated game byte-identical.
+* -text
+assets/*.js whitespace=-blank-at-eol,-space-before-tab
